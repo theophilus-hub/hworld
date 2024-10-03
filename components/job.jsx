@@ -1,6 +1,11 @@
+import Link from "next/link";
+
 function Job() {
   return (
-    <div id="solution" className="flex flex-col flex-1 justify-center items-center space-y-6 mb-[150px] md:mb-[250px] px-4 md:px-16 lg:px-40">
+    <div
+      id="solution"
+      className="flex flex-col flex-1 justify-center items-center space-y-6 mb-[150px] md:mb-[250px] px-4 md:px-16 lg:px-40"
+    >
       <div className="space-y-4 mx-2 md:mx-[25%]">
         <h1 className="text-center text-4xl text-white font-bold">
           What <span className="text-sec italic">we</span> do
@@ -29,10 +34,11 @@ function Job() {
                   infrastructure, delivering quality, efficiency, and safety in
                   every build.
                 </p>
-
-                <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
-                  Learn More
-                </button>
+                <Link href={"construction"}>
+                  <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -54,10 +60,11 @@ function Job() {
                   accommodations, offering unique experiences that combine
                   convenience with personalized hospitality.
                 </p>
-
-                <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
-                  Learn More
-                </button>
+                <Link href={"/"}>
+                  <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -79,10 +86,11 @@ function Job() {
                   and operational support. We ensure reliability and innovation
                   in every marine project we undertake.
                 </p>
-
-                <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
-                  Learn More
-                </button>
+                <Link href={"marine"}>
+                  <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -29,26 +29,27 @@ function Footer() {
             <div className=" w-full  px-2 xl:px-20">
               <div className="grid grid-cols-3 gap-4">
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
-                    <h1 className="text-notdark">H-World</h1>
-                    <Link href={'/'}>Home</Link>
-                    <Link href={'about'}>About Us</Link>
-                    <Link href={'#careers'}>Careers</Link>
-                    <Link href={'#solution'}>What we do</Link>
+                  <h1 className="text-notdark">H-World</h1>
+                  <Link href={"/"}>Home</Link>
+                  <Link href={"about"}>About Us</Link>
+                  <Link href={"/#careers"}>Careers</Link>
+                  <Link href={"/#solution"}>What we do</Link>
                 </div>
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
-                    <h1 className="text-notdark">Services</h1>
-                    <Link href={'construction'}>Engineering<br />
-                    & Construction</Link>
-                    <Link href={'marine'}>Marine</Link>
-                    <Link href={'airbnb'}>Air BnB</Link>
-                    
+                  <h1 className="text-notdark">Services</h1>
+                  <Link href={"construction"}>
+                    Engineering
+                    <br />& Construction
+                  </Link>
+                  <Link href={"marine"}>Marine</Link>
+                  <Link href={"airbnb"}>Air BnB</Link>
                 </div>
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
-                    <h1 className="text-notdark">Follow Us</h1>
-                    <Link href={'/'}>Instagram</Link>
-                    <Link href={'/'}>Facebook</Link>
-                    <Link href={'/'}>LinkedIn</Link>
-                    <Link href={'/'}>Twitter</Link>
+                  <h1 className="text-notdark">Follow Us</h1>
+                  <Link href={"/"}>Instagram</Link>
+                  <Link href={"/"}>Facebook</Link>
+                  <Link href={"/"}>LinkedIn</Link>
+                  <Link href={"/"}>Twitter</Link>
                 </div>
               </div>
             </div>
