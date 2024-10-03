@@ -5,8 +5,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "HWORLD",
-  description: "General company website",
+  description: "Hworld Official company website",
+  icons: {
+    icon: '/hworld.png',
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
