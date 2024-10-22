@@ -121,7 +121,7 @@ function Water() {
               <th className="py-3 px-4 text-left">Brand Model</th>
               <th className="py-3 px-4 text-left">Year</th>
               <th className="py-3 px-4 text-left">Information</th>
-              <th className="py-3 px-4 text-left">Price</th>
+             
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
@@ -133,7 +133,7 @@ function Water() {
                 <td className="py-2 px-4">{row.brandModel}</td>
                 <td className="py-2 px-4">{row.year}</td>
                 <td className="py-2 px-4">{row.information}</td>
-                <td className="py-2 px-4">{row.price}</td>
+                
               </tr>
             ))}
           </tbody>

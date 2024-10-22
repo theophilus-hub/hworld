@@ -69,7 +69,6 @@ function Offshore() {
               <th className="py-3 px-4 text-left">Year</th>
               <th className="py-3 px-4 text-left">Type</th>
               <th className="py-3 px-4 text-left">Comments</th>
-              <th className="py-3 px-4 text-left">Price</th>
             
             </tr>
           </thead>
@@ -82,7 +81,7 @@ function Offshore() {
                 <td className="py-2 px-4">{row.year}</td>
                 <td className="py-2 px-4">{row.type}</td>
                 <td className="py-2 px-4">{row.comments}</td>
-                <td className="py-2 px-4">{row.price}</td>
+                
                
               </tr>
             ))}
