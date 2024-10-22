@@ -62,7 +62,7 @@ function Contact() {
           <div className="text-white mx-0 md:mx-12 space-y-8 w-full md:w-1/2 flex flex-col px-6 py-8 md:px-8 font-semibold text-sm md:text-xl">
             <div className="flex space-x-4 justify-start items-center">
               <img src="/phone.png" alt="" />
-              <h4>44 (0)20 3544 2325</h4>
+              <h4>+44 (0)12 5627 9041</h4>
             </div>
             <div className="flex space-x-4 justify-start items-center">
               <img src="/mail.png" alt="" />
@@ -72,20 +72,48 @@ function Contact() {
                 <h4>marine@hworldinc.com</h4>
               </div>
             </div>
-            <div className="flex space-x-4 justify-start items-center">
+            <div className="flex space-x-4 justify-start items-start">
               <img src="/location.png" alt="" />
               <h4>
-                Nicholson House, 41 Thames Street <br />
-                Weybridge, Surrey KT13 8J
+              Head Office  <br /> United Kingdom  |  Basingstoke |  Hampshire  |  RG22 5FE  | United Kingdom
               </h4>
             </div>
+            
           </div>
           <div>
-            <img src="/map.png" className="rounded-2xl" alt="" />
+            <img src="/map.png" className="rounded-2xl h-full" alt="" />
           </div>
         </div>
       </div>
 
+<div className=" w-full flex flex-col flex-1 justify-start items-start space-y-6 mt-32  mb-[75px] md:mb-[150px] px-8  xl:px-56">
+<h2 className="text-3xl font-bold text-white">Our Other <span className="text-white">Offices</span></h2>
+
+<div className="flex space-x-4 justify-start items-start text-white font-semibold">
+              <img src="/location.png" alt="" />
+              <h4>
+              <span className="text-sec">Scotland </span><br /> Aberdeen |   Aberdeenshire  |  AB11 6LZ  | United Kingdom.
+              </h4>
+            </div>
+            <div className="flex space-x-4 justify-start items-start text-white font-semibold">
+              <img src="/location.png" alt="" />
+              <h4>
+              <span className="text-sec">Latvia </span><br /> Basuskas Novads  |  Islices Pagasts  |  Kalnares  |  LV-3914 Bauska
+              </h4>
+            </div>
+            <div className="flex space-x-4 justify-start items-start text-white font-semibold">
+              <img src="/location.png" alt="" />
+              <h4>
+              <span className="text-sec">United State</span> <br />   Richmond  | 77407  | Texas  | United States.
+              </h4>
+            </div>
+            <div className="flex space-x-4 justify-start items-start text-white font-semibold">
+              <img src="/location.png" alt="" />
+              <h4>
+              <span className="text-sec">Nigeria</span> <br /> Ikate Lekki  | Lagos  | Nigeria
+              </h4>
+            </div>
+</div>
       <hr
         className="border-0 my-16 mx-4 md:mx-20"
         style={{
