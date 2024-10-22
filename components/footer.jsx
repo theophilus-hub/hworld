@@ -31,18 +31,18 @@ function Footer() {
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
                   <h1 className="text-notdark">H-World</h1>
                   <Link href={"/"}>Home</Link>
-                  <Link href={"about"}>About Us</Link>
+                  <Link href={"/about"}>About Us</Link>
                   <Link href={"/#careers"}>Careers</Link>
                   <Link href={"/#solution"}>What we do</Link>
                 </div>
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
                   <h1 className="text-notdark">Services</h1>
-                  <Link href={"construction"}>
+                  <Link href={"/construction"}>
                     Engineering
                     <br />& Construction
                   </Link>
-                  <Link href={"marine"}>Marine</Link>
-                  <Link href={"airbnb"}>Air BnB</Link>
+                  <Link href={"/marine"}>Marine</Link>
+                  <Link href={"/airbnb"}>Air BnB</Link>
                 </div>
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
                   <h1 className="text-notdark">Follow Us</h1>

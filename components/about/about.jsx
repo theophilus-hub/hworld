@@ -1,6 +1,5 @@
 import React from "react";
 
-import Image from "next/image";
 
 function About() {
   return (
@@ -11,7 +10,7 @@ function About() {
         </h1>
         <img
           src={"/glowing light.png"}
-          className="absolute -top-12 md:-top-44 opacity-30"
+          className="absolute -top-12 md:-top-28 opacity-30 z-0"
           alt="light"
         />
 

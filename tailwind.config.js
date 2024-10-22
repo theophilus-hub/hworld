@@ -24,6 +24,9 @@ module.exports = {
         'darker' : '#121212',
         'notdark' : '#414141',
         'sec' : '#FFAD4A',
+        'over' : '#0B1215',
+        'ft' : '#2A2A2A',
+        'ftborder' : '#727272',
       },
       
       fontFamily: {
