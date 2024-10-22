@@ -12,7 +12,7 @@ function RigHero() {
 
           <img src="/rig.png" alt="" />
 
-          <div className="z-10 px-16 flex flex-col justify-center items-center space-y-10">
+          <div className="z-10 px-4 md:px-16 flex flex-col justify-center items-center space-y-10">
             <h4 className=" text-left text-white text-sm md:text-base">
               Welcome to our dedicated rig fleet page, where you can discover
               our comprehensive range of available drilling rigs. Whether you're
