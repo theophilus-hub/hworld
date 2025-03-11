@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Nav from "./nav";
+import Slide from "../slide";
 
 function Hero() {
   return (
@@ -13,7 +14,7 @@ function Hero() {
           <Nav />
         </div>
 
-        <div className="relative flex flex-col justify-center items-center py-44 mb-[150px] md:mb-[250px] w-full">
+        <div className="relative flex flex-col justify-center items-center py-44 mb-[100px] md:mb-[130px] w-full">
           <div className="space-y-4 flex flex-col justify-center items-center mx-4 md:mx-[20%]">
             <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl z-10">
               MARINE SERVICES
@@ -28,12 +29,15 @@ function Hero() {
                 className="absolute top-16 md:-top-20 z-0"
                 alt="light"
               />
-              <Link href={"#services"} className="z-10">
+              <Link href={"/marine/rigs"} className="z-10">
                 <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
-                  Explore Services
+                  Explore Available Rigs
                 </button>
               </Link>
-              <img src="/arrows.png" alt="" />
+              <Slide>
+  <img src="/arrows.png" alt="" />
+</Slide>
+              
             </div>
           </div>
         </div>

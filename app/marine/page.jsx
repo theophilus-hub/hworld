@@ -1,3 +1,5 @@
+"use client"
+
 import Footer from "@/components/footer"
 import Hero from "@/components/marine/hero"
 import Services from "@/components/marine/services"

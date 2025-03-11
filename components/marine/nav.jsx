@@ -12,10 +12,11 @@ import {
   
   const navigation = [
     { name: "Home", href: "/", current: false },
-    { name: "About Us", href: "about", current: false },
-    { name: "What we do", href: "/#solution", current: false },
-    { name: "Careers", href: "/#careers", current: false },
-    { name: "Contact", href: "contact", current: false },
+    { name: "Construction", href: "/construction", current: false },
+    { name: "Marine", href: "/marine", current: false },
+    { name: "Deals", href: "/deals", current: false },
+    { name: "About Us", href: "/about", current: false },
+    { name: "Contact", href: "/contact", current: false },
   ];
   
   function classNames(...classes) {

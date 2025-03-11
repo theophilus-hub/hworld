@@ -1,3 +1,5 @@
+"use client"
+
 import Nav from "@/components/nav"
 import AboutSub from "../../components/about/about"
 import Team from "../../components/about/team"
