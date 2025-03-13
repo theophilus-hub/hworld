@@ -29,6 +29,7 @@ module.exports = {
         'over' : '#0B1215',
         'ft' : '#2A2A2A',
         'ftborder' : '#727272',
+        'bgcon' : '#22272933'
       },
       
       fontFamily: {
