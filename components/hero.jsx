@@ -23,7 +23,7 @@ function Hero() {
     
   return (
     <>
-     <div className="flex flex-col justify-center items-center mt-20 mb-[100px] md:mb-[120px] w-full">
+     <div className="flex flex-col justify-center items-center mt-20 mb-[50px] md:mb-[60px] w-full">
       <div className="space-y-4 flex flex-col justify-center items-center mx-2 md:mx-[15%]">
         <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl">
           Building the Future
