@@ -51,7 +51,7 @@ function Job() {
         </Slide>
 <Slide>
           <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4">
-            <div className="bg-red-300">
+            <div className="">
               <img src="/job3.png" className="rounded-r-xl" alt="" />
             </div>
             <div className=" md:w-2/5 flex justify-center items-center lg:mx-12 ">

@@ -35,7 +35,7 @@ function About() {
       <Slide>
         <div className="flex flex-col flex-1 mt-4">
           <div className="flex items-center justify-center px-4 my-2 md:px-40 w-full">
-            <img src="/about.png" />
+            <img src="/aboutnew.png" />
           </div>
         </div>
         <div className="relative mt-12 flex flex-col justify-center items-center space-y-8">
