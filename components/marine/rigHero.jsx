@@ -28,7 +28,7 @@ function RigHero() {
 
 
   return (
-    <div className="bg-cover bg-center relative w-full">
+    <div className="bg-cover bg-center relative w-full mt-12">
       <div className="relative flex flex-col justify-center items-center pt-20 mb-[75px] md:mb-[100px] w-full">
         <div className=" space-y-16 flex flex-col justify-center items-center mx-4 lg:mx-[10%]">
          <Slide>

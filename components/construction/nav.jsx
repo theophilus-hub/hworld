@@ -31,15 +31,16 @@ import Link from "next/link";
           </Link>
         </div>
         <div className="flex space-x-4 px-6">
-           <MenuItem setActive={setActive} active={active} item="Services">
+           <MenuItem setActive={setActive} active={active} item="Sectors">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/">H-World</HoveredLink>
+            <HoveredLink href="/adhoc">Adhoc</HoveredLink>
+            <HoveredLink href="/construction">Construction</HoveredLink>
+            <HoveredLink href="/marine">Marine</HoveredLink>
+            <HoveredLink href="/deals">Deals</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Products">
+        {/* <MenuItem setActive={setActive} active={active} item="Products">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Algochurn"
@@ -66,15 +67,10 @@ import Link from "next/link";
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
+        </MenuItem> */}
+        <Link href={'/adhoc'}   className="cursor-pointer text-white font-semibold text-sm hover:opacity-[0.9] hover:text-sec ">
+           Adhoc
+        </Link>
         </div>
        
       </Menu>
