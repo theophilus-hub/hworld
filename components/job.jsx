@@ -21,6 +21,34 @@ function Job() {
       </Slide>
 
       <div className="space-y-14">
+      <Slide>
+          <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4">
+            <div className="">
+              <img src="/deal.png" className="rounded-r-xl" alt="" />
+            </div>
+            <div className=" md:w-2/5 flex justify-center items-center lg:mx-12 ">
+              <div className=" mx-4  px-2 xl:px-20 ">
+                <div className="md:space-y-6 lg:space-y-10 text-left ">
+                  <h1 className="font-bold text-lg lg:text-xl whitespace-nowrap text-white">
+                    Adhoc Services
+                  </h1>
+                  <p className="text-xs lg:text-sm font-normal text-white">
+                    At Hworld, we specialize in identifying high-value
+                    investment opportunities across construction and marine
+                    sectors. With strong industry connections and market
+                    insights, we source deals that align with your investment
+                    goals, ensuring long-term value and growth.
+                  </p>
+                  <Link href={"deals"}>
+                    <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                      Learn More
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Slide>
         <Slide>
           <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4">
             <div className="">
@@ -94,7 +122,7 @@ function Job() {
                     insights, we source deals that align with your investment
                     goals, ensuring long-term value and growth.
                   </p>
-                  <Link href={"construction"}>
+                  <Link href={"deals"}>
                     <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
                       Learn More
                     </button>
