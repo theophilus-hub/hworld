@@ -3,9 +3,10 @@ import Slide from "../slide";
 
 function Career() {
   return (
-    <div className="font-poppins relative  flex flex-col justify-center items-center  mb-[100px] md:mb-[250px] w-full">
-      <div className="relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-[10%]">
-      <Slide>
+    <Slide>
+      <div className="font-poppins relative  flex flex-col justify-center items-center  mb-[100px] md:mb-[250px] w-full">
+      <div className=" relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-[10%]">
+      
    <div className="space-y-4 w-full">
           <h4 className="text-white font-semibold text-sm md:text-lg italic">
             Careers
@@ -23,7 +24,7 @@ function Career() {
             <span className="text-sec italic">talented indivuals.</span>
           </h2>
         </div>
-  </Slide>
+ 
        
         <div className=" py-12 md:py-20 w-full flex flex-col md:flex-row  flex-1 text-white justify-start items-start space-y-8 md:space-y-0">
           <div className="w-full md:w-3/4 space-y-6 px-4 md:px-0">
@@ -54,6 +55,8 @@ function Career() {
         </div>
       </div>
     </div>
+    </Slide>
+    
   );
 }
 

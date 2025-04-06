@@ -1,37 +1,96 @@
-"use client";
-
-import Link from "next/link";
 import React from "react";
 import Slide from "../slide";
 
 function Services() {
   return (
-    <div
-      id="services"
-      className="flex flex-col  space-y-8 md:space-y-16 justify-center items-center mb-[100px] md:mb-[130px] "
-    >
-      <Slide >
-        <div className="text-center flex flex-col margin-auto space-y-4 w-full md:px-24 xl:px-44 px-4">
-          <h2 className="font-bold text-2xl md:text-5xl text-white">
-          Flexible Support for <span className="text-sec italic">Critical </span> Moments
-          </h2>
-          <p className="text-white text-xs md:text-base font-normal text-center">
-          Hworld’s Adhoc Services division is built to fill the gaps — fast. Whether it’s last-minute manpower, urgent logistics, technical backup, or on-the-fly project execution, we deploy trusted teams and tools to keep your operations moving. From construction and oil & gas to logistics and emergency planning, our support scales with your need.
-          </p>
-        </div>
-      </Slide>
+    <div className="font-poppins relative  flex flex-col justify-center items-center  mb-[50px] md:mb-[100px] w-full">
+      <div className="relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-8 lg:px-[10%]">
+        <div className=" py-12 md:py-20 w-full flex flex-col md:grid md:grid-cols-2   text-white justify-start items-start space-y-8 md:space-y-0">
+        <Slide>
+  <div className="w-full  space-y-6 px-4 ">
+            <h2 className="font-extrabold text-left text-3xl md:text-[40px]/[60px] w-full">
+            Service <br />
+              <span className="text-sec italic"> Categories </span>
+             
+            </h2>
+          </div>
+  </Slide>
+          
+          
+          <img
+          src={"/glowing light.png"}
+          className="absolute -bottom-10 md:-bottom-32  opacity-30"
+          alt="light"
+        />
 
-    <Slide>
-      <div className="flex flex-col justify-center items-center">
-        <Link href={"/deals/list"} className="z-10">
-        <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
-          See All Available Deals
-        </button>
-      </Link>
-      </div>
+          <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-8 space-y-12 md:space-y-28">
+            <div className="space-y-4 w-full">
+              <div className="space-y-10 w-full">
+                
+
+                <div className="grid grid-cols-2 gap-x-2 md:gap-x-6 gap-y-10 md:gap-y-20 justify-center items-start">
+                <Slide>
+   <div className="space-y-2  w-full flex flex-col items-start justify-start ">
+                    <img src="/bulb.png" alt="" />
+                    <h2 className="font-bold text-base md:text-lg">Project Planning</h2>
+                    <p className="font-normal text-xs md:text-sm">
+                    Quick-turn project frameworks, feasibility checks, and mobilization plans.
+                    </p>
+                  </div>
+  </Slide>
+  <Slide>
+  <div className="space-y-2  w-full flex flex-col items-start justify-start ">
+                    <img src="/shake.png" alt="" />
+                    <h2 className="font-bold text-base md:text-lg">Skilled Manpower</h2>
+                    <p className="font-normal text-xs md:text-sm">
+                    Certified professionals for short-notice deployment — engineers, techs, logistics experts.
+                    </p>
+                  </div>
+  </Slide>
+  <Slide>
+  <div className="space-y-2  w-full flex flex-col items-start justify-start ">
+                    <img src="/shield.png" alt="" />
+                    <h2 className="font-bold text-base md:text-lg">Equipment & Logistics Support</h2>
+                    <p className="font-normal text-xs md:text-sm">
+                    Temporary setups, machinery rental, or transport for short-term needs.
+                    </p>
+                  </div>
+  </Slide>
+  <Slide>
+  <div className="space-y-2  w-full flex flex-col items-start justify-start ">
+                    <img src="/heart.png" className=" " alt="" />
+                    <h2 className="font-bold text-base md:text-lg">Site Operations</h2>
+                    <p className="font-normal text-xs md:text-sm">
+                    Rapid setup of operational stations, field teams, and support hubs.
+                    </p>
+                  </div>
+  </Slide>
+  <Slide>
+  <div className=" space-y-2  w-full flex flex-col items-start justify-start ">
+                    <img src="/star.png" alt="" />
+                    <h2 className="font-bold text-base md:text-lg"> Special Projects</h2>
+                    <p className="font-normal text-xs md:text-sm">
+                    Custom, undefined, or unusual task execution — we step in when others can’t.
+                    </p>
+                  </div>
+  </Slide>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Slide>
+           <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-10 space-y-12 md:space-y-28">
+            <div className="space-y-4 w-full">
+              <div className="space-y-10 w-full">
+                <img src="/adhocgrid1.png" alt="" className="rounded-3xl" />
+              </div>
+            </div>
+          </div>
+        </Slide>
        
-    </Slide>
-     
+      </div>
     </div>
   );
 }

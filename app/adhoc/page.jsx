@@ -2,8 +2,8 @@
 
 import Footer from "@/components/footer"
 import Hero from "@/components/adhoc/hero"
+import Overview from "@/components/adhoc/overview"
 import Services from "@/components/adhoc/services"
-import Source from "@/components/adhoc/source"
 import Contact from "@/components/contact"
 
 function Adhoc() {
@@ -11,8 +11,8 @@ function Adhoc() {
     <>
   
     <Hero />
+    <Overview />
     <Services />
-    <Source />
     <Contact />
     <Footer />
     </>
