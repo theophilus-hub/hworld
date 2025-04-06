@@ -40,8 +40,8 @@ import Link from "next/link";
                      <HoveredLink href="/deals">Deals</HoveredLink>
                    </div>
                  </MenuItem>
-        <Link href={'/deals/list'}   className="cursor-pointer text-white font-semibold text-sm hover:opacity-[0.9] hover:text-sec ">
-           Deals
+        <Link href={'/adhoc'}   className="cursor-pointer text-white font-semibold text-sm hover:opacity-[0.9] hover:text-sec ">
+           Services
         </Link>
         </div>
        

@@ -25,7 +25,7 @@ function Overview() {
       <div className="flex flex-col justify-center items-center">
         <Link href={"/deals/list"} className="z-10">
         <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
-          See All Available Deals
+          See All Available Services
         </button>
       </Link>
       </div>
