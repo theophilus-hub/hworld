@@ -39,7 +39,7 @@ function Job() {
                     insights, we source deals that align with your investment
                     goals, ensuring long-term value and growth.
                   </p>
-                  <Link href={"deals"}>
+                  <Link href={"adhoc"}>
                     <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
                       Learn More
                     </button>

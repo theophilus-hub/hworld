@@ -11,7 +11,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "/", current: false },
+  { name: "Adhoc", href: "/adhoc", current: false },
   { name: "Construction", href: "/construction", current: false },
   { name: "Marine", href: "/marine", current: false },
   { name: "Deals", href: "/deals", current: false },
