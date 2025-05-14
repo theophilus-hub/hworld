@@ -1,7 +1,7 @@
 "use client"
 
 import Footer from "@/components/footer"
-import Nav from "@/components/marine/nav"
+import Nav from "@/components/nav"
 import React, { useState } from 'react';
 import Link from "next/link"
 

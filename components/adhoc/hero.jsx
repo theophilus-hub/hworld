@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Nav from "./nav";
+import Nav from "../nav";
 import Slide from "../slide";
 import HeroSub from "./hero-sub";
 
@@ -8,12 +8,9 @@ function Hero() {
   return (
     <>
       <div
-        className="bg-cover bg-center relative w-full"
+        className="bg-cover bg-center relative w-full pt-20"
         style={{ backgroundImage: "url('/adhoc.png')" }}
       >
-        <div className="relative z-20 w-full ">
-          <Nav />
-        </div>
 
         <div className="relative flex flex-col justify-center items-center py-44 mb-[150px] md:mb-[180px] w-full">
           <div className="space-y-4 flex flex-col justify-center items-center mx-4 md:mx-[20%]">
@@ -31,7 +28,7 @@ function Hero() {
                 className="absolute top-16 md:-top-20 z-0"
                 alt="light"
               />
-              <Link href={"/deals/list"} className="z-10">
+              <Link href={"/adhoc/services"} className="z-10">
                 <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
                 Request a Service
                 </button>

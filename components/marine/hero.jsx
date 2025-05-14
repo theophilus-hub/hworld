@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Nav from "../marine/nav";
+import Nav from "../nav";
 import Slide from "../slide";
 import HeroSub from "./hero-sub";
 
@@ -8,12 +8,9 @@ function Hero() {
   return (
     <>
       <div
-        className="bg-cover bg-center relative w-full"
+        className="bg-cover bg-center relative w-full pt-20"
         style={{ backgroundImage: "url('/bgmarine.png')" }}
       >
-        <div className="relative z-20 w-full ">
-          <Nav />
-        </div>
 
         <div className="relative flex flex-col justify-center items-center py-44 mb-[100px] md:mb-[130px] w-full">
           <div className="space-y-4 flex flex-col justify-center items-center mx-4 md:mx-[20%]">

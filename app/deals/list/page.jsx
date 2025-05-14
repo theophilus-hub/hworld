@@ -1,6 +1,6 @@
 "use client"
 
-import Nav from "@/components/deals/nav"
+import Nav from "@/components/nav"
 import Footer from "@/components/footer"
 import ListHero from "@/components/deals/listHero"
 import MainList from "@/components/deals/mainList"

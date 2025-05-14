@@ -1,16 +1,15 @@
 import Nav from "@/components/nav"
 import Footer from "@/components/footer"
-import RigHero from "@/components/marine/rigHero"
+import ForensicsHero from "@/components/adhoc/forensicsHero"
 
-
-function Rigs() {
+function Forensics() {
   return (
     <>
     <Nav />
-    <RigHero />
+    <ForensicsHero />
     <Footer />
     </>
   )
 }
 
-export default Rigs
+export default Forensics

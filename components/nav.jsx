@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Disclosure,
   DisclosureButton,
@@ -9,23 +11,119 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navigation = [
-  { name: "Adhoc", href: "/adhoc", current: false },
-  { name: "Construction", href: "/construction", current: false },
-  { name: "Marine", href: "/marine", current: false },
-  { name: "Deals", href: "/deals", current: false },
+  { name: "Home", href: "/", current: false },
+  {
+    name: "Sectors",
+    current: false,
+    dropdown: true,
+    items: [
+      { name: "Adhoc", href: "/adhoc", current: false },
+      { name: "Construction", href: "/construction", current: false },
+      { name: "Marine", href: "/marine", current: false },
+      { name: "Deals", href: "/deals", current: false },
+    ],
+  },
   { name: "About Us", href: "/about", current: false },
-  { name: "Contact", href: "/contact", current: false },
+  { name: "Contact Us", href: "/contact", current: false },
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Nav() {
+export default function Nav({ sectorSpecial }) {
+  const pathname = usePathname();
+  
+  // Determine which sector we're in based on the pathname
+  const currentSector = pathname.split('/')[1] || '';
+  
+  // Define special links for each sector
+  const sectorSpecialLinks = {
+    marine: { name: "Rigs", href: "/marine/rigs" },
+    deals: { name: "Deals", href: "/deals/list" },
+    adhoc: {
+      name: "Services",
+      href: "/adhoc/services",
+      hasDropdown: true,
+      items: [
+        { name: "All Services", href: "/adhoc/services" },
+        { name: "Project Management Office", href: "/adhoc/services/pmo" },
+        { name: "Planning Management", href: "/adhoc/services/planning-management" },
+        { name: "Functional Lead Service", href: "/adhoc/services/functional-lead" },
+        { name: "Cost Management", href: "/adhoc/services/cost-management" },
+        { name: "Project Controls", href: "/adhoc/services/project-controls" },
+        { name: "Project Estimations", href: "/adhoc/services/project-estimations" },
+        { name: "Risk Management", href: "/adhoc/services/risk-management" },
+        { name: "Document Management", href: "/adhoc/services/document-management" },
+        { name: "Commercial Management", href: "/adhoc/services/commercial-management" },
+        { name: "4D Planning", href: "/adhoc/services/4d-planning" },
+      ],
+    },
+    construction: { name: "Services", href: "/construction" },
+  };
+  
+  // Define additional special links for adhoc sector
+  const adhocSpecialLinks = {
+    forensics: {
+      name: "Forensics",
+      href: "/adhoc/forensics",
+      hasDropdown: true,
+      items: [
+        { name: "Claims Analysis", href: "/adhoc/forensics/claims-analysis" },
+        { name: "Dispute Resolution", href: "/adhoc/forensics/dispute-resolution" },
+        { name: "Expert Witness", href: "/adhoc/forensics/expert-witness" },
+      ],
+    },
+  };
+  
+  // Get the special link for the current sector
+  const specialLink = sectorSpecialLinks[currentSector];
+  
+  // Create a modified navigation array for sector pages
+  let currentNavigation = [...navigation];
+  
+  // If we're on a sector page, modify the navigation to show Home, special link, About Us, Contact Us
+  if (specialLink) {
+    // Default navigation for most sectors
+    currentNavigation = [
+      { name: "Home", href: "/", current: false },
+      { name: specialLink.name, href: specialLink.href, current: false },
+      { name: "About Us", href: "/about", current: false },
+      { name: "Contact Us", href: "/contact", current: false },
+    ];
+    
+    // Special case for adhoc sector - add the additional special links
+    if (currentSector === 'adhoc') {
+      currentNavigation = [
+        { name: "Home", href: "/", current: false },
+        specialLink.hasDropdown ? 
+          {
+            name: specialLink.name,
+            href: specialLink.href,
+            current: false,
+            dropdown: true,
+            items: specialLink.items
+          } : 
+          { name: specialLink.name, href: specialLink.href, current: false },
+        adhocSpecialLinks.forensics.hasDropdown ? 
+          {
+            name: adhocSpecialLinks.forensics.name,
+            href: adhocSpecialLinks.forensics.href,
+            current: false,
+            dropdown: true,
+            items: adhocSpecialLinks.forensics.items
+          } : 
+          { name: adhocSpecialLinks.forensics.name, href: adhocSpecialLinks.forensics.href, current: false },
+        { name: "About Us", href: "/about", current: false },
+        { name: "Contact Us", href: "/contact", current: false },
+      ];
+    }
+  }
   return (
-    <Disclosure as="nav" className="bg-dark z-10">
+    <Disclosure as="nav" className="bg-dark/20 backdrop-blur-lg z-50 fixed top-0 left-0 right-0 w-full">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className=" relative flex h-20 items-center justify-between">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -47,7 +145,7 @@ export default function Nav() {
             <div className="flex flex-shrink-0 items-center">
               <Link href={"/"}>
                 <img
-                  alt="Your Company"
+                  alt="H-World"
                   src={"/hworld.png"}
                   className="h-12 md:h-16 w-auto"
                 />
@@ -55,19 +153,65 @@ export default function Nav() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                {navigation.map((item) => (
-                  <Link
-                    scroll={true}
-                    key={item.name}
-                    href={item.href}
-                    aria-current={item.current ? "page" : undefined}
-                    className={classNames(
-                      item.current ? "bg-dark text-white" : "text-gray-300  ",
-                      "rounded-md px-3 py-2 text-base font-medium hover:text-sec"
-                    )}
-                  >
-                    {item.name}
-                  </Link>
+                {currentNavigation.map((item) => (
+                  item.dropdown ? (
+                    <Menu as="div" className="relative" key={item.name}>
+                      <MenuButton
+                        className={classNames(
+                          item.current ? "bg-dark text-white" : "text-gray-300",
+                          "rounded-md px-3 py-2 text-base font-medium hover:text-sec inline-flex items-center"
+                        )}
+                      >
+                        {item.name}
+                        <svg
+                          className="ml-1 h-4 w-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </MenuButton>
+                      <MenuItems
+                        className="absolute z-10 mt-2 w-48 origin-top-right rounded-md bg-dark py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                      >
+                        {item.items.map((subItem) => (
+                          <MenuItem key={subItem.name}>
+                            {({ active }) => (
+                              <Link
+                                href={subItem.href}
+                                className={classNames(
+                                  active ? "bg-darker" : "",
+                                  "block px-4 py-2 text-sm text-gray-300 hover:text-sec"
+                                )}
+                              >
+                                {subItem.name}
+                              </Link>
+                            )}
+                          </MenuItem>
+                        ))}
+                      </MenuItems>
+                    </Menu>
+                  ) : (
+                    <Link
+                      scroll={true}
+                      key={item.name}
+                      href={item.href}
+                      aria-current={item.current ? "page" : undefined}
+                      className={classNames(
+                        item.current ? "bg-dark text-white" : "text-gray-300  ",
+                        "rounded-md px-3 py-2 text-base font-medium hover:text-sec"
+                      )}
+                    >
+                      {item.name}
+                    </Link>
+                  )
                 ))}
               </div>
             </div>
@@ -76,23 +220,47 @@ export default function Nav() {
       </div>
 
       <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pb-3 pt-2">
-          {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-darker text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
-            >
-              {item.name}
-            </DisclosureButton>
-          ))}
+        <div className="h-[95vh] overflow-y-auto scrollbar-thin scrollbar-track-transparent">
+          <div className="space-y-1 px-2 pb-3 pt-2">
+            {currentNavigation.map((item) => (
+              item.dropdown ? (
+                <div key={item.name}>
+                  <div
+                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  >
+                    {item.name}
+                  </div>
+                  <div className="pl-4">
+                    {item.items.map((subItem) => (
+                      <DisclosureButton
+                        key={subItem.name}
+                        as="a"
+                        href={subItem.href}
+                        className="block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                      >
+                        {subItem.name}
+                      </DisclosureButton>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <DisclosureButton
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  aria-current={item.current ? "page" : undefined}
+                  className={classNames(
+                    item.current
+                      ? "bg-darker text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium"
+                  )}
+                >
+                  {item.name}
+                </DisclosureButton>
+              )
+            ))}
+          </div>
         </div>
       </DisclosurePanel>
     </Disclosure>

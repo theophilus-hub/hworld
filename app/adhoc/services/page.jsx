@@ -1,16 +1,16 @@
 import Nav from "@/components/nav"
 import Footer from "@/components/footer"
-import RigHero from "@/components/marine/rigHero"
+import ServicesHero from "@/components/adhoc/servicesHero"
 
-
-function Rigs() {
+function Services() {
   return (
     <>
     <Nav />
-    <RigHero />
+    <ServicesHero />
     <Footer />
     </>
   )
 }
 
-export default Rigs
+export default Services
+
