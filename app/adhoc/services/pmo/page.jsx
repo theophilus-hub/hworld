@@ -20,12 +20,12 @@ function PMO() {
               </h1>
             </Slide>
             <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
+              <h2 className="text-sec font-semibold text-center text-sm md:text-base mb-12">
                 Whether your project is small or large, gain assistance with all aspects of programme and project management
               </h2>
             </Slide>
             <Slide>
-              <img src="/pmo-service.png" alt="Project Management Office" className="w-full max-w-3xl mx-auto mb-8" />
+              <img src="/pmo.png" alt="Project Management Office" className="w-full max-w-3xl mx-auto mb-8 rounded-2xl" />
             </Slide>
           </div>
 

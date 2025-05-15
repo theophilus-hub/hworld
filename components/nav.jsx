@@ -38,12 +38,14 @@ export default function Nav({ sectorSpecial }) {
   const pathname = usePathname();
   
   // Determine which sector we're in based on the pathname
-  const currentSector = pathname.split('/')[1] || '';
+  const pathParts = pathname.split('/');
+  const currentSector = pathParts[1] || '';
+  const isNestedPage = pathParts.length > 2 && pathParts[2];
   
   // Define special links for each sector
   const sectorSpecialLinks = {
     marine: { name: "Rigs", href: "/marine/rigs" },
-    deals: { name: "Deals", href: "/deals/list" },
+    deals: { name: "Deal Listings", href: "/deals/list" },
     adhoc: {
       name: "Services",
       href: "/adhoc/services",
@@ -86,21 +88,33 @@ export default function Nav({ sectorSpecial }) {
   // Create a modified navigation array for sector pages
   let currentNavigation = [...navigation];
   
-  // If we're on a sector page, modify the navigation to show Home, special link, About Us, Contact Us
-  if (specialLink) {
-    // Default navigation for most sectors
-    currentNavigation = [
-      { name: "Home", href: "/", current: false },
-      { name: specialLink.name, href: specialLink.href, current: false },
-      { name: "About Us", href: "/about", current: false },
-      { name: "Contact Us", href: "/contact", current: false },
-    ];
-    
-    // Special case for adhoc sector - add the additional special links
-    if (currentSector === 'adhoc') {
+  // Remove Home option from main page
+  if (pathname === '/') {
+    currentNavigation = currentNavigation.filter(item => item.name !== "Home");
+  }
+  // If we're on a sector page, modify the navigation
+  else if (currentSector) {
+    // For nested pages (services, forensics, etc.), show sector name instead of Home
+    if (isNestedPage) {
+      // Get the sector display name with proper capitalization
+      const sectorDisplayName = {
+        'adhoc': 'Milestone Project Planner',
+        'marine': 'Marine',
+        'construction': 'Construction',
+        'deals': 'Deals'
+      }[currentSector] || currentSector.charAt(0).toUpperCase() + currentSector.slice(1);
+      
+      // Default navigation for nested pages
       currentNavigation = [
-        { name: "Home", href: "/", current: false },
-        specialLink.hasDropdown ? 
+        { name: sectorDisplayName, href: `/${currentSector}`, current: false },
+        { name: "About Us", href: "/about", current: false },
+        { name: "Contact Us", href: "/contact", current: false },
+      ];
+      
+      // Add special links based on sector
+      if (specialLink) {
+        currentNavigation.splice(1, 0, 
+          specialLink.hasDropdown ? 
           {
             name: specialLink.name,
             href: specialLink.href,
@@ -108,8 +122,14 @@ export default function Nav({ sectorSpecial }) {
             dropdown: true,
             items: specialLink.items
           } : 
-          { name: specialLink.name, href: specialLink.href, current: false },
-        adhocSpecialLinks.forensics.hasDropdown ? 
+          { name: specialLink.name, href: specialLink.href, current: false }
+        );
+      }
+      
+      // Special case for adhoc sector - add forensics link
+      if (currentSector === 'adhoc') {
+        currentNavigation.splice(2, 0, 
+          adhocSpecialLinks.forensics.hasDropdown ? 
           {
             name: adhocSpecialLinks.forensics.name,
             href: adhocSpecialLinks.forensics.href,
@@ -117,10 +137,47 @@ export default function Nav({ sectorSpecial }) {
             dropdown: true,
             items: adhocSpecialLinks.forensics.items
           } : 
-          { name: adhocSpecialLinks.forensics.name, href: adhocSpecialLinks.forensics.href, current: false },
+          { name: adhocSpecialLinks.forensics.name, href: adhocSpecialLinks.forensics.href, current: false }
+        );
+      }
+    }
+    // For sector home pages, show Home option to go back to main page
+    else {
+      currentNavigation = [
+        { name: "Home", href: "/", current: false },
         { name: "About Us", href: "/about", current: false },
         { name: "Contact Us", href: "/contact", current: false },
       ];
+      
+      // Add special links based on sector
+      if (specialLink) {
+        currentNavigation.splice(1, 0, 
+          specialLink.hasDropdown ? 
+          {
+            name: specialLink.name,
+            href: specialLink.href,
+            current: false,
+            dropdown: true,
+            items: specialLink.items
+          } : 
+          { name: specialLink.name, href: specialLink.href, current: false }
+        );
+      }
+      
+      // Special case for adhoc sector - add forensics link
+      if (currentSector === 'adhoc') {
+        currentNavigation.splice(2, 0, 
+          adhocSpecialLinks.forensics.hasDropdown ? 
+          {
+            name: adhocSpecialLinks.forensics.name,
+            href: adhocSpecialLinks.forensics.href,
+            current: false,
+            dropdown: true,
+            items: adhocSpecialLinks.forensics.items
+          } : 
+          { name: adhocSpecialLinks.forensics.name, href: adhocSpecialLinks.forensics.href, current: false }
+        );
+      }
     }
   }
   return (

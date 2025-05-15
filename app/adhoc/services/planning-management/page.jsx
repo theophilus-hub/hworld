@@ -20,12 +20,12 @@ function PlanningManagement() {
               </h1>
             </Slide>
             <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
+              <h2 className="text-sec font-semibold text-center text-sm md:text-base mb-12">
                 From concept through to forensic planning - discover planning services that cover your complete requirements
               </h2>
             </Slide>
             <Slide>
-              <img src="/planning-management.png" alt="Planning Management" className="w-full max-w-3xl mx-auto mb-8" />
+              <img src="/planman.png" alt="Planning Management" className="w-full max-w-3xl mx-auto mb-8 rounded-2xl" />
             </Slide>
           </div>
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Slide from "@/components/slide";
+import Image from "next/image";
 
 function Job() {
   return (
@@ -20,27 +21,29 @@ function Job() {
         </div>
       </Slide>
 
-      <div className="space-y-14">
-      <Slide>
-          <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4">
-            <div className="">
-              <img src="/deal.png" className="rounded-r-xl" alt="" />
+      <div className="space-y-14 w-full">
+        <Slide>
+          <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4 md:space-y-0">
+            <div className="md:w-3/5 h-[200px] sm:h-[250px] md:h-[300px] relative overflow-hidden">
+              <Image 
+                src="/adhoc.jpg" 
+                alt="Project Planning Services" 
+                fill 
+                className="object-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl" 
+                priority
+              />
             </div>
-            <div className=" md:w-2/5 flex justify-center items-center lg:mx-12 ">
-              <div className=" mx-4  px-2 xl:px-20 ">
-                <div className="md:space-y-6 lg:space-y-10 text-left ">
-                  <h1 className="font-bold text-lg lg:text-xl whitespace-nowrap text-white">
-                    Adhoc Services
+            <div className="md:w-2/5 flex justify-center items-center py-4 md:py-0">
+              <div className="mx-4 px-2 xl:px-12 w-full">
+                <div className="space-y-3 md:space-y-4 lg:space-y-6 text-left">
+                  <h1 className="font-bold text-lg lg:text-xl text-white">
+                    Project Planning (Ad Hoc Services)
                   </h1>
                   <p className="text-xs lg:text-sm font-normal text-white">
-                    At Hworld, we specialize in identifying high-value
-                    investment opportunities across construction and marine
-                    sectors. With strong industry connections and market
-                    insights, we source deals that align with your investment
-                    goals, ensuring long-term value and growth.
+                    Expert planning services for construction and marine projects. We deliver tailored solutions with precision scheduling and resource optimization.
                   </p>
-                  <Link href={"adhoc"}>
-                    <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                  <Link href="/adhoc" className="block">
+                    <button className="bg-sec my-4 md:my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
                       Learn More
                     </button>
                   </Link>
@@ -49,26 +52,29 @@ function Job() {
             </div>
           </div>
         </Slide>
+        
         <Slide>
-          <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4">
-            <div className="">
-              <img src="/job1.png" className="rounded-r-xl" alt="" />
+          <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4 md:space-y-0">
+            <div className="md:w-3/5 h-[200px] sm:h-[250px] md:h-[300px] relative overflow-hidden">
+              <Image 
+                src="/job1.png" 
+                alt="Construction Services" 
+                fill 
+                className="object-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl" 
+                priority
+              />
             </div>
-            <div className=" md:w-2/5 flex justify-center items-center lg:mx-12 ">
-              <div className=" mx-4  px-2 xl:px-20 ">
-                <div className="md:space-y-6 lg:space-y-10 text-left ">
-                  <h1 className="font-bold text-lg lg:text-xl whitespace-nowrap text-white">
+            <div className="md:w-2/5 flex justify-center items-center py-4 md:py-0">
+              <div className="mx-4 px-2 xl:px-12 w-full">
+                <div className="space-y-3 md:space-y-4 lg:space-y-6 text-left">
+                  <h1 className="font-bold text-lg lg:text-xl text-white">
                     Construction Services
                   </h1>
                   <p className="text-xs lg:text-sm font-normal text-white">
-                    Our construction services at Hworld focus on building
-                    innovative, sustainable structures. We handle everything
-                    from residential and commercial projects to large-scale
-                    infrastructure, delivering quality, efficiency, and safety
-                    in every build.
+                    Building innovative, sustainable structures from residential to large-scale infrastructure. Quality, efficiency, and safety in every project.
                   </p>
-                  <Link href={"construction"}>
-                    <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                  <Link href="/construction" className="block">
+                    <button className="bg-sec my-4 md:my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
                       Learn More
                     </button>
                   </Link>
@@ -77,25 +83,29 @@ function Job() {
             </div>
           </div>
         </Slide>
-<Slide>
-          <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4">
-            <div className="">
-              <img src="/job3.png" className="rounded-r-xl" alt="" />
+        
+        <Slide>
+          <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4 md:space-y-0">
+            <div className="md:w-3/5 h-[200px] sm:h-[250px] md:h-[300px] relative overflow-hidden">
+              <Image 
+                src="/job3.png" 
+                alt="Marine Services" 
+                fill 
+                className="object-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl" 
+                priority
+              />
             </div>
-            <div className=" md:w-2/5 flex justify-center items-center lg:mx-12 ">
-              <div className=" mx-4  px-2 xl:px-20 ">
-                <div className="md:space-y-6 lg:space-y-10 text-left ">
-                  <h1 className="font-bold text-lg lg:text-xl whitespace-nowrap text-white">
+            <div className="md:w-2/5 flex justify-center items-center py-4 md:py-0">
+              <div className="mx-4 px-2 xl:px-12 w-full">
+                <div className="space-y-3 md:space-y-4 lg:space-y-6 text-left">
+                  <h1 className="font-bold text-lg lg:text-xl text-white">
                     Marine Services
                   </h1>
                   <p className="text-xs lg:text-sm font-normal text-white">
-                    Hworld delivers expert marine engineering solutions, from
-                    designing and building maritime infrastructure to
-                    maintenance and operational support. We ensure reliability
-                    and innovation in every marine project we undertake.
+                    Expert marine engineering from infrastructure design to maintenance and operational support. Reliability and innovation in every project.
                   </p>
-                  <Link href={"marine"}>
-                    <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                  <Link href="/marine" className="block">
+                    <button className="bg-sec my-4 md:my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
                       Learn More
                     </button>
                   </Link>
@@ -105,25 +115,27 @@ function Job() {
           </div>
         </Slide>
         <Slide>
-          <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4">
-            <div className="">
-              <img src="/deal.png" className="rounded-r-xl" alt="" />
+          <div className="overflow-hidden flex flex-col justify-between md:flex-row bg-notdark p-0 mx-2 rounded-[20px] space-y-4 md:space-y-0">
+            <div className="md:w-3/5 h-[200px] sm:h-[250px] md:h-[300px] relative overflow-hidden">
+              <Image 
+                src="/deal.png" 
+                alt="Deal Sourcing" 
+                fill 
+                className="object-cover rounded-t-xl md:rounded-tr-none md:rounded-l-xl" 
+                priority
+              />
             </div>
-            <div className=" md:w-2/5 flex justify-center items-center lg:mx-12 ">
-              <div className=" mx-4  px-2 xl:px-20 ">
-                <div className="md:space-y-6 lg:space-y-10 text-left ">
-                  <h1 className="font-bold text-lg lg:text-xl whitespace-nowrap text-white">
+            <div className="md:w-2/5 flex justify-center items-center py-4 md:py-0">
+              <div className="mx-4 px-2 xl:px-12 w-full">
+                <div className="space-y-3 md:space-y-4 lg:space-y-6 text-left">
+                  <h1 className="font-bold text-lg lg:text-xl text-white">
                     Deal Sourcing
                   </h1>
                   <p className="text-xs lg:text-sm font-normal text-white">
-                    At Hworld, we specialize in identifying high-value
-                    investment opportunities across construction and marine
-                    sectors. With strong industry connections and market
-                    insights, we source deals that align with your investment
-                    goals, ensuring long-term value and growth.
+                    Identifying high-value investment opportunities in construction and marine sectors. Strong connections and market insights for long-term growth.
                   </p>
-                  <Link href={"deals"}>
-                    <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                  <Link href="/deals" className="block">
+                    <button className="bg-sec my-4 md:my-6 rounded-[40px] flex w-full justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
                       Learn More
                     </button>
                   </Link>

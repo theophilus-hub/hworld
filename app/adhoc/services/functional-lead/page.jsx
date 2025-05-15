@@ -20,12 +20,12 @@ function FunctionalLead() {
               </h1>
             </Slide>
             <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
+              <h2 className="text-sec font-semibold text-center text-sm md:text-base mb-12">
                 Could you benefit from an experienced and disciplined expert to act as a functional lead on your project?
               </h2>
             </Slide>
             <Slide>
-              <img src="/functional-lead.png" alt="Functional Lead Service" className="w-full max-w-3xl mx-auto mb-8" />
+              <img src="/funclead.png" alt="Functional Lead Service" className="w-full max-w-3xl mx-auto mb-8 rounded-2xl" />
             </Slide>
           </div>
 

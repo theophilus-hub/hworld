@@ -15,7 +15,9 @@ function ServicesHero() {
           </Slide>
           
           <Slide>
-            <img src="/adhoc-services.png" alt="Professional Services" />
+            <div className="w-full flex flex-col justify-center items-center px-[10%]">
+              <img src="/adhocservice.png" alt="Professional Services" className="rounded-2xl h-[30%]"/>
+            </div>
           </Slide>
           
           <div className="z-10 px-2 md:px-8 lg:px-12 flex flex-col justify-center items-center space-y-10">

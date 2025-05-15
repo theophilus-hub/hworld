@@ -15,12 +15,12 @@ function Hero() {
         <div className="relative flex flex-col justify-center items-center py-44 mb-[150px] md:mb-[180px] w-full">
           <div className="space-y-4 flex flex-col justify-center items-center mx-4 md:mx-[20%]">
             <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl z-10">
-            ADHOC SERVICES
+            MILESTONE PROJECT PLANNER
             </h1>
 
             <div className="z-10  flex flex-col justify-center items-center space-y-10">
               <h4 className=" text-center text-white text-sm md:text-base">
-              Precision Support. On Demand.
+              Ad Hoc Services
               </h4>
               
               <img
