@@ -1,0 +1,51 @@
+# Image Generation Prompts for Service and Forensics Pages
+
+## Main Services Page
+1. **Services Main Page**:
+   "A professional construction planning team gathered around a large digital project plan in a modern office setting. The team includes diverse professionals reviewing schedules and blueprints on a large table. Natural lighting coming through large windows, with a cityscape visible in the background. Wide landscape format with 16:9 aspect ratio. Photorealistic style with warm professional lighting."
+
+## Individual Service Pages
+
+2. **Project Management Office (PMO)**:
+   "A sophisticated project management office with multiple screens displaying Gantt charts, dashboards, and KPIs. A diverse team of professionals collaborating at a central command center. Modern office environment with glass partitions and organized workstations. Landscape format with 16:9 aspect ratio. Photorealistic style with cool blue professional lighting."
+
+3. **Planning Management**:
+   "Construction planning professionals reviewing detailed project schedules and timelines on a large digital display. The scene shows both physical blueprints and digital planning tools being used simultaneously. A well-organized planning room with project artifacts visible on walls. Landscape format with 16:9 aspect ratio. Photorealistic style with natural daylight coming through windows."
+
+4. **Functional Lead Service**:
+   "A confident project leader guiding a diverse team through a construction planning session. The leader is pointing at a digital presentation showing project milestones. Team members are engaged and taking notes. Modern conference room setting with construction site visible through windows. Landscape format with 16:9 aspect ratio. Photorealistic style with balanced indoor lighting."
+
+5. **Cost Management**:
+   "Financial experts analyzing construction cost data on multiple screens showing graphs, budgets, and cost forecasts. Close-up of detailed spreadsheets and cost control dashboards. Professional setting with financial reports and charts visible in background. Landscape format with 16:9 aspect ratio. Photorealistic style with subtle office lighting highlighting the screens."
+
+6. **Project Controls**:
+   "A control room environment with multiple monitoring stations tracking various aspects of construction projects. Screens displaying earned value charts, S-curves, and progress metrics. Professionals monitoring and adjusting controls. High-tech environment with organized workstations. Landscape format with 16:9 aspect ratio. Photorealistic style with dramatic lighting highlighting the control screens."
+
+7. **Project Estimations**:
+   "Estimation specialists working with detailed quantity takeoffs and pricing databases. Multiple screens showing estimation software with complex calculations and material costs. Close-up of professionals comparing estimates with actual market prices. Modern office with material samples visible. Landscape format with 16:9 aspect ratio. Photorealistic style with warm professional lighting."
+
+8. **Risk Management**:
+   "A team analyzing risk matrices and heat maps on digital displays. Risk assessment workshop in progress with professionals using sticky notes on a risk breakdown structure board. Visual risk registers and mitigation plans visible on walls. Professional setting with organized risk documentation. Landscape format with 16:9 aspect ratio. Photorealistic style with even lighting highlighting the risk visualization tools."
+
+9. **Document Management**:
+   "A sophisticated digital document control system with organized files and drawings visible on multiple screens. Physical and digital document integration with professionals scanning and organizing construction documents. Advanced filing system with labeled sections visible. Clean, organized environment. Landscape format with 16:9 aspect ratio. Photorealistic style with bright, clear lighting."
+
+10. **Commercial Management**:
+    "Commercial managers reviewing contracts and procurement documents at a modern workstation. Multiple screens showing supplier databases, contract terms, and procurement tracking. Professionals negotiating terms over a video conference with suppliers. Professional office environment with organized contract files. Landscape format with 16:9 aspect ratio. Photorealistic style with natural office lighting."
+
+11. **4D Planning**:
+    "Advanced 4D simulation showing building construction sequence over time. Multiple screens displaying BIM models with timeline integration. Professionals using VR/AR tools to visualize construction sequencing. High-tech visualization room with impressive digital displays. Landscape format with 16:9 aspect ratio. Photorealistic style with dramatic lighting highlighting the 3D visualizations."
+
+## Forensics Pages
+
+12. **Forensics Main Page**:
+    "Forensic planning experts analyzing project documentation and timeline discrepancies. Multiple screens showing detailed schedule analysis and deviation reports. Professionals examining construction photographs alongside as-built schedules. Organized investigation room with evidence boards and documentation. Landscape format with 16:9 aspect ratio. Photorealistic style with focused lighting on the investigation materials."
+
+13. **Claims Analysis**:
+    "Claims specialists reviewing construction delay documentation and analyzing critical path impacts. Multiple screens showing before-and-after schedules with delay analysis. Professionals examining project records and correspondence related to claims. Organized workspace with categorized claim documentation. Landscape format with 16:9 aspect ratio. Photorealistic style with professional lighting highlighting the analysis work."
+
+14. **Dispute Resolution**:
+    "A mediation session between construction professionals with a neutral mediator facilitating discussion. Digital displays showing disputed project timelines and contractual obligations. Professional setting with conference table and organized presentation of evidence. Calm, professional environment conducive to resolution. Landscape format with 16:9 aspect ratio. Photorealistic style with balanced lighting creating a neutral atmosphere."
+
+15. **Expert Witness**:
+    "A construction expert presenting technical evidence in a formal hearing setting. Digital displays showing detailed schedule analysis and technical findings. Professional dressed in formal attire explaining complex construction concepts with visual aids. Courtroom or arbitration setting with legal professionals visible. Landscape format with 16:9 aspect ratio. Photorealistic style with formal lighting appropriate for legal proceedings."

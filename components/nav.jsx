@@ -72,6 +72,7 @@ export default function Nav({ sectorSpecial }) {
       href: "/adhoc/forensics",
       hasDropdown: true,
       items: [
+        { name: "All Forensics", href: "/adhoc/forensics" },
         { name: "Claims Analysis", href: "/adhoc/forensics/claims-analysis" },
         { name: "Dispute Resolution", href: "/adhoc/forensics/dispute-resolution" },
         { name: "Expert Witness", href: "/adhoc/forensics/expert-witness" },
