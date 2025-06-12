@@ -1,5 +1,6 @@
 "use client"
 
+
 import Nav from "@/components/nav";
 import Hero from "@/components/hero";
 import About from "@/components/about";
@@ -13,27 +14,26 @@ import React from "react";
 import Slide from "@/components/slide";
 
 
+
 export default function Home() {
-//  const ref = React.useRef(null);
-//    const { scrollYProgress } = useScroll({
-//       target: ref,
-//       offset: ["start start", "end start"],
-//     });
-   
-//     const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.25, 10]);
-//     const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.2, 10]);
-//     const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.15, 10]);
-//     const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.12, 10]);
-//     const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0.25, 10]);
-   
+  //  const ref = React.useRef(null);
+  //    const { scrollYProgress } = useScroll({
+  //       target: ref,
+  //       offset: ["start start", "end start"],
+  //     });
+
+  //     const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.25, 10]);
+  //     const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.2, 10]);
+  //     const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.15, 10]);
+  //     const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.12, 10]);
+  //     const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0.25, 10]);
+
   return (
     <>
-      <Nav />  
-      <Slide>
-        <Hero />
-      </Slide>
-      <About />
+      <Nav />
+      <Hero />
       <Job />
+      <About />
       <Career />
       <Contact />
       <Footer />

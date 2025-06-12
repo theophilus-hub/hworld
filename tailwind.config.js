@@ -1,4 +1,4 @@
-import flowbite from "flowbite-react/tailwind";
+const flowbite = require("flowbite/plugin");
 
 /** @type {import('tailwindcss').Config} */
 
@@ -9,11 +9,10 @@ const {
 
 module.exports = {
   content: [
-    "./node_modules/flowbite-react/lib/**/*.js",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    flowbite.content(),
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
@@ -39,9 +38,8 @@ module.exports = {
     },
   },
   plugins: [
-    require("flowbite/plugin"),
+    flowbite,
     addVariablesForColors,
-    flowbite.plugin()
   ],
 };
 

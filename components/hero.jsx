@@ -1,67 +1,75 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import React from "react";
 import Link from "next/link";
 import { FlipWords } from "./ui/flip-words";
 import { useScroll, useTransform } from "motion/react";
 import { GoogleGeminiEffect } from "./ui/google-gemini-effect";
- 
-function Hero() {
+const NoSSRGlobe = dynamic(() => import("@/components/hworldGlobe"), {
+  ssr: false,
+});
 
+function Hero() {
   const words = ["Industries", "Construction", "Marine", "Trade", "Ventures"];
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
- 
-    const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.25, 7]);
-     const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.2, 7]);
-     const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.15, 7]);
-     const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.12, 7]);
-     const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0.25, 7]);
-    
+
   return (
     <>
-     <div className="flex flex-col justify-center items-center mt-32 mb-[50px] md:mb-[60px] w-full">
-      <div className="space-y-4 flex flex-col justify-center items-center mx-2 md:mx-[15%]">
-        <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl">
-          Building the Future
-          <br />
-          Across  <FlipWords words={words} className='text-white' /> <br />
-        </h1>
-     
-        <div className="relative  flex flex-col justify-center items-center space-y-8">
-          <h4 className=" text-center text-white text-sm md:text-base">
-            From construction to marine engineering, and innovative hospitality
-            solutions,Hworld is shaping tomorrow's world with sustainable,
-            cutting-edge expertise.
-          </h4>
-          <img
-            src={"/glowing light.png"}
-            className="absolute top-4 md:-top-28 z-0"
-            alt="light"
-          />
-          <Link href={"about"} className="z-10" >
-          <button className=" z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
-            Learn More
-          </button>
-        </Link>
+      <div className="relative flex flex-col justify-center items-center mt-4 mb-[50px] md:mb-[60px] w-full min-h-[85vh]">
+        <img
+          src={"/glowing light.png"}
+          className="absolute top-4 md:-top-28 z-0 pointer-events-none"
+          alt="light"
+        />
+        
+        {/* Main content grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 px-4 sm:px-8 md:px-12 py-6 mt-16 md:mt-8 w-full max-w-7xl mx-auto h-full items-center">
+          
+          {/* Text content */}
+          <div className="lg:col-span-3 space-y-6 flex flex-col justify-center items-center lg:items-start order-1">
+            <h1 className="font-poppins text-white font-extrabold text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight">
+              Building the Future <br />
+              Across <FlipWords words={words} className="text-white" />
+            </h1>
+            
+            <div className="space-y-6 flex flex-col items-center lg:items-start max-w-2xl">
+              <h4 className="text-center lg:text-left text-white/90 text-sm sm:text-base md:text-lg leading-relaxed">
+                From construction to marine engineering, and innovative hospitality solutions, Hworld is shaping tomorrow's world with sustainable, cutting-edge expertise.
+              </h4>
+              
+              <Link href={"about"} className="z-10 group">
+                <button className="bg-sec hover:bg-orange-500 transition-all duration-300 rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm md:text-base font-bold md:font-extrabold shadow-lg hover:shadow-xl transform hover:scale-105">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+          </div>
+          
+          {/* Globe section */}
+          <div className="lg:col-span-2 w-full flex justify-center items-center order-2">
+            <div className="relative w-full max-w-md lg:max-w-full aspect-square">
+              {/* Globe container with better responsive sizing */}
+              <div className="w-full h-full min-h-[280px] sm:min-h-[320px] md:min-h-[400px] lg:min-h-[450px] xl:min-h-[500px]">
+                <NoSSRGlobe />
+              </div>
+            </div>
+          </div>
+          
         </div>
-      </div> 
-      
-    </div>
-     {/* <GoogleGeminiEffect
-               pathLengths={[
-                 pathLengthFirst,
-                 pathLengthSecond,
-                 pathLengthThird,
-                 pathLengthFourth,
-                 pathLengthFifth,
-               ]}
-             /> */}
+        
+        {/* Optional: Scroll indicator for mobile */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 lg:hidden">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-bounce"></div>
+          </div>
+        </div>
+      </div>
     </>
-   
   );
 }
 
