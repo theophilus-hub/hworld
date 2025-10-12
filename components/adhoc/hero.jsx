@@ -15,7 +15,7 @@ function Hero() {
         <div className="relative flex flex-col justify-center items-center py-44 mb-[150px] md:mb-[180px] w-full">
           <div className="space-y-4 flex flex-col justify-center items-center mx-4 md:mx-[20%]">
             <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl z-10">
-            MILESTONE PROJECT PLANNER
+            ADHOC PROJECT PLANNING
             </h1>
 
             <div className="z-10  flex flex-col justify-center items-center space-y-10">

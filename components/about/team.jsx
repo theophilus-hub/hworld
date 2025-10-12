@@ -3,9 +3,9 @@ import Slide from "../slide";
 
 function Team() {
   return (
-    <div className="font-poppins relative  flex flex-col justify-center items-center  mb-[100px] md:mb-[250px] w-full">
+    <div className="font-poppins relative  flex flex-col justify-center items-center  mb-[20px]  w-full">
       <div className="relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-[10%]">
-        <div className="py-12 md:py-20 w-full flex flex-col md:flex-row  flex-1 text-white justify-start items-start space-y-8 md:space-y-0">
+        <div className="py-2 md:py-20 w-full flex flex-col md:flex-row  flex-1 text-white justify-start items-start space-y-8 md:space-y-0">
           
         <Slide>
   <div className="w-full md:w-3/4 space-y-6 px-4 md:px-0">

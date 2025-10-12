@@ -20,10 +20,10 @@ const navigation = [
     current: false,
     dropdown: true,
     items: [
-      { name: "Adhoc", href: "/adhoc", current: false },
+      { name: "Adhoc Project Planning", href: "/adhoc", current: false },
       { name: "Construction", href: "/construction", current: false },
       { name: "Marine", href: "/marine", current: false },
-      { name: "Deals", href: "/deals", current: false },
+      { name: "Deal Sourcing", href: "/deals", current: false },
     ],
   },
   { name: "About Us", href: "/about", current: false },

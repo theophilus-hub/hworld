@@ -18,38 +18,39 @@ const HWorldGlobe = () => {
 
   // Enhanced sectors data with proper distribution and slower speeds
   const sectors = [
-    { 
-      name: 'Adhoc Services', 
-      orbitType: 'elliptical',
-      direction: 'clockwise',
-      layer: 'outer',
-      speed: 0.7,
-      eccentricity: 0.7,
-      tilt: 10,
-      phaseOffset: 90
-    },
+    // { 
+    //   name: 'Adhoc Services', 
+    //   orbitType: 'elliptical',
+    //   direction: 'clockwise',
+    //   layer: 'outer',
+    //   speed: 0.7,
+    //   eccentricity: 0.7,
+    //   tilt: 10,
+    //   phaseOffset: 90
+    // },
     { 
       name: 'Construction', 
-      orbitType: 'circular',
-      direction: 'counterclockwise',
-      layer: 'middle',
-      speed: 1.9,
-      eccentricity: 0.9,
-      tilt: -10,
-      phaseOffset: 60
-    },
-    { 
-      name: 'Marine', 
       orbitType: 'figure8',
       direction: 'clockwise',
       layer: 'inner',
-      speed: 0.5,
-      eccentricity: 0.5,
-      tilt: 25,
-      phaseOffset: 180
+      speed: 1.9,
+      eccentricity: 1.9,
+      tilt: -15,
+      phaseOffset: 5
     },
     { 
-      name: 'Deals', 
+      name: 'Marine', 
+      orbitType: 'elliptical',
+      direction: 'counterclockwise',
+      layer: 'inner',
+      speed: 1.0,
+      eccentricity: 0.4,
+      tilt: 200,
+      phaseOffset: 270
+    
+    },
+    { 
+      name: 'Deal Sourcing', 
       orbitType: 'elliptical',
       direction: 'counterclockwise',
       layer: 'outer',
@@ -59,7 +60,7 @@ const HWorldGlobe = () => {
       phaseOffset: 210
     },
     { 
-      name: 'Project Planning', 
+      name: 'Adhoc Project Planning', 
       orbitType: 'circular',
       direction: 'clockwise',
       layer: 'middle',
@@ -67,17 +68,17 @@ const HWorldGlobe = () => {
       eccentricity: 0.8,
       tilt: 5,
       phaseOffset: 240
-    },
-    { 
-      name: 'Forensics', 
-      orbitType: 'elliptical',
-      direction: 'counterclockwise',
-      layer: 'inner',
-      speed: 1.0,
-      eccentricity: 0.4,
-      tilt: 30,
-      phaseOffset: 350
     }
+    // { 
+    //   name: 'Forensics', 
+    //   orbitType: 'elliptical',
+    //   direction: 'counterclockwise',
+    //   layer: 'inner',
+    //   speed: 1.0,
+    //   eccentricity: 0.4,
+    //   tilt: 30,
+    //   phaseOffset: 350
+    // }
   ];
 
   // Responsive configuration with globe-relative orbital layers
