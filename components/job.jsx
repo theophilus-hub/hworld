@@ -37,7 +37,7 @@ function Job() {
               <div className="mx-4 px-2 xl:px-12 w-full">
                 <div className="space-y-3 md:space-y-4 lg:space-y-6 text-left">
                   <h1 className="font-bold text-lg lg:text-xl text-white">
-                    Project Planning (Ad Hoc Services)
+                    Adhoc Project Planning
                   </h1>
                   <p className="text-xs lg:text-sm font-normal text-white">
                     Expert planning services for construction and marine projects. We deliver tailored solutions with precision scheduling and resource optimization.
@@ -68,7 +68,7 @@ function Job() {
               <div className="mx-4 px-2 xl:px-12 w-full">
                 <div className="space-y-3 md:space-y-4 lg:space-y-6 text-left">
                   <h1 className="font-bold text-lg lg:text-xl text-white">
-                    Construction Services
+                    Construction
                   </h1>
                   <p className="text-xs lg:text-sm font-normal text-white">
                     Building innovative, sustainable structures from residential to large-scale infrastructure. Quality, efficiency, and safety in every project.
@@ -99,7 +99,7 @@ function Job() {
               <div className="mx-4 px-2 xl:px-12 w-full">
                 <div className="space-y-3 md:space-y-4 lg:space-y-6 text-left">
                   <h1 className="font-bold text-lg lg:text-xl text-white">
-                    Marine Services
+                    Marine
                   </h1>
                   <p className="text-xs lg:text-sm font-normal text-white">
                     Expert marine engineering from infrastructure design to maintenance and operational support. Reliability and innovation in every project.
