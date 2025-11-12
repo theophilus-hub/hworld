@@ -12,7 +12,7 @@ function Hero() {
         style={{ backgroundImage: "url('/bgcon.png')" }}
       >
 
-        <div className="relative flex flex-col justify-center items-center py-44 mb-[150px] md:mb-[180px] w-full">
+        <div className="relative flex flex-col justify-center items-center py-44 mb-[60px] md:mb-[70px] w-full">
           <div className="space-y-4 flex flex-col justify-center items-center mx-4 md:mx-[20%]">
             <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl z-10">
               CONSTRUCTIONS

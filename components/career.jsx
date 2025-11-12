@@ -3,7 +3,7 @@ import Slide from "@/components/slide";
 
 function Career() {
   return (
-    <div className="w-full mb-[100px] " id="careers">
+    <div className="w-full mb-[40px] " id="careers">
       <Slide>
         <div className="flex flex-col justify-center items-center space-y-4 mx-6 md:mx-[25%]">
           <h1 className="text-white text-4xl font-bold">Careers</h1>

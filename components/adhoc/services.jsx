@@ -3,7 +3,7 @@ import Slide from "../slide";
 
 function Services() {
   return (
-    <div className="font-poppins relative  flex flex-col justify-center items-center  mb-[50px] md:mb-[100px] w-full">
+    <div className="font-poppins relative  flex flex-col justify-center items-center  mb-[20px] md:mb-[40px] w-full">
       <div className="relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-8 lg:px-[10%]">
         <div className=" py-12 md:py-20 w-full flex flex-col md:grid md:grid-cols-2   text-white justify-start items-start space-y-8 md:space-y-0">
         <Slide>

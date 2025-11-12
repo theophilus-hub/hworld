@@ -4,7 +4,7 @@ import FeaturesCard from "./features-card";
 
 function Features() {
   return (
-    <div className="flex flex-col space-y-6 md:space-y-20 justify-center items-center mb-[100px] md:mb-[130px] ">
+    <div className="flex flex-col space-y-6 md:space-y-20 justify-center items-center mb-[40px] md:mb-[50px] ">
       <Slide>
         <div className="text-center space-y-4 w-full xl:w-[75%] px-4">
           <h2 className="font-bold text-2xl md:text-5xl text-white">

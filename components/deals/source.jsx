@@ -3,7 +3,7 @@ import React from "react";
 
 function Source() {
   return (
-    <div className="font-poppins relative  flex flex-col justify-center items-center mt-20 mb-[50px] md:mb-[100px] w-full">
+    <div className="font-poppins relative  flex flex-col justify-center items-center mt-20 mb-[20px] md:mb-[40px] w-full">
       <div className="relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-[10%]">
         
         <img

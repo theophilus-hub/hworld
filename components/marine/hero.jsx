@@ -12,7 +12,7 @@ function Hero() {
         style={{ backgroundImage: "url('/bgmarine.png')" }}
       >
 
-        <div className="relative flex flex-col justify-center items-center py-44 mb-[100px] md:mb-[130px] w-full">
+        <div className="relative flex flex-col justify-center items-center py-44 mb-[40px] md:mb-[50px] w-full">
           <div className="space-y-4 flex flex-col justify-center items-center mx-4 md:mx-[20%]">
             <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl z-10">
               MARINE SERVICES

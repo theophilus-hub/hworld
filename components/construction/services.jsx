@@ -8,7 +8,7 @@ function Services() {
   return (
     <div
       id="services"
-      className="flex flex-col space-y-14 md:space-y-32 justify-center items-center mb-[100px] md:mb-[130px] "
+      className="flex flex-col space-y-14 md:space-y-32 justify-center items-center mb-[40px] md:mb-[50px] "
     >
       <Slide>
         <div className="text-center space-y-4 w-full xl:w-[75%] px-4">
