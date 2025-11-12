@@ -134,7 +134,7 @@ function Job() {
                     <div className="absolute -inset-2 bg-gradient-to-br from-sec/20 to-transparent rounded-[28px] blur-xl"></div>
                     <div className="relative aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl">
                       <Image 
-                        src="/job1.png" 
+                        src="/newconst2.png" 
                         alt="Construction Services" 
                         fill 
                         className="object-cover" 

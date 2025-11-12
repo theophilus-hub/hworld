@@ -5,7 +5,7 @@ import { LampContainer } from "./ui/lamp";
 
 function Contact() {
   return (
-    <div className="flex flex-col flex-1 justify-center items-center space-y-6 mb-[30px] md:mb-[60px] px-4 md:px-16">
+    <div className="flex flex-col flex-1 justify-center items-center space-y-6 mb-[75px] md:mb-[150px] px-4 md:px-16">
       <div className="space-y-14">
         <div className=" flex flex-col justify-between md:flex-row p-0 mx-2 rounded-[20px] space-y-4">
           <Slide>
