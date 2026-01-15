@@ -4,9 +4,9 @@ import FeaturesCard from "./features-card";
 
 function Features() {
   return (
-    <div className="flex flex-col space-y-6 md:space-y-20 justify-center items-center mb-[40px] md:mb-[50px] ">
+    <div className="flex flex-col space-y-6 md:space-y-20 justify-center items-center mb-[40px] md:mb-[50px] w-full">
       <Slide>
-        <div className="text-center space-y-4 w-full xl:w-[75%] px-4">
+        <div className="text-center space-y-4 w-full px-4 md:px-20 xl:px-44 mx-auto">
           <h2 className="font-bold text-2xl md:text-5xl text-white">
             We aren't limited to one
             <span className="text-sec italic"> Sector</span>

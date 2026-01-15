@@ -3,9 +3,9 @@ import Slide from "../slide";
 
 function Features() {
   return (
-    <div className="flex flex-col space-y-10 md:space-y-32 justify-center items-center mb-[40px] md:mb-[50px] ">
+    <div className="flex flex-col space-y-10 md:space-y-32 justify-center items-center mb-[40px] md:mb-[50px] w-full">
       <Slide>
-        <div className="text-center space-y-4 w-full xl:w-[75%] px-4">
+        <div className="text-center space-y-4 w-full px-4 md:px-20 xl:px-44 mx-auto">
           <h2 className="font-bold text-2xl md:text-5xl text-white">
             Solutions Designed to Drive
             <br />

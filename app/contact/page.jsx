@@ -6,7 +6,7 @@ function Contact() {
     <>
       <Nav />
 
-      <div className="flex flex-col flex-1 justify-center items-center space-y-6 mt-20  mb-[75px] md:mb-[150px] px-4 md:px-16">
+      <div className="flex flex-col flex-1 justify-center items-center space-y-6 mt-20 mb-[20px] md:mb-[40px] px-4 md:px-16">
         <div className=" space-y-14 relative w-full">
           <div className=" w-full mx-0 md:mx-6 px-6 md:px-12">
             <h1 className=" opacity-60 font-poppins px-2 xl:px-16 text-white font-bold text-left text-xl md:text-3xl">
@@ -57,7 +57,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col flex-1 justify-center items-center space-y-6 mt-20 mb-[30px] md:mb-[60px] px-4 md:px-16">
+      <div className="w-full flex flex-col flex-1 justify-center items-center space-y-6 mt-6 mb-[10px] md:mb-[20px] px-4 md:px-16">
         <div className="w-full max-w-7xl">
           {/* Contact Information Section */}
           <div className="relative group">
@@ -85,8 +85,8 @@ function Contact() {
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">Phone</p>
-                      <a href="tel:+4401256279041" className="text-white text-lg font-semibold hover:text-sec transition-colors">
-                        +44 (0)12 5627 9041
+                      <a href="tel:01256232342" className="text-white text-lg font-semibold hover:text-sec transition-colors">
+                        01256232342
                       </a>
                     </div>
                   </div>
@@ -147,7 +147,7 @@ function Contact() {
       </div>
 
       {/* Department-Specific Contact Section */}
-      <div className="w-full flex flex-col flex-1 justify-center items-center space-y-6 mb-[30px] md:mb-[60px] px-4 md:px-16">
+      <div className="w-full flex flex-col flex-1 justify-center items-center space-y-6 mb-[10px] md:mb-[20px] px-4 md:px-16">
         <div className="w-full max-w-7xl">
           <div className="space-y-8">
             <div className="text-center space-y-2">
@@ -218,7 +218,7 @@ function Contact() {
         </div>
       </div>
 
-<div className=" w-full flex flex-col flex-1 justify-start items-start space-y-6 mt-32  mb-[75px] md:mb-[150px] px-8  xl:px-56">
+<div className=" w-full flex flex-col flex-1 justify-start items-start space-y-6 mt-8 mb-[20px] md:mb-[40px] px-8 xl:px-56">
 <h2 className="text-3xl font-bold text-white">Our Other <span className="text-white">Offices</span></h2>
 
 <div className="flex space-x-4 justify-start items-start text-white font-semibold">
@@ -247,7 +247,7 @@ function Contact() {
             </div>
 </div>
       <hr
-        className="border-0 my-16 mx-4 md:mx-20"
+        className="border-0 my-6 mx-4 md:mx-20"
         style={{
           color: "",
           backgroundColor: "#414141",

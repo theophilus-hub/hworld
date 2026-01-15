@@ -73,7 +73,7 @@ function Land() {
     <>
     <Nav />
     <div className="bg-cover bg-center relative w-full">
-      <div className="relative flex flex-col justify-center items-center pt-44 mb-[75px] md:mb-[150px] w-full">
+      <div className="relative flex flex-col justify-center items-center pt-44 mb-[20px] md:mb-[40px] w-full">
         <div className=" space-y-24 flex flex-col justify-center items-center mx-4 md:mx-[10%]">
           <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl z-10">
             Land Drilling Rigs

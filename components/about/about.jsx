@@ -3,7 +3,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="font-poppins relative  flex flex-col justify-center items-center mt-32 mb-[10px] w-full">
+    <div className="font-poppins relative  flex flex-col justify-center items-center mt-16 mb-[10px] w-full">
       <div className="relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-[10%]">
         <h1 className="opacity-60 font-poppins px-4 text-white font-bold text-left text-xl md:text-3xl">
           About Us
@@ -14,13 +14,13 @@ function About() {
           alt="light"
         />
 
-        <div className="py-12 w-full flex flex-col md:flex-row  flex-1 text-white justify-start items-start space-y-8 md:space-y-0">
+        <div className="py-6 w-full flex flex-col md:flex-row  flex-1 text-white justify-start items-start space-y-4 md:space-y-0">
           <h2 className="font-extrabold px-4 text-left text-3xl md:text-5xl/[70px] w-full">
             We are your <br />
             partners in every <br />
             <span className="text-sec italic"> possibility.</span>
           </h2>
-          <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-10 space-y-12 md:space-y-16">
+          <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-10 space-y-6 md:space-y-8">
             <div className="space-y-4">
               <div className="space-y-4 w-full">
                 <h4 className="font-semibold text-sm md:text-lg italic">

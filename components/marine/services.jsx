@@ -6,9 +6,9 @@ import Slide from "../slide";
 
 function Services() {
   return (
-    <div id="services" className="flex flex-col space-y-14 md:space-y-32 justify-center items-center mb-[40px] md:mb-[50px] ">
+    <div id="services" className="flex flex-col space-y-14 md:space-y-32 justify-center items-center mt-16 md:mt-24 mb-[40px] md:mb-[50px] w-full">
      <Slide>
-      <div className="text-center space-y-4 w-full xl:w-[75%] px-4">
+      <div className="text-center space-y-4 w-full px-4 md:px-20 xl:px-44 mx-auto">
         <h2 className="font-bold text-2xl md:text-5xl text-white">
           Marine services <span className="text-sec italic">for you</span>
         </h2>
