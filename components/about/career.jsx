@@ -45,7 +45,7 @@ function Career() {
             </div>
           </div>
 
-          <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-10 space-y-12 md:space-y-28">
+          <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-10 space-y-6 md:space-y-28">
             <div className="space-y-4 w-full">
               <div className="space-y-10 w-full">
                 <img src="/careers.png" alt="" />

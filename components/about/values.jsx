@@ -23,7 +23,7 @@ function Values() {
           alt="light"
         />
 
-          <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-8 space-y-12 md:space-y-28">
+          <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-8 space-y-6 md:space-y-28">
             <div className="space-y-4 w-full">
               <div className="space-y-10 w-full">
                 <div className="space-y-4">

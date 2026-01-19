@@ -21,7 +21,7 @@ function Job() {
         </div>
       </Slide>
 
-      <div className="space-y-14 w-full">
+      <div className="space-y-6 md:space-y-14 w-full">
         <Slide>
           <div className="relative max-w-7xl mx-auto group">
             {/* Decorative background elements */}
