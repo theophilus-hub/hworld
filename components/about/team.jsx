@@ -12,9 +12,7 @@ function Team() {
           <Slide className="w-full lg:w-1/2">
             <div className="space-y-6">
               <div className="space-y-2">
-                <span className="text-sec text-sm font-semibold uppercase tracking-wider">
-                  Our Team
-                </span>
+                
                 <h2 className="text-white font-extrabold text-3xl md:text-[42px]/[52px]">
                   Driven by Passion,<br />
                   <span className="text-sec italic">Defined by Excellence</span>
@@ -31,16 +29,6 @@ function Team() {
                   By bringing together experience and creativity, we solve complex challenges 
                   and respond effectively to our clients' needs. We take pride in our work 
                   and value collaboration as a key driver of success.
-                </p>
-                <p>
-                  At Hworld, our strength lies in our people. We have assembled a team of 
-                  dedicated professionals who bring diverse expertise and a shared commitment 
-                  to delivering exceptional outcomes across every project we undertake.
-                </p>
-                <p>
-                  Our collaborative culture enables us to tackle complex challenges with 
-                  innovative solutions. Together, we combine industry knowledge with creative 
-                  thinking to exceed expectations and build lasting partnerships with our clients.
                 </p>
               </div>
             </div>
