@@ -94,7 +94,7 @@ function About() {
             {/* CTA Button */}
             <div className="pt-4">
               <Link href="/about" className="inline-block">
-                <button className="bg-sec hover:bg-orange-500 transition-all duration-300 rounded-[40px] px-8 py-3 text-sm md:text-base font-bold md:font-extrabold shadow-lg hover:shadow-xl transform hover:scale-105">
+                <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white transition-all duration-150 rounded-[40px] px-8 py-3 text-sm md:text-base font-bold md:font-extrabold transform hover:scale-105">
                   Discover Our Story
                 </button>
               </Link>

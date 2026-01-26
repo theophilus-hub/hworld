@@ -3,7 +3,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="font-poppins relative  flex flex-col justify-center items-center mt-16 mb-[10px] w-full">
+    <div className="font-poppins relative  flex flex-col justify-center items-center mt-24 mb-[10px] w-full">
       <div className="relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-[10%]">
         <h1 className="opacity-60 font-poppins px-4 text-white font-bold text-left text-xl md:text-3xl">
           About Us

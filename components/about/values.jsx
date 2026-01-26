@@ -8,7 +8,7 @@ function Values() {
         <div className=" py-12  w-full flex flex-col md:grid md:grid-cols-2   text-white justify-start items-start space-y-8 md:space-y-0">
         <Slide>
   <div className="w-full md:w-full space-y-6 px-4 ">
-            <h2 className="font-extrabold text-left text-3xl md:text-[40px]/[60px] w-full">
+            <h2 className="font-extrabold text-left text-2xl md:text-[32px]/[48px] w-full">
               We
               <span className="text-sec italic"> believe </span>
               in the same things and that’s why we are thriving.

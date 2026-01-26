@@ -6,7 +6,7 @@ function MainList() {
   return (
     <div className="flex flex-col space-y-6 md:space-y-20 justify-center items-center mb-[40px] md:mb-[50px] ">
       <Slide>
-        <div className="text-center space-y-4 w-full xl:w-[75%] px-4">
+        <div className="text-center space-y-4 w-full max-w-4xl mx-auto px-4">
           <h2 className="font-bold text-2xl md:text-5xl text-white">
             Active 
             <span className="text-sec italic"> Listings</span>
@@ -18,13 +18,15 @@ function MainList() {
         </div>
       </Slide>
 
-      <div className=" w-full px-10 md:px-20 xl:px-72">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-8 gap-y-4 md:gap-y-8">
+      <div className=" w-full px-4 md:px-8 lg:px-16 xl:px-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 justify-items-center">
           <Slide>
             <ListingCard
               header={"Gas Turbine Plant"}
               sub={"/"}
               img={"/gasturbine.png"}
+              category="Energy & Power"
+              description="State-of-the-art gas turbine facility with advanced efficiency systems and environmental controls"
             />
           </Slide>
           <Slide>
@@ -32,6 +34,8 @@ function MainList() {
               header={"CPP Power Plant"}
               sub={"/"}
               img={"/powerplant.png"}
+              category="Energy & Power"
+              description="Combined cycle power plant with high-efficiency generation and grid integration capabilities"
             />
           </Slide>
           <Slide>
@@ -39,6 +43,8 @@ function MainList() {
               header={"CCGT Power Plant"}
               sub={"/"}
               img={"/powerplant2.png"}
+              category="Energy & Power"
+              description="Combined Cycle Gas Turbine facility featuring cutting-edge technology and sustainable operations"
             />
           </Slide>
           <Slide>
@@ -46,6 +52,8 @@ function MainList() {
               header={"Oil Refinery"}
               sub={"/"}
               img={"/oilref.png"}
+              category="Oil & Gas"
+              description="Modern refinery complex with advanced processing capabilities and environmental compliance systems"
             />
           </Slide>
           {/* <Slide>
@@ -63,6 +71,17 @@ function MainList() {
             />
           </Slide> */}
         </div>
+      </div>
+      
+      {/* Horizontal separator line */}
+      <div className="w-full flex justify-center px-4 md:px-16 mt-8 md:mt-12">
+        <hr
+          className="border-0 w-full max-w-6xl"
+          style={{
+            backgroundColor: "#414141",
+            height: 1,
+          }}
+        />
       </div>
     </div>
   );

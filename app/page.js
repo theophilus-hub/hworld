@@ -6,7 +6,7 @@ import Hero from "@/components/hero";
 import About from "@/components/about";
 import Job from "@/components/job";
 import Career from "@/components/career"
-import Contact from "@/components/contact"
+import CTA from "@/components/cta"
 import Footer from "@/components/footer"
 import { useScroll, useTransform } from "motion/react";
 import { GoogleGeminiEffect } from "@/components/ui/google-gemini-effect";
@@ -34,8 +34,11 @@ export default function Home() {
       <Hero />
       <Job />
       <About />
-      <Career />
-      <Contact />
+      <CTA 
+        title="Ready to Partner with Us?"
+        description="Discover how Hworld can help transform your next project with our expertise across construction, marine, and innovative solutions."
+        primaryButton={{ text: "Contact Us", href: "/contact" }}
+      />
       <Footer />
     </>
 

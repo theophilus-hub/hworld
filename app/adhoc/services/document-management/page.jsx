@@ -160,10 +160,10 @@ function DocumentManagement() {
                 />
               </div>
               <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white">
+                <p className="text-white transition-all duration-150 transform hover:scale-105">
                   Our document management services deliver numerous benefits to your organization, including:
                 </p>
-                <ul className="list-disc pl-6 space-y-2 text-white">
+                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
                   <li>Improved information accessibility and reduced time spent searching for documents</li>
                   <li>Enhanced document security and protection of sensitive project information</li>
                   <li>Consistent document naming and classification for easier identification</li>
@@ -189,12 +189,12 @@ function DocumentManagement() {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
                   <Link href="/contact">
-                    <button className="bg-sec rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
                       Contact Us
                     </button>
                   </Link>
                   <Link href="/adhoc/services">
-                    <button className="bg-transparent border-2 border-sec rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white">
+                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
                       Back to Services
                     </button>
                   </Link>

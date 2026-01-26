@@ -160,10 +160,10 @@ function CommercialManagement() {
                 />
               </div>
               <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white">
+                <p className="text-white transition-all duration-150 transform hover:scale-105">
                   Our commercial management services deliver numerous benefits to your organization, including:
                 </p>
-                <ul className="list-disc pl-6 space-y-2 text-white">
+                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
                   <li>Enhanced financial visibility and control throughout the project lifecycle</li>
                   <li>Improved cash flow management through accurate forecasting and payment processing</li>
                   <li>Reduced financial risks through proactive change management and contract administration</li>
@@ -189,12 +189,12 @@ function CommercialManagement() {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
                   <Link href="/contact">
-                    <button className="bg-sec rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
                       Contact Us
                     </button>
                   </Link>
                   <Link href="/adhoc/services">
-                    <button className="bg-transparent border-2 border-sec rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white">
+                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
                       Back to Services
                     </button>
                   </Link>

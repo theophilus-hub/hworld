@@ -3,58 +3,70 @@ import Slide from "../slide";
 
 function Team() {
   return (
-    <div className="font-poppins relative  flex flex-col justify-center items-center  mb-[20px]  w-full">
-      <div className="relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-[10%]">
-        <div className="py-2 md:py-10 w-full flex flex-col md:flex-row  flex-1 text-white justify-start items-start space-y-4 md:space-y-0">
+    <div className="font-poppins relative flex flex-col justify-center items-center w-full">
+      
+      {/* Team Section */}
+      <div className="relative w-full px-4 md:px-[10%] py-8 md:py-16">
+        <div className="w-full flex flex-col lg:flex-row gap-8 lg:gap-16">
           
-        <Slide>
-  <div className="w-full md:w-3/4 space-y-6 px-4 md:px-0">
-            <h2 className="font-extrabold text-left text-3xl md:text-[40px]/[60px] w-full">
-              We are passionate<br /> about
-              <span className="text-sec italic"> our work.</span>
-            </h2>
-
-            <div className="space-y-4 md:space-y-6 font-normal text-xs md:text-base">
-              <p>
-                Our team is passionate about delivering quality results. Each
-                project is approached with dedication, aiming for excellence in
-                construction, marine engineering, and hospitality.
-              </p>
-              <p>
-                Bringing together experience and creativity, we solve challenges
-                and meet client needs. We take pride in our work and enjoy
-                collaborating to achieve great results.
-              </p>
-            </div>
-          </div>
-  </Slide>
-          
-  <Slide>
-  <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-10 space-y-6 md:space-y-14">
-            <div className="space-y-4 w-full">
-              <div className="space-y-10 w-full">
-                <div className="space-y-4">
-                    <h4 className="font-semibold text-sm md:text-lg italic">
+          <Slide className="w-full lg:w-1/2">
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <span className="text-sec text-sm font-semibold uppercase tracking-wider">
                   Our Team
-                </h4>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    color: "",
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-                </div>
-                
-                <img src="/team.png" alt="" />
+                </span>
+                <h2 className="text-white font-extrabold text-3xl md:text-[42px]/[52px]">
+                  Driven by Passion,<br />
+                  <span className="text-sec italic">Defined by Excellence</span>
+                </h2>
+              </div>
+
+              <div className="space-y-5 text-white/80 text-sm md:text-base leading-relaxed">
+                <p>
+                  Our team is passionate about delivering high-quality results. Every project 
+                  is approached with dedication and a commitment to excellence across 
+                  construction, marine engineering, and hospitality.
+                </p>
+                <p>
+                  By bringing together experience and creativity, we solve complex challenges 
+                  and respond effectively to our clients' needs. We take pride in our work 
+                  and value collaboration as a key driver of success.
+                </p>
+                <p>
+                  At Hworld, our strength lies in our people. We have assembled a team of 
+                  dedicated professionals who bring diverse expertise and a shared commitment 
+                  to delivering exceptional outcomes across every project we undertake.
+                </p>
+                <p>
+                  Our collaborative culture enables us to tackle complex challenges with 
+                  innovative solutions. Together, we combine industry knowledge with creative 
+                  thinking to exceed expectations and build lasting partnerships with our clients.
+                </p>
               </div>
             </div>
-          </div>
-  </Slide>
+          </Slide>
+
+          <Slide className="w-full lg:w-1/2">
+            <div className="space-y-4 h-full">
+              <div className="flex items-center gap-3">
+                <h4 className="text-white font-semibold text-sm md:text-lg italic">
+                  Our Team
+                </h4>
+                <hr className="border-0 flex-1 h-[1px] bg-[#414141]" />
+              </div>
+              <div className="rounded-xl overflow-hidden">
+                <img 
+                  src="/team.png" 
+                  alt="Hworld Team" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </Slide>
           
         </div>
       </div>
+
     </div>
   );
 }

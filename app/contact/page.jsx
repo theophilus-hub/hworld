@@ -47,8 +47,8 @@ function Contact() {
                     />
                   </div>
 
-                  <button className="bg-sec my-6 rounded-[40px] flex w-full justify-center items-center text-center px-12 py-4 text-sm font-bold md:font-bold">
-                    Send Message
+                  <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white my-6 rounded-[40px] flex w-full justify-center items-center text-center px-12 py-4 text-sm font-bold md:font-bold transition-all duration-150 transform hover:scale-105">
+                    Submit!
                   </button>
                 </div>
               </div>

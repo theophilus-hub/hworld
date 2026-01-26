@@ -227,10 +227,10 @@ function DisputeResolution() {
                 />
               </div>
               <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white">
+                <p className="text-white transition-all duration-150 transform hover:scale-105">
                   Our dispute resolution services provide numerous benefits to your organization, including:
                 </p>
-                <ul className="list-disc pl-6 space-y-2 text-white">
+                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
                   <li>Faster resolution compared to traditional litigation, saving time and resources</li>
                   <li>Reduced costs through efficient dispute management and early resolution</li>
                   <li>Preservation of business relationships through collaborative approaches</li>
@@ -256,12 +256,12 @@ function DisputeResolution() {
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
                   <Link href="/contact">
-                    <button className="bg-sec rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
                       Contact Us
                     </button>
                   </Link>
                   <Link href="/adhoc/forensics">
-                    <button className="bg-transparent border-2 border-sec rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white">
+                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
                       Back to Forensics
                     </button>
                   </Link>

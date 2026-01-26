@@ -8,18 +8,8 @@ function Career() {
       <div className=" relative space-y-4 flex flex-col justify-center items-start w-full px-4 md:px-[10%]">
       
    <div className="space-y-4 w-full">
-          <h4 className="text-white font-semibold text-sm md:text-lg italic">
-            Careers
-          </h4>
-          <hr
-            className="border-0 w-full"
-            style={{
-              color: "",
-              backgroundColor: "#414141",
-              height: 1,
-            }}
-          />
-          <h2 className="text-white font-extrabold text-center text-3xl md:text-[40px]/[60px] w-full">
+        
+          <h2 className="text-white font-extrabold text-left text-3xl md:text-[40px]/[60px] w-full">
             We believe success is driven by <br />
             <span className="text-sec italic">talented indivuals.</span>
           </h2>
@@ -45,13 +35,7 @@ function Career() {
             </div>
           </div>
 
-          <div className=" flex flex-col w-full justify-start items-start py-0 px-4 md:px-10 space-y-6 md:space-y-28">
-            <div className="space-y-4 w-full">
-              <div className="space-y-10 w-full">
-                <img src="/careers.png" alt="" />
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>

@@ -82,7 +82,7 @@ function RigHero() {
                     </p>
                   </div>
                   <Link href={"/marine/rigs/land"} className="z-10">
-                    <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                    <button className="z-10 bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
                       Explore
                     </button>
                   </Link>
@@ -105,7 +105,7 @@ function RigHero() {
                     </p>
                   </div>
                   <Link href={"/marine/rigs/water"} className="z-10">
-                    <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                    <button className="z-10 bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
                       Explore 
                     </button>
                   </Link>
@@ -128,7 +128,7 @@ function RigHero() {
                     </p>
                   </div>
                   <Link href={"/marine/rigs/offshore"} className="z-10">
-                    <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
+                    <button className="z-10 bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
                       Explore
                     </button>
                   </Link>

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FlipWords } from "./ui/flip-words";
 import { useScroll, useTransform } from "motion/react";
 import { GoogleGeminiEffect } from "./ui/google-gemini-effect";
+import DarkVeil from "@/src/components/DarkVeil";
 const NoSSRGlobe = dynamic(() => import("@/components/hworldGlobe"), {
   ssr: false,
 });
@@ -20,15 +21,40 @@ function Hero() {
 
   return (
     <>
-      <div className="relative flex flex-col justify-center items-center mt-4 mb-[50px] md:mb-[60px] w-full min-h-[85vh]">
+      <div className="relative flex flex-col justify-center items-center mt-0 mb-0 w-full min-h-screen overflow-hidden">
+        {/* DarkVeil Background - Mobile (lower resolution scale) */}
+        <div className="absolute inset-0 w-full h-full z-0 lg:hidden">
+          <DarkVeil
+            hueShift={-150}
+            noiseIntensity={0}
+            scanlineIntensity={0}
+            speed={0.8}
+            scanlineFrequency={1}
+            warpAmount={0.8}
+            resolutionScale={1}
+          />
+        </div>
+        {/* DarkVeil Background - Desktop */}
+        <div className="absolute inset-0 w-full h-full z-0 hidden lg:block">
+          <DarkVeil
+            hueShift={-150}
+            noiseIntensity={0}
+            scanlineIntensity={0}
+            speed={0.8}
+            scanlineFrequency={1}
+            warpAmount={0.8}
+            resolutionScale={1.25}
+          />
+        </div>
+        
         <img
           src={"/glowing light.png"}
-          className="absolute top-4 md:-top-28 z-0 pointer-events-none"
+          className="absolute top-4 md:-top-28 z-20 pointer-events-none"
           alt="light"
         />
         
         {/* Main content grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 px-4 sm:px-8 md:px-12 py-6 mt-16 md:mt-8 w-full max-w-7xl mx-auto h-full items-center">
+        <div className="relative grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 px-4 sm:px-8 md:px-12 py-6 mt-16 md:mt-8 w-full max-w-7xl mx-auto h-full items-center z-10">
           
           {/* Text content */}
           <div className="lg:col-span-3 space-y-6 flex flex-col justify-center items-center lg:items-start order-1">
@@ -43,7 +69,7 @@ function Hero() {
               </h4>
               
               <Link href={"about"} className="z-10 group">
-                <button className="bg-sec hover:bg-orange-500 transition-all duration-300 rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm md:text-base font-bold md:font-extrabold shadow-lg hover:shadow-xl transform hover:scale-105">
+                <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white transition-all duration-150 rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm md:text-base font-bold md:font-extrabold transform hover:scale-105">
                   Learn More
                 </button>
               </Link>

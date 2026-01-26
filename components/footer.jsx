@@ -32,26 +32,29 @@ function Footer() {
               <div className="grid grid-cols-3 gap-4">
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
                   <h1 className="text-notdark">H-World</h1>
-                  <Link href={"/"}>Home</Link>
-                  <Link href={"/about"}>About Us</Link>
-                  <Link href={"/#careers"}>Careers</Link>
-                  <Link href={"/#solution"}>What we do</Link>
+                  <Link href={"/"} className="hover:text-sec transition-colors duration-300">Home</Link>
+                  <Link href={"/about"} className="hover:text-sec transition-colors duration-300">About Us</Link>
+                  <Link href={"/contact"} className="hover:text-sec transition-colors duration-300">Contact Us</Link>
+                  
                 </div>
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
                   <h1 className="text-notdark">Services</h1>
-                  <Link href={"/construction"}>
+                  <Link href={"/adhoc"} className="hover:text-sec transition-colors duration-300">
+                    Adhoc project <br /> planning
+                  </Link>
+                  <Link href={"/construction"} className="hover:text-sec transition-colors duration-300">
                     Engineering
                     <br />& Construction
                   </Link>
-                  <Link href={"/marine"}>Marine</Link>
-                  <Link href={"/airbnb"}>Air BnB</Link>
+                  <Link href={"/marine"} className="hover:text-sec transition-colors duration-300">Marine</Link>
+                  <Link href={"/deals"} className="hover:text-sec transition-colors duration-300">Deal sourcing</Link>
                 </div>
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
                   <h1 className="text-notdark">Follow Us</h1>
-                  <Link href={"/"}>Instagram</Link>
-                  <Link href={"/"}>Facebook</Link>
-                  <Link href={"/"}>LinkedIn</Link>
-                  <Link href={"/"}>Twitter</Link>
+                  <Link href={"/"} className="hover:text-sec transition-colors duration-300">Instagram</Link>
+                  <Link href={"/"} className="hover:text-sec transition-colors duration-300">Facebook</Link>
+                  <Link href={"/"} className="hover:text-sec transition-colors duration-300">LinkedIn</Link>
+                  <Link href={"/"} className="hover:text-sec transition-colors duration-300">Twitter</Link>
                 </div>
               </div>
             </div>

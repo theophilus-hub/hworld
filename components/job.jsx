@@ -6,7 +6,7 @@ function Job() {
   return (
     <div
       id="solution"
-      className="flex flex-col flex-1 justify-center items-center space-y-6 mb-[40px] md:mb-[50px] px-4 md:px-16 lg:px-40"
+      className="flex flex-col flex-1 justify-center items-center space-y-6 mt-[40px] mb-[40px] md:mb-[50px] px-4 md:px-16 lg:px-40"
     >
       <Slide>
         <div className="space-y-4 mx-2 md:mx-[25%]">
@@ -98,7 +98,7 @@ function Job() {
                   {/* CTA */}
                   <div className="pt-2">
                     <Link href="/adhoc">
-                      <button className="group/btn bg-sec transition-all duration-300 rounded-full px-10 py-4 text-base font-bold shadow-xl shadow-sec/20 hover:shadow-2xl hover:shadow-sec/30 flex items-center gap-3">
+                      <button className="group/btn bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white transition-all duration-150 rounded-full px-10 py-4 text-base font-bold transform hover:scale-105 flex items-center gap-3">
                         <span>Explore Service</span>
                         <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -188,7 +188,7 @@ function Job() {
                   {/* CTA */}
                   <div className="pt-2">
                     <Link href="/construction">
-                      <button className="group/btn bg-sec transition-all duration-300 rounded-full px-10 py-4 text-base font-bold shadow-xl shadow-sec/20 hover:shadow-2xl hover:shadow-sec/30 flex items-center gap-3">
+                      <button className="group/btn bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white transition-all duration-150 rounded-full px-10 py-4 text-base font-bold transform hover:scale-105 flex items-center gap-3">
                         <span>Explore Service</span>
                         <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -278,7 +278,7 @@ function Job() {
                   {/* CTA */}
                   <div className="pt-2">
                     <Link href="/marine">
-                      <button className="group/btn bg-sec transition-all duration-300 rounded-full px-10 py-4 text-base font-bold shadow-xl shadow-sec/20 hover:shadow-2xl hover:shadow-sec/30 flex items-center gap-3">
+                      <button className="group/btn bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white transition-all duration-150 rounded-full px-10 py-4 text-base font-bold transform hover:scale-105 flex items-center gap-3">
                         <span>Explore Service</span>
                         <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -367,7 +367,7 @@ function Job() {
                   {/* CTA */}
                   <div className="pt-2">
                     <Link href="/deals">
-                      <button className="group/btn bg-sec transition-all duration-300 rounded-full px-10 py-4 text-base font-bold shadow-xl shadow-sec/20 hover:shadow-2xl hover:shadow-sec/30 flex items-center gap-3">
+                      <button className="group/btn bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white transition-all duration-150 rounded-full px-10 py-4 text-base font-bold transform hover:scale-105 flex items-center gap-3">
                         <span>Explore Service</span>
                         <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
