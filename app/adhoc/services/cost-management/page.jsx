@@ -5,205 +5,210 @@ import Nav from "@/components/nav"
 import React from 'react';
 import Link from "next/link"
 import Slide from "@/components/slide"
+import CTA from "@/components/cta"
+import DarkVeil from "@/src/components/DarkVeil"
 
 function CostManagement() {
+  const services = [
+    {
+      title: "Budget Development & Planning",
+      description: "Establish realistic budgets aligned with project scope, schedule, and quality requirements.",
+    },
+    {
+      title: "Cost Estimating & Forecasting",
+      description: "Detailed cost estimates using industry-standard methodologies and historical data.",
+    },
+    {
+      title: "Cash Flow Management",
+      description: "Monitor cash flow projections to ensure adequate funding and optimize resources.",
+    },
+    {
+      title: "Value Engineering",
+      description: "Identify cost reduction opportunities without sacrificing functionality or quality.",
+    },
+    {
+      title: "Earned Value Management",
+      description: "Measure project performance against baseline and forecast final costs.",
+    },
+    {
+      title: "Change Management",
+      description: "Evaluate cost impact of changes and maintain budget control throughout.",
+    }
+  ];
+
+  const benefits = [
+    "Improved financial predictability and control throughout the project",
+    "Early identification of potential cost overruns",
+    "Better informed decision-making through accurate cost information",
+    "Optimized resource allocation and improved ROI",
+    "Enhanced stakeholder confidence through transparent reporting",
+    "Reduced financial risk through systematic processes",
+    "Integration of cost and schedule management",
+    "Knowledge capture for continuous improvement"
+  ];
+
   return (
     <>
       <Nav />
-      <div className="font-poppins relative flex flex-col justify-center items-center pt-32 pb-16 w-full overflow-x-hidden">
-        <div className="relative space-y-8 flex flex-col justify-center items-start w-full px-4 sm:px-6 md:px-[10%] max-w-full">
-          {/* Hero Section */}
-          <div className="w-full flex flex-col items-center justify-center mb-12">
-            <Slide>
-              <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl mb-8">
-                Cost Management
-              </h1>
-            </Slide>
-            <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
-                Our expert forecasting methodologies predict and prevent budget overruns, controlling your project costs
-              </h2>
-            </Slide>
-            <Slide>
-              <img src="/cost-management.png" alt="Cost Management" className="w-full max-w-3xl mx-auto mb-8" />
-            </Slide>
-          </div>
+      
+      {/* Hero Section */}
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 lg:hidden">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1} />
+        </div>
+        <div className="absolute inset-0 w-full h-full z-0 hidden lg:block">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1.25} />
+        </div>
+        
+        <img src="/glowing light.png" className="absolute top-0 left-1/2 -translate-x-1/2 opacity-40 z-0" alt="light" />
 
-          <img
-            src={"/glowing light.png"}
-            className="absolute -top-12 md:-top-28 opacity-30 z-0"
-            alt="light"
-          />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-28 pb-12">
+          <Slide>
+            <span className="inline-block px-4 py-2 rounded-full bg-sec/10 border border-sec/30 text-sec text-sm font-medium mb-6">
+              Expert Forecasting Methodologies
+            </span>
+          </Slide>
+          <Slide>
+            <h1 className="font-poppins text-white font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+              Cost <span className="text-sec">Management</span>
+            </h1>
+          </Slide>
+          <Slide>
+            <p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+              Predict and prevent budget overruns with proven processes and systems tested across major capital infrastructure programmes.
+            </p>
+          </Slide>
+          <Slide>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/contact">
+                <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-sec/20">
+                  Start Your Project
+                </button>
+              </Link>
+              <a href="#services">
+                <button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white rounded-full px-8 py-4 text-sm font-bold transition-all duration-300">
+                  Explore Services
+                </button>
+              </a>
+            </div>
+          </Slide>
+        </div>
+      </section>
 
-          {/* Main Content Section */}
-          <div className="py-8 w-full flex flex-col md:flex-row flex-1 text-white justify-start items-start space-y-8 md:space-y-0 md:space-x-12">
-            <div className="w-full md:w-1/2">
+      {/* About Section */}
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Slide>
+              <div className="relative">
+                <img src="/services/3.png" alt="Cost Management" className="rounded-2xl shadow-2xl shadow-black/50" />
+                <div className="absolute -bottom-4 right-2 md:-bottom-6 md:-right-6 bg-sec text-dark px-4 py-2 md:px-6 md:py-4 rounded-xl font-bold text-sm md:text-lg shadow-lg">
+                  Proven Processes
+                </div>
+              </div>
+            </Slide>
+            
+            <div className="space-y-6">
               <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Baseline Management for Project Success
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Baseline management, whether cost or planning, is the cornerstone of any programme or project's success. Metisplan offers a service that is both experienced and tried and tested across a wide spectrum of major capital infrastructure programmes.
-                  </p>
-                  <p>
-                    Accurate forecasting allows for better control of your costs and gives management a platform to aid in better decision making when managing any programme or project. Our commitment is to ensure you have the right platform to access the right information at the right time.
-                  </p>
-                </div>
+                <h2 className="text-white font-bold text-3xl md:text-4xl leading-tight">
+                  Baseline Management for 
+                  <span className="text-sec"> Project Success</span>
+                </h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  Baseline management is the cornerstone of any programme's success. We offer experienced, tried and tested services across major capital infrastructure programmes.
+                </p>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  Unlike competitors, we don't reinvent the wheel at your cost. We use proven processes alongside assurance and governance methodologies ensuring right-first-time data.
+                </p>
               </Slide>
             </div>
-
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Proven Processes and Systems
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Unlike our competitors, we do not reinvent the wheel at your cost. Instead, we use proven processes and systems alongside both assurance and governance methodologies ensuring right-first-time data.
-                  </p>
-                  <p>
-                    Metisplan's reputation is testimony to our commitment to working with our clients from start to finish, whether setting up the project or programme from scratch or resolving issues and getting projects back on track, with the right people for the job specification.
-                  </p>
-                </div>
-              </Slide>
-            </div>
-          </div>
-
-          {/* Services Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Our Cost Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Budget Development & Planning</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Establishing realistic budgets and cost plans aligned with project scope, schedule, and quality requirements to provide a solid financial foundation.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Cost Estimating & Forecasting</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Developing detailed cost estimates and forecasts using industry-standard methodologies and historical data to ensure accuracy and reliability.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Cash Flow Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Creating and monitoring cash flow projections to ensure adequate funding throughout the project lifecycle and optimize financial resources.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Value Engineering</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Identifying opportunities to reduce costs without sacrificing functionality or quality through systematic analysis of design and construction methods.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Earned Value Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Implementing earned value techniques to measure project performance against the baseline plan and forecast final costs and completion dates.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Change Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Evaluating the cost impact of proposed changes and managing the change process to minimize disruption and maintain budget control.
-                  </p>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Benefits Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Benefits of Our Cost Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white transition-all duration-150 transform hover:scale-105">
-                  Our cost management services deliver numerous benefits to your organization, including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
-                  <li>Improved financial predictability and control throughout the project lifecycle</li>
-                  <li>Early identification of potential cost overruns and proactive mitigation strategies</li>
-                  <li>Better informed decision-making through accurate and timely cost information</li>
-                  <li>Optimized resource allocation and improved return on investment</li>
-                  <li>Enhanced stakeholder confidence through transparent cost reporting</li>
-                  <li>Reduced financial risk through systematic cost management processes</li>
-                  <li>Integration of cost and schedule management for comprehensive project control</li>
-                  <li>Knowledge capture for continuous improvement in cost estimation and control</li>
-                </ul>
-              </div>
-            </Slide>
-          </div>
-
-          {/* CTA Section */}
-          <div className="w-full py-8 flex flex-col items-center">
-            <Slide>
-              <div className="text-center max-w-2xl mx-auto space-y-6">
-                <h3 className="text-sec font-bold text-xl md:text-2xl">
-                  Ready to Take Control of Your Project Costs?
-                </h3>
-                <p className="text-white text-sm md:text-base">
-                  Contact us today to discuss how our cost management services can help your organization deliver projects within budget and maximize financial performance.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                  <Link href="/contact">
-                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
-                      Contact Us
-                    </button>
-                  </Link>
-                  <Link href="/adhoc/services">
-                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
-                      Back to Services
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </Slide>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-6 md:py-8 bg-dark relative overflow-hidden">
+        <img src="/glowing light.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" alt="light" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10">
+            <Slide>
+              <span className="text-sec text-sm font-semibold tracking-wider uppercase">What We Offer</span>
+              <h2 className="text-white font-bold text-3xl md:text-4xl mt-3">Our Cost Management Services</h2>
+            </Slide>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Slide key={index}>
+                <div className="group h-full bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/[0.06] hover:border-sec/30 transition-all duration-300">
+                  <h3 className="text-white font-bold text-lg mb-3 group-hover:text-sec transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-white/60 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <Slide>
+                <span className="text-sec text-sm font-semibold tracking-wider uppercase">Why Choose Us</span>
+                <h2 className="text-white font-bold text-3xl md:text-4xl mt-3 mb-6">
+                  Benefits of Our <span className="text-sec">Cost Management</span>
+                </h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed mb-6">
+                  Deliver projects within budget and maximize financial performance with the right platform for the right information at the right time.
+                </p>
+              </Slide>
+              <Slide>
+                <Link href="/contact">
+                  <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105">
+                    Get Started Today
+                  </button>
+                </Link>
+              </Slide>
+            </div>
+            
+            <div className="space-y-3">
+              {benefits.map((benefit, index) => (
+                <Slide key={index}>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-sec/20 transition-all duration-300">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-sec/10 flex items-center justify-center mt-0.5">
+                      <svg className="w-3 h-3 text-sec" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-white/80 text-sm">{benefit}</p>
+                  </div>
+                </Slide>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CTA 
+        title="Ready to Take Control of Your Project Costs?"
+        description="Contact us today to discuss how our cost management services can help your organization deliver projects within budget."
+        primaryButton={{ text: "Contact Us", href: "/contact" }}
+        secondaryButton={{ text: "Back to Services", href: "/adhoc/services" }}
+      />
+      
       <Footer />
     </>
   )

@@ -5,272 +5,118 @@ import Nav from "@/components/nav"
 import React from 'react';
 import Link from "next/link"
 import Slide from "@/components/slide"
+import CTA from "@/components/cta"
+import DarkVeil from "@/src/components/DarkVeil"
 
 function ExpertWitness() {
+  const services = [
+    { title: "Expert Reports", description: "Comprehensive, well-documented reports meeting legal requirements." },
+    { title: "Deposition Testimony", description: "Clear, concise expert testimony during depositions." },
+    { title: "Trial Testimony", description: "Authoritative, persuasive testimony supported by visual aids." },
+    { title: "Forensic Schedule Analysis", description: "Detailed analysis using Time Impact and Windows Analysis methods." },
+    { title: "Quantum Assessment", description: "Expert evaluation of financial impacts including overhead and damages." },
+    { title: "Litigation Support", description: "Comprehensive support from discovery through trial strategies." }
+  ];
+
+  const benefits = [
+    "Credible, independent testimony from experienced professionals",
+    "Clear communication of complex technical issues",
+    "Robust analysis that withstands cross-examination",
+    "Strategic support throughout litigation",
+    "Comprehensive reports documenting findings",
+    "Industry-recognized methodologies enhancing credibility",
+    "Visual aids explaining complex concepts",
+    "Objective assessment of project issues"
+  ];
+
   return (
     <>
       <Nav />
-      <div className="font-poppins relative flex flex-col justify-center items-center pt-32 pb-16 w-full">
-        <div className="relative space-y-8 flex flex-col justify-center items-start w-full px-4 sm:px-6 md:px-[10%] max-w-full">
-          {/* Hero Section */}
-          <div className="w-full flex flex-col items-center justify-center mb-12">
-            <Slide>
-              <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl mb-8">
-                Expert Witness Services
-              </h1>
-            </Slide>
-            <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
-                Independent, authoritative testimony for construction claims and disputes
-              </h2>
-            </Slide>
-            <Slide>
-              <img src="/expert-witness.png" alt="Expert Witness Services" className="w-full max-w-3xl mx-auto mb-8" />
-            </Slide>
-          </div>
-
-          <img
-            src={"/glowing light.png"}
-            className="absolute -top-12 md:-top-28 opacity-30 z-0"
-            alt="light"
-          />
-
-          {/* Main Content Section */}
-          <div className="py-8 w-full flex flex-col md:flex-row flex-1 text-white justify-start items-start space-y-8 md:space-y-0 md:space-x-12">
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Authoritative Expert Testimony
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Our expert witness services provide independent, authoritative testimony for construction claims and disputes. We combine technical expertise with industry knowledge to deliver clear, objective opinions that stand up to scrutiny in mediation, arbitration, and court proceedings.
-                  </p>
-                  <p>
-                    Our experts have extensive experience in all aspects of construction planning, scheduling, and project controls, allowing them to provide credible testimony on complex technical issues. We focus on presenting complex information in an accessible manner that helps judges, arbitrators, and juries understand the key issues.
-                  </p>
-                </div>
-              </Slide>
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 lg:hidden"><DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1} /></div>
+        <div className="absolute inset-0 w-full h-full z-0 hidden lg:block"><DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1.25} /></div>
+        <img src="/glowing light.png" className="absolute top-0 left-1/2 -translate-x-1/2 opacity-40 z-0" alt="light" />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-28 pb-12">
+          <Slide><span className="inline-block px-4 py-2 rounded-full bg-sec/10 border border-sec/30 text-sec text-sm font-medium mb-6">Forensic Planning Services</span></Slide>
+          <Slide><h1 className="font-poppins text-white font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">Expert <span className="text-sec">Witness</span></h1></Slide>
+          <Slide><p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">Independent, authoritative testimony for construction claims and disputes that stands up to scrutiny.</p></Slide>
+          <Slide>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/contact"><button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-sec/20">Get Expert Support</button></Link>
+              <a href="#services"><button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white rounded-full px-8 py-4 text-sm font-bold transition-all duration-300">Explore Services</button></a>
             </div>
+          </Slide>
+        </div>
+      </section>
 
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Comprehensive Forensic Analysis
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    We conduct thorough forensic analysis of project documentation, schedules, and performance data to identify the causes of delays, disruptions, and other issues. Our approach combines industry-standard methodologies with advanced analytical techniques to provide robust, defensible conclusions.
-                  </p>
-                  <p>
-                    Our experts work closely with legal teams to understand the specific requirements of each case, ensuring that our analysis addresses the key issues and provides the evidence needed to support your position. We prepare detailed reports that clearly explain our findings and conclusions.
-                  </p>
-                </div>
-              </Slide>
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Slide>
+              <div className="relative">
+                <img src="/services/10.png" alt="Expert Witness" className="rounded-2xl shadow-2xl shadow-black/50" />
+                <div className="absolute -bottom-4 right-2 md:-bottom-6 md:-right-6 bg-sec text-dark px-4 py-2 md:px-6 md:py-4 rounded-xl font-bold text-sm md:text-lg shadow-lg">Forensic Analysis</div>
+              </div>
+            </Slide>
+            <div className="space-y-6">
+              <Slide><h2 className="text-white font-bold text-3xl md:text-4xl leading-tight">Authoritative <span className="text-sec">Expert Testimony</span></h2></Slide>
+              <Slide><p className="text-white/70 text-base md:text-lg leading-relaxed">Our experts have extensive experience in construction planning, scheduling, and project controls, delivering credible testimony on complex technical issues.</p></Slide>
+              <Slide><p className="text-white/70 text-base md:text-lg leading-relaxed">We work closely with legal teams to ensure our analysis addresses key issues and provides evidence needed to support your position.</p></Slide>
             </div>
-          </div>
-
-          {/* Services Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Our Expert Witness Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Expert Reports</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Preparation of comprehensive, well-documented expert reports that clearly present our analysis, findings, and opinions in a format that meets legal requirements and effectively communicates complex technical issues.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Deposition Testimony</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Expert testimony during depositions, providing clear, concise answers to questions while maintaining the integrity and consistency of our expert opinions throughout the legal process.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Trial Testimony</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Authoritative, persuasive testimony at trial that effectively communicates complex technical concepts to judges and juries, supported by clear visual aids and demonstrations as appropriate.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Forensic Schedule Analysis</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Detailed analysis of project schedules using recognized methodologies such as Time Impact Analysis, Windows Analysis, and As-Planned vs. As-Built Analysis to identify and quantify delays.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Quantum Assessment</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Expert evaluation of the financial impact of delays, disruptions, and other issues, including extended overhead, acceleration costs, loss of productivity, and other damages.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Litigation Support</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Comprehensive support throughout the litigation process, including assistance with discovery, review of opposing expert reports, preparation of rebuttal opinions, and development of trial strategies.
-                  </p>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Expert Areas Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Areas of Expertise
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-6">
-                <div className="bg-ft rounded-xl p-6 border-[3px] border-ftborder">
-                  <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <div className="md:col-span-1 flex items-center justify-center">
-                      <div className="bg-darker rounded-full w-16 h-16 flex items-center justify-center">
-                        <span className="text-sec font-bold text-xl">01</span>
-                      </div>
-                    </div>
-                    <div className="md:col-span-4">
-                      <h4 className="text-sec font-bold text-lg mb-2">Delay and Disruption Analysis</h4>
-                      <p className="text-white text-sm md:text-base">
-                        Expert analysis of project delays and disruptions, including identification of critical path impacts, concurrent delays, and responsibility allocation. We employ industry-standard methodologies to provide objective, defensible opinions on delay causation and impact.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-ft rounded-xl p-6 border-[3px] border-ftborder">
-                  <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <div className="md:col-span-1 flex items-center justify-center">
-                      <div className="bg-darker rounded-full w-16 h-16 flex items-center justify-center">
-                        <span className="text-sec font-bold text-xl">02</span>
-                      </div>
-                    </div>
-                    <div className="md:col-span-4">
-                      <h4 className="text-sec font-bold text-lg mb-2">Standard of Care Assessment</h4>
-                      <p className="text-white text-sm md:text-base">
-                        Evaluation of whether project participants met the standard of care expected in the industry, including compliance with contract requirements, industry standards, and best practices in project planning, scheduling, and management.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-ft rounded-xl p-6 border-[3px] border-ftborder">
-                  <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <div className="md:col-span-1 flex items-center justify-center">
-                      <div className="bg-darker rounded-full w-16 h-16 flex items-center justify-center">
-                        <span className="text-sec font-bold text-xl">03</span>
-                      </div>
-                    </div>
-                    <div className="md:col-span-4">
-                      <h4 className="text-sec font-bold text-lg mb-2">Construction Productivity Analysis</h4>
-                      <p className="text-white text-sm md:text-base">
-                        Analysis of productivity losses resulting from changes, interference, and other disruptions, using measured mile and other recognized methodologies to quantify the impact on labor productivity and project performance.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Benefits Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Benefits of Our Expert Witness Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white transition-all duration-150 transform hover:scale-105">
-                  Our expert witness services provide numerous benefits to your organization, including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
-                  <li>Credible, independent testimony from experienced construction professionals</li>
-                  <li>Clear, persuasive communication of complex technical issues</li>
-                  <li>Robust analysis that stands up to cross-examination and scrutiny</li>
-                  <li>Strategic support throughout the litigation or dispute resolution process</li>
-                  <li>Comprehensive reports that effectively document findings and opinions</li>
-                  <li>Industry-recognized methodologies that enhance the credibility of conclusions</li>
-                  <li>Visual aids and demonstrations that help explain complex concepts</li>
-                  <li>Objective assessment of project issues and responsibilities</li>
-                </ul>
-              </div>
-            </Slide>
-          </div>
-
-          {/* CTA Section */}
-          <div className="w-full py-8 flex flex-col items-center">
-            <Slide>
-              <div className="text-center max-w-2xl mx-auto space-y-6">
-                <h3 className="text-sec font-bold text-xl md:text-2xl">
-                  Need Expert Testimony for Your Case?
-                </h3>
-                <p className="text-white text-sm md:text-base">
-                  Contact us today to discuss how our expert witness services can strengthen your position in construction disputes and claims.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                  <Link href="/contact">
-                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
-                      Contact Us
-                    </button>
-                  </Link>
-                  <Link href="/adhoc/forensics">
-                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
-                      Back to Forensics
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </Slide>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section id="services" className="py-6 md:py-8 bg-dark relative overflow-hidden">
+        <img src="/glowing light.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" alt="light" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10">
+            <Slide>
+              <span className="text-sec text-sm font-semibold tracking-wider uppercase">What We Offer</span>
+              <h2 className="text-white font-bold text-3xl md:text-4xl mt-3">Our Expert Witness Services</h2>
+            </Slide>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Slide key={index}>
+                <div className="group h-full bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/[0.06] hover:border-sec/30 transition-all duration-300">
+                  <h3 className="text-white font-bold text-lg mb-3 group-hover:text-sec transition-colors">{service.title}</h3>
+                  <p className="text-white/60 text-sm leading-relaxed">{service.description}</p>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <Slide>
+                <span className="text-sec text-sm font-semibold tracking-wider uppercase">Why Choose Us</span>
+                <h2 className="text-white font-bold text-3xl md:text-4xl mt-3 mb-6">Benefits of Our <span className="text-sec">Expert Witness</span></h2>
+              </Slide>
+              <Slide><p className="text-white/70 text-base md:text-lg leading-relaxed mb-6">Strengthen your position in construction disputes with credible, independent expert testimony.</p></Slide>
+              <Slide><Link href="/contact"><button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105">Get Started Today</button></Link></Slide>
+            </div>
+            <div className="space-y-3">
+              {benefits.map((benefit, index) => (
+                <Slide key={index}>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-sec/20 transition-all duration-300">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-sec/10 flex items-center justify-center mt-0.5">
+                      <svg className="w-3 h-3 text-sec" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                    </div>
+                    <p className="text-white/80 text-sm">{benefit}</p>
+                  </div>
+                </Slide>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CTA title="Need Expert Testimony for Your Case?" description="Contact us today to discuss how our expert witness services can strengthen your position in construction disputes." primaryButton={{ text: "Contact Us", href: "/contact" }} secondaryButton={{ text: "Back to Forensics", href: "/adhoc/forensics" }} />
       <Footer />
     </>
   )

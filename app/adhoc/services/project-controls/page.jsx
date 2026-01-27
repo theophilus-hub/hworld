@@ -5,205 +5,198 @@ import Nav from "@/components/nav"
 import React from 'react';
 import Link from "next/link"
 import Slide from "@/components/slide"
+import CTA from "@/components/cta"
+import DarkVeil from "@/src/components/DarkVeil"
 
 function ProjectControls() {
+  const services = [
+    {
+      title: "Cost Control",
+      description: "Detailed budgeting, cost tracking, forecasting, and variance analysis.",
+    },
+    {
+      title: "Schedule Management",
+      description: "Baseline development, progress tracking, and recovery planning.",
+    },
+    {
+      title: "Risk Management",
+      description: "Risk identification, impact assessment, and mitigation strategies.",
+    },
+    {
+      title: "Document Control",
+      description: "Systems ensuring documentation is properly managed and accessible.",
+    },
+    {
+      title: "Performance Monitoring",
+      description: "Regular status reports and early issue identification.",
+    },
+    {
+      title: "Earned Value Management",
+      description: "Integrated schedule and cost metrics for comprehensive analysis.",
+    }
+  ];
+
+  const benefits = [
+    "Enhanced visibility through integrated reporting and analytics",
+    "Early identification of potential issues",
+    "Improved decision-making with accurate information",
+    "Better resource allocation across activities",
+    "Increased accountability through clear metrics",
+    "Reduced risks through systematic mitigation",
+    "Improved stakeholder communication",
+    "Consistent delivery methodologies"
+  ];
+
   return (
     <>
       <Nav />
-      <div className="font-poppins relative flex flex-col justify-center items-center pt-32 pb-16 w-full">
-        <div className="relative space-y-8 flex flex-col justify-center items-start w-full px-4 sm:px-6 md:px-[10%] max-w-full">
-          {/* Hero Section */}
-          <div className="w-full flex flex-col items-center justify-center mb-12">
-            <Slide>
-              <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl mb-8">
-                Project Controls
-              </h1>
-            </Slide>
-            <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
-                Our project controls service ensures that your project runs efficiently and successfully
-              </h2>
-            </Slide>
-            <Slide>
-              <img src="/project-controls.png" alt="Project Controls" className="w-full max-w-3xl mx-auto mb-8" />
-            </Slide>
-          </div>
+      
+      {/* Hero Section */}
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 lg:hidden">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1} />
+        </div>
+        <div className="absolute inset-0 w-full h-full z-0 hidden lg:block">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1.25} />
+        </div>
+        
+        <img src="/glowing light.png" className="absolute top-0 left-1/2 -translate-x-1/2 opacity-40 z-0" alt="light" />
 
-          <img
-            src={"/glowing light.png"}
-            className="absolute -top-12 md:-top-28 opacity-30 z-0"
-            alt="light"
-          />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-28 pb-12">
+          <Slide>
+            <span className="inline-block px-4 py-2 rounded-full bg-sec/10 border border-sec/30 text-sec text-sm font-medium mb-6">
+              Efficient & Successful Delivery
+            </span>
+          </Slide>
+          <Slide>
+            <h1 className="font-poppins text-white font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+              Project <span className="text-sec">Controls</span>
+            </h1>
+          </Slide>
+          <Slide>
+            <p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+              Ensure your project runs efficiently with integrated control systems covering cost, schedule, risk, and document management.
+            </p>
+          </Slide>
+          <Slide>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/contact">
+                <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-sec/20">
+                  Start Your Project
+                </button>
+              </Link>
+              <a href="#services">
+                <button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white rounded-full px-8 py-4 text-sm font-bold transition-all duration-300">
+                  Explore Services
+                </button>
+              </a>
+            </div>
+          </Slide>
+        </div>
+      </section>
 
-          {/* Main Content Section */}
-          <div className="py-8 w-full flex flex-col md:flex-row flex-1 text-white justify-start items-start space-y-8 md:space-y-0 md:space-x-12">
-            <div className="w-full md:w-1/2">
+      {/* About Section */}
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Slide>
+              <div className="relative">
+                <img src="/services/5.png" alt="Project Controls" className="rounded-2xl shadow-2xl shadow-black/50" />
+                <div className="absolute -bottom-4 right-2 md:-bottom-6 md:-right-6 bg-sec text-dark px-4 py-2 md:px-6 md:py-4 rounded-xl font-bold text-sm md:text-lg shadow-lg">
+                  Data-Driven
+                </div>
+              </div>
+            </Slide>
+            
+            <div className="space-y-6">
               <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Managing Complex Projects
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Construction and engineering projects are always complex in nature. They require the close coordination of personnel and a range of project controls to ensure that projects are carried out efficiently and successfully.
-                  </p>
-                  <p>
-                    As specialists in all aspects of construction planning for both small and large-scale projects, Metisplan has spent many years developing the knowledge and expertise to help your company implement effective project controls.
-                  </p>
-                </div>
+                <h2 className="text-white font-bold text-3xl md:text-4xl leading-tight">
+                  Managing Complex 
+                  <span className="text-sec"> Engineering Projects</span>
+                </h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  Construction projects require close coordination and a range of controls to ensure efficiency. We've spent years developing expertise to help implement effective project controls.
+                </p>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  Our data-driven approach utilizes advanced analytics to transform project data into actionable insights, enabling early identification of trends and timely corrective actions.
+                </p>
               </Slide>
             </div>
-
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Integrated Control Systems
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Our approach to project controls integrates multiple disciplines including cost management, schedule management, risk management, and document control to provide a comprehensive view of project performance.
-                  </p>
-                  <p>
-                    We take a data-driven approach to project controls, utilizing advanced analytics and reporting tools to transform project data into actionable insights. This enables early identification of trends and issues, allowing for proactive management and timely corrective actions.
-                  </p>
-                </div>
-              </Slide>
-            </div>
-          </div>
-
-          {/* Services Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Our Project Controls Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Cost Control</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Monitoring and managing project costs through detailed budgeting, cost tracking, forecasting, and variance analysis to ensure financial objectives are met.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Schedule Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Preparation and maintenance of construction schedules, including baseline development, progress tracking, and recovery planning to keep projects on time.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Risk Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Identifying potential risks, assessing their impact, and providing recommendations to manage and mitigate risks throughout the project lifecycle.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Document Control</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Implementing systems and procedures to ensure all project documentation is properly managed, stored, and accessible to relevant stakeholders.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Performance Monitoring</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Monitoring projects on behalf of our clients, providing regular status reports, and identifying potential issues before they impact project objectives.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Earned Value Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Implementing earned value techniques to measure project performance against the baseline plan, integrating schedule and cost metrics for comprehensive analysis.
-                  </p>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Benefits Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Benefits of Our Project Controls Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white transition-all duration-150 transform hover:scale-105">
-                  Our project controls services deliver numerous benefits to your organization, including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
-                  <li>Enhanced visibility into project performance through integrated reporting and analytics</li>
-                  <li>Early identification of potential issues allowing for proactive management</li>
-                  <li>Improved decision-making based on accurate and timely project information</li>
-                  <li>Better resource allocation and utilization across project activities</li>
-                  <li>Increased accountability through clear performance metrics and targets</li>
-                  <li>Reduced project risks through systematic identification and mitigation strategies</li>
-                  <li>Improved stakeholder communication and confidence through transparent reporting</li>
-                  <li>Consistent project delivery methodologies leading to more predictable outcomes</li>
-                </ul>
-              </div>
-            </Slide>
-          </div>
-
-          {/* CTA Section */}
-          <div className="w-full py-8 flex flex-col items-center">
-            <Slide>
-              <div className="text-center max-w-2xl mx-auto space-y-6">
-                <h3 className="text-sec font-bold text-xl md:text-2xl">
-                  Ready to Enhance Your Project Controls?
-                </h3>
-                <p className="text-white text-sm md:text-base">
-                  Contact us today to discuss how our project controls services can help your organization deliver projects more efficiently and successfully.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                  <Link href="/contact">
-                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
-                      Contact Us
-                    </button>
-                  </Link>
-                  <Link href="/adhoc/services">
-                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
-                      Back to Services
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </Slide>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-6 md:py-8 bg-dark relative overflow-hidden">
+        <img src="/glowing light.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" alt="light" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10">
+            <Slide>
+              <span className="text-sec text-sm font-semibold tracking-wider uppercase">What We Offer</span>
+              <h2 className="text-white font-bold text-3xl md:text-4xl mt-3">Our Project Controls Services</h2>
+            </Slide>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Slide key={index}>
+                <div className="group h-full bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/[0.06] hover:border-sec/30 transition-all duration-300">
+                  <h3 className="text-white font-bold text-lg mb-3 group-hover:text-sec transition-colors">{service.title}</h3>
+                  <p className="text-white/60 text-sm leading-relaxed">{service.description}</p>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <Slide>
+                <span className="text-sec text-sm font-semibold tracking-wider uppercase">Why Choose Us</span>
+                <h2 className="text-white font-bold text-3xl md:text-4xl mt-3 mb-6">Benefits of Our <span className="text-sec">Project Controls</span></h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed mb-6">Deliver projects more efficiently with comprehensive visibility and proactive management.</p>
+              </Slide>
+              <Slide>
+                <Link href="/contact">
+                  <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105">Get Started Today</button>
+                </Link>
+              </Slide>
+            </div>
+            <div className="space-y-3">
+              {benefits.map((benefit, index) => (
+                <Slide key={index}>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-sec/20 transition-all duration-300">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-sec/10 flex items-center justify-center mt-0.5">
+                      <svg className="w-3 h-3 text-sec" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-white/80 text-sm">{benefit}</p>
+                  </div>
+                </Slide>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CTA 
+        title="Ready to Enhance Your Project Controls?"
+        description="Contact us today to discuss how our project controls services can help your organization deliver projects more efficiently."
+        primaryButton={{ text: "Contact Us", href: "/contact" }}
+        secondaryButton={{ text: "Back to Services", href: "/adhoc/services" }}
+      />
+      
       <Footer />
     </>
   )

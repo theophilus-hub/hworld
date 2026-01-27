@@ -5,205 +5,210 @@ import Nav from "@/components/nav"
 import React from 'react';
 import Link from "next/link"
 import Slide from "@/components/slide"
+import CTA from "@/components/cta"
+import DarkVeil from "@/src/components/DarkVeil"
 
 function PlanningManagement() {
+  const services = [
+    {
+      title: "Construction Delivery Programmes",
+      description: "Development of programmes for client acceptance with full contract compliance.",
+    },
+    {
+      title: "Progress Monitoring & Reporting",
+      description: "Detailed monitoring reports against baseline with variance analysis.",
+    },
+    {
+      title: "Claims Evaluation & Quantification",
+      description: "Expert analysis and support for claims situations with detailed documentation.",
+    },
+    {
+      title: "Forensic Planning",
+      description: "Specialized services for EOT cases and delay analysis for dispute resolution.",
+    },
+    {
+      title: "4D Planning & BIM Integration",
+      description: "Visual simulations combining traditional scheduling with 3D models.",
+    },
+    {
+      title: "Resource Planning & Optimization",
+      description: "Strategic resource allocation to maximize efficiency across timelines.",
+    }
+  ];
+
+  const benefits = [
+    "Improved project predictability through realistic schedules",
+    "Early identification of potential delays",
+    "Enhanced resource utilization and cost control",
+    "Better coordination between stakeholders",
+    "Increased transparency in progress reporting",
+    "Stronger position in claims situations",
+    "Visual communication through 4D planning",
+    "Continuous improvement through lessons learned"
+  ];
+
   return (
     <>
       <Nav />
-      <div className="font-poppins relative flex flex-col justify-center items-center pt-32 pb-16 w-full">
-        <div className="relative space-y-8 flex flex-col justify-center items-start w-full px-4 sm:px-6 md:px-[10%] max-w-full">
-          {/* Hero Section */}
-          <div className="w-full flex flex-col items-center justify-center mb-12">
-            <Slide>
-              <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl mb-8">
-                Planning Management
-              </h1>
-            </Slide>
-            <Slide>
-              <h2 className="text-sec font-semibold text-center text-sm md:text-base mb-12">
-                From concept through to forensic planning - discover planning services that cover your complete requirements
-              </h2>
-            </Slide>
-            <Slide>
-              <img src="/planman.png" alt="Planning Management" className="w-full max-w-3xl mx-auto mb-8 rounded-2xl" />
-            </Slide>
-          </div>
+      
+      {/* Hero Section */}
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 lg:hidden">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1} />
+        </div>
+        <div className="absolute inset-0 w-full h-full z-0 hidden lg:block">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1.25} />
+        </div>
+        
+        <img src="/glowing light.png" className="absolute top-0 left-1/2 -translate-x-1/2 opacity-40 z-0" alt="light" />
 
-          <img
-            src={"/glowing light.png"}
-            className="absolute -top-12 md:-top-28 opacity-30 z-0"
-            alt="light"
-          />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-28 pb-12">
+          <Slide>
+            <span className="inline-block px-4 py-2 rounded-full bg-sec/10 border border-sec/30 text-sec text-sm font-medium mb-6">
+              Concept to Forensic Planning
+            </span>
+          </Slide>
+          <Slide>
+            <h1 className="font-poppins text-white font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+              Planning <span className="text-sec">Management</span>
+            </h1>
+          </Slide>
+          <Slide>
+            <p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+              Discover planning services that cover your complete requirements—from small to large-scale construction projects.
+            </p>
+          </Slide>
+          <Slide>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/contact">
+                <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-sec/20">
+                  Start Your Project
+                </button>
+              </Link>
+              <a href="#services">
+                <button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white rounded-full px-8 py-4 text-sm font-bold transition-all duration-300">
+                  Explore Services
+                </button>
+              </a>
+            </div>
+          </Slide>
+        </div>
+      </section>
 
-          {/* Main Content Section */}
-          <div className="py-8 w-full flex flex-col md:flex-row flex-1 text-white justify-start items-start space-y-8 md:space-y-0 md:space-x-12">
-            <div className="w-full md:w-1/2">
+      {/* About Section */}
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Slide>
+              <div className="relative">
+                <img src="/planman.png" alt="Planning Management" className="rounded-2xl shadow-2xl shadow-black/50" />
+                <div className="absolute -bottom-4 right-2 md:-bottom-6 md:-right-6 bg-sec text-dark px-4 py-2 md:px-6 md:py-4 rounded-xl font-bold text-sm md:text-lg shadow-lg">
+                  Acumen Fuse
+                </div>
+              </div>
+            </Slide>
+            
+            <div className="space-y-6">
               <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Expert Planning for Construction Projects
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    As specialists in all aspects of construction planning for both small and large-scale projects, Metisplan has spent many years developing the knowledge and expertise to help your company with effective project planning and management.
-                  </p>
-                  <p>
-                    Using advanced software like Acumen Fuse, we can take an objective and realistic view of programmes of work, including the actual progress to-date, helping to identify whether critical delivery points in the programme are likely to be met.
-                  </p>
-                </div>
+                <h2 className="text-white font-bold text-3xl md:text-4xl leading-tight">
+                  Expert Planning for 
+                  <span className="text-sec"> Construction Projects</span>
+                </h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  Using advanced software like Acumen Fuse, we take an objective view of programmes, including actual progress, helping identify whether critical delivery points will be met.
+                </p>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  We identify inherent risks and ensure built-in allowances are realistic, providing confidence that work will be completed on time and on budget.
+                </p>
               </Slide>
             </div>
-
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Optimizing Project Performance
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Beyond progress reporting, we can identify the inherent risks in your programme and ensure that built-in allowances for risk management are realistic, providing everyone with the confidence that work will be completed on time and on budget.
-                  </p>
-                  <p>
-                    Each of our consultant planners approaches the task of developing a programme by gaining an understanding of the scope of work, timescales, and relevant project phasing, while observing how the key objectives of time, cost and quality are balanced.
-                  </p>
-                </div>
-              </Slide>
-            </div>
-          </div>
-
-          {/* Services Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Our Planning Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Construction Delivery Programmes</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Development of original programmes for client acceptance, ensuring full compliance with contract requirements and engaging the project delivery team.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Progress Monitoring & Reporting</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Providing detailed monitoring reports against baseline, highlighting any variance in the programme of work and offering solutions to keep projects on track.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Claims Evaluation & Quantification</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Expert analysis and support for claims situations, helping to defend and protect your project against claims with detailed documentation and evidence.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Forensic Planning</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Specialized forensic planning services to put together cases for project extensions of time (EOT) and analyze delays for dispute resolution.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">4D Planning & BIM Integration</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Combining traditional scheduling with 3D models to create visual simulations of project progress, enhancing communication and decision-making.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Resource Planning & Optimization</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Strategic resource allocation and optimization to maximize efficiency and minimize conflicts across project timelines.
-                  </p>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Benefits Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Benefits of Our Planning Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white transition-all duration-150 transform hover:scale-105">
-                  Our planning management services deliver numerous benefits to your organization, including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
-                  <li>Improved project predictability through realistic and achievable schedules</li>
-                  <li>Early identification of potential delays and proactive mitigation strategies</li>
-                  <li>Enhanced resource utilization and cost control</li>
-                  <li>Better coordination between different project stakeholders</li>
-                  <li>Increased transparency in project progress reporting</li>
-                  <li>Stronger position in claims situations with detailed documentation</li>
-                  <li>Visual communication of complex scheduling information through 4D planning</li>
-                  <li>Continuous improvement through lessons learned and historical data analysis</li>
-                </ul>
-              </div>
-            </Slide>
-          </div>
-
-          {/* CTA Section */}
-          <div className="w-full py-8 flex flex-col items-center">
-            <Slide>
-              <div className="text-center max-w-2xl mx-auto space-y-6">
-                <h3 className="text-sec font-bold text-xl md:text-2xl">
-                  Ready to Optimize Your Project Planning?
-                </h3>
-                <p className="text-white text-sm md:text-base">
-                  Contact us today to discuss how our planning management services can help your organization deliver projects more effectively and efficiently.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                  <Link href="/contact">
-                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
-                      Contact Us
-                    </button>
-                  </Link>
-                  <Link href="/adhoc/services">
-                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
-                      Back to Services
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </Slide>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-6 md:py-8 bg-dark relative overflow-hidden">
+        <img src="/glowing light.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" alt="light" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10">
+            <Slide>
+              <span className="text-sec text-sm font-semibold tracking-wider uppercase">What We Offer</span>
+              <h2 className="text-white font-bold text-3xl md:text-4xl mt-3">Our Planning Services</h2>
+            </Slide>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Slide key={index}>
+                <div className="group h-full bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/[0.06] hover:border-sec/30 transition-all duration-300">
+                  <h3 className="text-white font-bold text-lg mb-3 group-hover:text-sec transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-white/60 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <Slide>
+                <span className="text-sec text-sm font-semibold tracking-wider uppercase">Why Choose Us</span>
+                <h2 className="text-white font-bold text-3xl md:text-4xl mt-3 mb-6">
+                  Benefits of Our <span className="text-sec">Planning</span> Services
+                </h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed mb-6">
+                  Deliver projects more effectively with realistic schedules and proactive risk management.
+                </p>
+              </Slide>
+              <Slide>
+                <Link href="/contact">
+                  <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105">
+                    Get Started Today
+                  </button>
+                </Link>
+              </Slide>
+            </div>
+            
+            <div className="space-y-3">
+              {benefits.map((benefit, index) => (
+                <Slide key={index}>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-sec/20 transition-all duration-300">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-sec/10 flex items-center justify-center mt-0.5">
+                      <svg className="w-3 h-3 text-sec" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-white/80 text-sm">{benefit}</p>
+                  </div>
+                </Slide>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CTA 
+        title="Ready to Optimize Your Project Planning?"
+        description="Contact us today to discuss how our planning management services can help your organization deliver projects more effectively."
+        primaryButton={{ text: "Contact Us", href: "/contact" }}
+        secondaryButton={{ text: "Back to Services", href: "/adhoc/services" }}
+      />
+      
       <Footer />
     </>
   )

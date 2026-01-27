@@ -5,205 +5,122 @@ import Nav from "@/components/nav"
 import React from 'react';
 import Link from "next/link"
 import Slide from "@/components/slide"
+import CTA from "@/components/cta"
+import DarkVeil from "@/src/components/DarkVeil"
 
 function RiskManagement() {
+  const services = [
+    { title: "Risk Identification & Assessment", description: "Systematic identification with probability and impact analysis." },
+    { title: "Risk Mitigation Strategies", description: "Tailored strategies including preventive measures and contingency planning." },
+    { title: "Schedule Risk Analysis (SRA)", description: "Quantitative analysis to determine milestone achievement probability." },
+    { title: "Cost Risk Analysis (CRA)", description: "Assessment of cost impacts for confident budget forecasting." },
+    { title: "Opportunity Management", description: "Maximize opportunities to enhance performance and reduce costs." },
+    { title: "Risk Training & Awareness", description: "Build risk management capabilities within your project teams." }
+  ];
+
+  const benefits = [
+    "Increased confidence through systematic risk management",
+    "Reduced project uncertainty and improved decisions",
+    "More accurate schedule and cost forecasts",
+    "Proactive management before issues impact performance",
+    "Identification of opportunities to enhance outcomes",
+    "Enhanced stakeholder confidence through transparency",
+    "Integration with 4D scheduling for risk visualization",
+    "Organizational capability development through training"
+  ];
+
   return (
     <>
       <Nav />
-      <div className="font-poppins relative flex flex-col justify-center items-center pt-32 pb-16 w-full">
-        <div className="relative space-y-8 flex flex-col justify-center items-start w-full px-4 sm:px-6 md:px-[10%] max-w-full">
-          {/* Hero Section */}
-          <div className="w-full flex flex-col items-center justify-center mb-12">
-            <Slide>
-              <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl mb-8">
-                Risk Management
-              </h1>
-            </Slide>
-            <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
-                Looking to control the impact of risks and maximise the realisation of opportunities?
-              </h2>
-            </Slide>
-            <Slide>
-              <img src="/risk-management.png" alt="Risk Management" className="w-full max-w-3xl mx-auto mb-8" />
-            </Slide>
-          </div>
-
-          <img
-            src={"/glowing light.png"}
-            className="absolute -top-12 md:-top-28 opacity-30 z-0"
-            alt="light"
-          />
-
-          {/* Main Content Section */}
-          <div className="py-8 w-full flex flex-col md:flex-row flex-1 text-white justify-start items-start space-y-8 md:space-y-0 md:space-x-12">
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Proactive Risk Identification
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Good risk management is a proactive process of identification and mitigation. Metisplan looks at the bigger picture, from a whole programme perspective, with the skills and industry know-how to successfully aid both programmes and projects.
-                  </p>
-                  <p>
-                    We work with both the programme and project team as early as possible, establishing and identifying risks in order to formulate a clear strategy to mitigate those risks and work towards a successful outcome.
-                  </p>
-                </div>
-              </Slide>
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 lg:hidden">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1} />
+        </div>
+        <div className="absolute inset-0 w-full h-full z-0 hidden lg:block">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1.25} />
+        </div>
+        <img src="/glowing light.png" className="absolute top-0 left-1/2 -translate-x-1/2 opacity-40 z-0" alt="light" />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-28 pb-12">
+          <Slide><span className="inline-block px-4 py-2 rounded-full bg-sec/10 border border-sec/30 text-sec text-sm font-medium mb-6">Control Risks, Maximize Opportunities</span></Slide>
+          <Slide><h1 className="font-poppins text-white font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">Risk <span className="text-sec">Management</span></h1></Slide>
+          <Slide><p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">Proactive identification and mitigation from a whole programme perspective, working towards successful outcomes.</p></Slide>
+          <Slide>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/contact"><button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-sec/20">Start Your Project</button></Link>
+              <a href="#services"><button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white rounded-full px-8 py-4 text-sm font-bold transition-all duration-300">Explore Services</button></a>
             </div>
+          </Slide>
+        </div>
+      </section>
 
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Robust Risk Processes
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    By establishing a robust risk process, we can continually identify new risks and work on risk mitigation wherever necessary, as well as identifying opportunities that arise within the programme or project.
-                  </p>
-                  <p>
-                    Metisplan works with senior management to identify the customer's objectives and priorities, utilizing an efficient top-down approach. We also provide robust training and awareness of risk and opportunity to ensure all stakeholders understand the process.
-                  </p>
-                </div>
-              </Slide>
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Slide>
+              <div className="relative">
+                <img src="/services/7.png" alt="Risk Management" className="rounded-2xl shadow-2xl shadow-black/50" />
+                <div className="absolute -bottom-4 right-2 md:-bottom-6 md:-right-6 bg-sec text-dark px-4 py-2 md:px-6 md:py-4 rounded-xl font-bold text-sm md:text-lg shadow-lg">Proactive Approach</div>
+              </div>
+            </Slide>
+            <div className="space-y-6">
+              <Slide><h2 className="text-white font-bold text-3xl md:text-4xl leading-tight">Robust Risk <span className="text-sec">Processes</span></h2></Slide>
+              <Slide><p className="text-white/70 text-base md:text-lg leading-relaxed">We work with teams as early as possible, establishing and identifying risks to formulate clear mitigation strategies and work towards successful outcomes.</p></Slide>
+              <Slide><p className="text-white/70 text-base md:text-lg leading-relaxed">Using a top-down approach with senior management, we identify objectives and priorities while providing robust training and awareness to all stakeholders.</p></Slide>
             </div>
-          </div>
-
-          {/* Services Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Our Risk Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Risk Identification & Assessment</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Systematic identification and assessment of potential risks that could impact project objectives, including probability and impact analysis.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Risk Mitigation Strategies</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Development of tailored strategies to mitigate identified risks, including preventive measures and contingency planning.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Schedule Risk Analysis (SRA)</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Quantitative analysis of schedule risks using advanced modeling techniques to determine the probability of meeting key milestones and completion dates.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Cost Risk Analysis (CRA)</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Assessment of potential cost impacts of identified risks, providing greater confidence in budget forecasts and contingency requirements.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Opportunity Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Identification and maximization of potential opportunities within projects to enhance performance, reduce costs, or accelerate schedules.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Risk Training & Awareness</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Comprehensive training programs to build risk awareness and management capabilities within your organization's project teams.
-                  </p>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Benefits Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Benefits of Our Risk Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white transition-all duration-150 transform hover:scale-105">
-                  Our risk management services deliver numerous benefits to your organization, including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
-                  <li>Increased confidence in project outcomes through systematic risk identification and mitigation</li>
-                  <li>Reduced project uncertainty and improved decision-making</li>
-                  <li>More accurate schedule and cost forecasts through quantitative risk analysis</li>
-                  <li>Proactive management of potential issues before they impact project performance</li>
-                  <li>Identification and realization of opportunities to enhance project outcomes</li>
-                  <li>Enhanced stakeholder confidence through transparent risk reporting</li>
-                  <li>Integration with 4D scheduling models for comprehensive risk visualization</li>
-                  <li>Development of organizational risk management capabilities through training and knowledge transfer</li>
-                </ul>
-              </div>
-            </Slide>
-          </div>
-
-          {/* CTA Section */}
-          <div className="w-full py-8 flex flex-col items-center">
-            <Slide>
-              <div className="text-center max-w-2xl mx-auto space-y-6">
-                <h3 className="text-sec font-bold text-xl md:text-2xl">
-                  Ready to Manage Your Project Risks?
-                </h3>
-                <p className="text-white text-sm md:text-base">
-                  Contact us today to discuss how our risk management services can help your organization identify, mitigate, and control project risks while maximizing opportunities.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                  <Link href="/contact">
-                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
-                      Contact Us
-                    </button>
-                  </Link>
-                  <Link href="/adhoc/services">
-                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
-                      Back to Services
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </Slide>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section id="services" className="py-6 md:py-8 bg-dark relative overflow-hidden">
+        <img src="/glowing light.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" alt="light" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10">
+            <Slide>
+              <span className="text-sec text-sm font-semibold tracking-wider uppercase">What We Offer</span>
+              <h2 className="text-white font-bold text-3xl md:text-4xl mt-3">Our Risk Management Services</h2>
+            </Slide>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Slide key={index}>
+                <div className="group h-full bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/[0.06] hover:border-sec/30 transition-all duration-300">
+                  <h3 className="text-white font-bold text-lg mb-3 group-hover:text-sec transition-colors">{service.title}</h3>
+                  <p className="text-white/60 text-sm leading-relaxed">{service.description}</p>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <Slide>
+                <span className="text-sec text-sm font-semibold tracking-wider uppercase">Why Choose Us</span>
+                <h2 className="text-white font-bold text-3xl md:text-4xl mt-3 mb-6">Benefits of Our <span className="text-sec">Risk Management</span></h2>
+              </Slide>
+              <Slide><p className="text-white/70 text-base md:text-lg leading-relaxed mb-6">Control risks and maximize opportunities with systematic identification and proactive mitigation.</p></Slide>
+              <Slide><Link href="/contact"><button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105">Get Started Today</button></Link></Slide>
+            </div>
+            <div className="space-y-3">
+              {benefits.map((benefit, index) => (
+                <Slide key={index}>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-sec/20 transition-all duration-300">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-sec/10 flex items-center justify-center mt-0.5">
+                      <svg className="w-3 h-3 text-sec" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                    </div>
+                    <p className="text-white/80 text-sm">{benefit}</p>
+                  </div>
+                </Slide>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CTA title="Ready to Manage Your Project Risks?" description="Contact us today to discuss how our risk management services can help identify, mitigate, and control project risks." primaryButton={{ text: "Contact Us", href: "/contact" }} secondaryButton={{ text: "Back to Services", href: "/adhoc/services" }} />
       <Footer />
     </>
   )

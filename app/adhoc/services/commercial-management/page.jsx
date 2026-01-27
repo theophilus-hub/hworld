@@ -5,205 +5,210 @@ import Nav from "@/components/nav"
 import React from 'react';
 import Link from "next/link"
 import Slide from "@/components/slide"
+import CTA from "@/components/cta"
+import DarkVeil from "@/src/components/DarkVeil"
 
 function CommercialManagement() {
+  const services = [
+    {
+      title: "Tendering & Sub-Contracting",
+      description: "Advise and write sub-contracts to deliver your project and manage sub-contractors through scope completion.",
+    },
+    {
+      title: "Cost Reporting & Forecasting",
+      description: "Detailed reporting of current costs and projection of future expenses with clear financial visibility.",
+    },
+    {
+      title: "Change Control Management",
+      description: "Systematic management of scope changes with proper documentation and minimal financial impact.",
+    },
+    {
+      title: "Applications for Payment",
+      description: "Review and assess payment applications ensuring alignment with contract terms and milestones.",
+    },
+    {
+      title: "Final Accounting",
+      description: "Expert management of complex final accounts with clients and sub-contractors.",
+    },
+    {
+      title: "Contract Administration",
+      description: "Comprehensive management of contractual obligations and compliance documentation.",
+    }
+  ];
+
+  const benefits = [
+    "Enhanced financial visibility and control throughout the project lifecycle",
+    "Improved cash flow management through accurate forecasting",
+    "Reduced financial risks through proactive change management",
+    "Optimized procurement processes for better sub-contractor value",
+    "Minimized disputes through clear contractual arrangements",
+    "Streamlined final account settlements",
+    "Better decision-making through comprehensive financial reporting",
+    "Protection of profit margins through effective cost control"
+  ];
+
   return (
     <>
       <Nav />
-      <div className="font-poppins relative flex flex-col justify-center items-center pt-32 pb-16 w-full">
-        <div className="relative space-y-8 flex flex-col justify-center items-start w-full px-4 sm:px-6 md:px-[10%] max-w-full">
-          {/* Hero Section */}
-          <div className="w-full flex flex-col items-center justify-center mb-12">
-            <Slide>
-              <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl mb-8">
-                Commercial Management
-              </h1>
-            </Slide>
-            <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
-                From project conception to final account agreements, our team can fulfil your commercial needs during a full project lifecycle.
-              </h2>
-            </Slide>
-            <Slide>
-              <img src="/commercial-management.png" alt="Commercial Management" className="w-full max-w-3xl mx-auto mb-8" />
-            </Slide>
-          </div>
+      
+      {/* Hero Section */}
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 lg:hidden">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1} />
+        </div>
+        <div className="absolute inset-0 w-full h-full z-0 hidden lg:block">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1.25} />
+        </div>
+        
+        <img src="/glowing light.png" className="absolute top-0 left-1/2 -translate-x-1/2 opacity-40 z-0" alt="light" />
 
-          <img
-            src={"/glowing light.png"}
-            className="absolute -top-12 md:-top-28 opacity-30 z-0"
-            alt="light"
-          />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-28 pb-12">
+          <Slide>
+            <span className="inline-block px-4 py-2 rounded-full bg-sec/10 border border-sec/30 text-sec text-sm font-medium mb-6">
+              Full Project Lifecycle Support
+            </span>
+          </Slide>
+          <Slide>
+            <h1 className="font-poppins text-white font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+              Commercial <span className="text-sec">Management</span>
+            </h1>
+          </Slide>
+          <Slide>
+            <p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+              From project conception to final account agreements, our team fulfils your commercial needs throughout the entire project lifecycle.
+            </p>
+          </Slide>
+          <Slide>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/contact">
+                <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-sec/20">
+                  Start Your Project
+                </button>
+              </Link>
+              <a href="#services">
+                <button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white rounded-full px-8 py-4 text-sm font-bold transition-all duration-300">
+                  Explore Services
+                </button>
+              </a>
+            </div>
+          </Slide>
+        </div>
+      </section>
 
-          {/* Main Content Section */}
-          <div className="py-8 w-full flex flex-col md:flex-row flex-1 text-white justify-start items-start space-y-8 md:space-y-0 md:space-x-12">
-            <div className="w-full md:w-1/2">
+      {/* About Section */}
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Slide>
+              <div className="relative">
+                <img src="/services/2.png" alt="Commercial Management" className="rounded-2xl shadow-2xl shadow-black/50" />
+                <div className="absolute -bottom-4 right-2 md:-bottom-6 md:-right-6 bg-sec text-dark px-4 py-2 md:px-6 md:py-4 rounded-xl font-bold text-sm md:text-lg shadow-lg">
+                  Value-Driven Approach
+                </div>
+              </div>
+            </Slide>
+            
+            <div className="space-y-6">
               <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Comprehensive Financial Insight
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    At Metisplan, our commercial team understands the need to fully comprehend where your project is heading financially. We know that simply reporting costs is not enough.
-                  </p>
-                  <p>
-                    You want to understand why and where money needs spending and how this will impact your budget in the future. Our approach provides complete financial transparency and proactive management to ensure project success.
-                  </p>
-                </div>
+                <h2 className="text-white font-bold text-3xl md:text-4xl leading-tight">
+                  Comprehensive Financial 
+                  <span className="text-sec"> Insight & Control</span>
+                </h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  Our commercial team understands the need to fully comprehend where your project is heading financially. Simply reporting costs is not enough—you need to understand why and where money needs spending.
+                </p>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  We commercially manage your project to deliver the best value for money by controlling costs and managing change control with both clients and sub-contractors.
+                </p>
               </Slide>
             </div>
-
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Value-Driven Management
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Our team will commercially manage your project to ensure it delivers the best value for money by controlling costs and managing change control with both clients and sub-contractors.
-                  </p>
-                  <p>
-                    We focus on maximizing project value while maintaining quality standards, creating a balanced approach that protects your financial interests throughout the entire project lifecycle.
-                  </p>
-                </div>
-              </Slide>
-            </div>
-          </div>
-
-          {/* Services Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Our Commercial Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Tendering & Sub-Contracting</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Our Quantity Surveyors can advise and write sub-contracts to help deliver your project and manage the sub-contractor through to their scope completion, including the tender process and assessment.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Cost Reporting & Forecasting</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Detailed reporting of current costs and projection of future expenses throughout the project's life cycle, providing clear visibility of financial performance and trends.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Change Control Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Systematic management of changes to project scope, ensuring proper documentation, evaluation, approval, and implementation of changes with minimal financial impact.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Applications for Payment</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Reviewing and assessing applications for payment from sub-contractors, ensuring they align with contract terms, completed work, and project milestones.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Final Accounting</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Expert management of complex final accounts, reviewing your project and agreeing on final accounts in accordance with contracts, both upstream with clients and downstream with sub-contractors.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Contract Administration</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Comprehensive management of contractual obligations, ensuring compliance with terms and conditions, and maintaining proper documentation throughout the project.
-                  </p>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Benefits Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Benefits of Our Commercial Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white transition-all duration-150 transform hover:scale-105">
-                  Our commercial management services deliver numerous benefits to your organization, including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
-                  <li>Enhanced financial visibility and control throughout the project lifecycle</li>
-                  <li>Improved cash flow management through accurate forecasting and payment processing</li>
-                  <li>Reduced financial risks through proactive change management and contract administration</li>
-                  <li>Optimized procurement processes leading to better value from sub-contractors</li>
-                  <li>Minimized disputes through clear contractual arrangements and documentation</li>
-                  <li>Streamlined final account settlements, reducing delays in project closure</li>
-                  <li>Better decision-making through comprehensive financial reporting and analysis</li>
-                  <li>Protection of profit margins through effective cost control and value engineering</li>
-                </ul>
-              </div>
-            </Slide>
-          </div>
-
-          {/* CTA Section */}
-          <div className="w-full py-8 flex flex-col items-center">
-            <Slide>
-              <div className="text-center max-w-2xl mx-auto space-y-6">
-                <h3 className="text-sec font-bold text-xl md:text-2xl">
-                  Ready to Enhance Your Commercial Management?
-                </h3>
-                <p className="text-white text-sm md:text-base">
-                  Contact us today to discuss how our commercial management services can help your organization achieve better financial outcomes for your construction projects.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                  <Link href="/contact">
-                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
-                      Contact Us
-                    </button>
-                  </Link>
-                  <Link href="/adhoc/services">
-                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
-                      Back to Services
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </Slide>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-6 md:py-8 bg-dark relative overflow-hidden">
+        <img src="/glowing light.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" alt="light" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10">
+            <Slide>
+              <span className="text-sec text-sm font-semibold tracking-wider uppercase">What We Offer</span>
+              <h2 className="text-white font-bold text-3xl md:text-4xl mt-3">Our Commercial Services</h2>
+            </Slide>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Slide key={index}>
+                <div className="group h-full bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/[0.06] hover:border-sec/30 transition-all duration-300">
+                  <h3 className="text-white font-bold text-lg mb-3 group-hover:text-sec transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-white/60 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <Slide>
+                <span className="text-sec text-sm font-semibold tracking-wider uppercase">Why Choose Us</span>
+                <h2 className="text-white font-bold text-3xl md:text-4xl mt-3 mb-6">
+                  Benefits of Our <span className="text-sec">Commercial</span> Services
+                </h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed mb-6">
+                  Achieve better financial outcomes with complete transparency and proactive management throughout your project.
+                </p>
+              </Slide>
+              <Slide>
+                <Link href="/contact">
+                  <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105">
+                    Get Started Today
+                  </button>
+                </Link>
+              </Slide>
+            </div>
+            
+            <div className="space-y-3">
+              {benefits.map((benefit, index) => (
+                <Slide key={index}>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-sec/20 transition-all duration-300">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-sec/10 flex items-center justify-center mt-0.5">
+                      <svg className="w-3 h-3 text-sec" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-white/80 text-sm">{benefit}</p>
+                  </div>
+                </Slide>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CTA 
+        title="Ready to Enhance Your Commercial Management?"
+        description="Contact us today to discuss how our commercial management services can help your organization achieve better financial outcomes."
+        primaryButton={{ text: "Contact Us", href: "/contact" }}
+        secondaryButton={{ text: "Back to Services", href: "/adhoc/services" }}
+      />
+      
       <Footer />
     </>
   )

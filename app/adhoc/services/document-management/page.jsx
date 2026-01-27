@@ -5,205 +5,210 @@ import Nav from "@/components/nav"
 import React from 'react';
 import Link from "next/link"
 import Slide from "@/components/slide"
+import CTA from "@/components/cta"
+import DarkVeil from "@/src/components/DarkVeil"
 
 function DocumentManagement() {
+  const services = [
+    {
+      title: "Metadata Management",
+      description: "Consistent metadata numbering conventions for proper document identification and retrieval.",
+    },
+    {
+      title: "Document Control",
+      description: "Day-to-day management including version control, distribution, and status tracking.",
+    },
+    {
+      title: "Electronic Filing Systems",
+      description: "Logical organization of documents ensuring quick and efficient access to information.",
+    },
+    {
+      title: "Document Storage & Retrieval",
+      description: "Efficient storage processes for electronic and hard copy documents.",
+    },
+    {
+      title: "Management Reporting",
+      description: "Regular and ad-hoc reports on document status, compliance, and information flow.",
+    },
+    {
+      title: "Staff Training",
+      description: "Training from basic user level to document management and audit oversight.",
+    }
+  ];
+
+  const benefits = [
+    "Improved information accessibility and reduced search time",
+    "Enhanced document security and protection",
+    "Consistent document naming and classification",
+    "Streamlined approval and distribution processes",
+    "Reduced risk of using outdated document versions",
+    "Improved stakeholder collaboration",
+    "Comprehensive audit trails for changes",
+    "Knowledge transfer through targeted training"
+  ];
+
   return (
     <>
       <Nav />
-      <div className="font-poppins relative flex flex-col justify-center items-center pt-32 pb-16 w-full">
-        <div className="relative space-y-8 flex flex-col justify-center items-start w-full px-4 sm:px-6 md:px-[10%] max-w-full">
-          {/* Hero Section */}
-          <div className="w-full flex flex-col items-center justify-center mb-12">
-            <Slide>
-              <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl mb-8">
-                Document Management
-              </h1>
-            </Slide>
-            <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
-                Need help organising, storing and protecting documents during the project lifecycle?
-              </h2>
-            </Slide>
-            <Slide>
-              <img src="/document-management.png" alt="Document Management" className="w-full max-w-3xl mx-auto mb-8" />
-            </Slide>
-          </div>
+      
+      {/* Hero Section */}
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 lg:hidden">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1} />
+        </div>
+        <div className="absolute inset-0 w-full h-full z-0 hidden lg:block">
+          <DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1.25} />
+        </div>
+        
+        <img src="/glowing light.png" className="absolute top-0 left-1/2 -translate-x-1/2 opacity-40 z-0" alt="light" />
 
-          <img
-            src={"/glowing light.png"}
-            className="absolute -top-12 md:-top-28 opacity-30 z-0"
-            alt="light"
-          />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-28 pb-12">
+          <Slide>
+            <span className="inline-block px-4 py-2 rounded-full bg-sec/10 border border-sec/30 text-sec text-sm font-medium mb-6">
+              Organise, Store & Protect
+            </span>
+          </Slide>
+          <Slide>
+            <h1 className="font-poppins text-white font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+              Document <span className="text-sec">Management</span>
+            </h1>
+          </Slide>
+          <Slide>
+            <p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+              Expert document controllers at all levels, offering assistance with day-to-day documentation, metadata management, and oversight.
+            </p>
+          </Slide>
+          <Slide>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/contact">
+                <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-sec/20">
+                  Start Your Project
+                </button>
+              </Link>
+              <a href="#services">
+                <button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white rounded-full px-8 py-4 text-sm font-bold transition-all duration-300">
+                  Explore Services
+                </button>
+              </a>
+            </div>
+          </Slide>
+        </div>
+      </section>
 
-          {/* Main Content Section */}
-          <div className="py-8 w-full flex flex-col md:flex-row flex-1 text-white justify-start items-start space-y-8 md:space-y-0 md:space-x-12">
-            <div className="w-full md:w-1/2">
+      {/* About Section */}
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Slide>
+              <div className="relative">
+                <img src="/services/4.png" alt="Document Management" className="rounded-2xl shadow-2xl shadow-black/50" />
+                <div className="absolute -bottom-4 right-2 md:-bottom-6 md:-right-6 bg-sec text-dark px-4 py-2 md:px-6 md:py-4 rounded-xl font-bold text-sm md:text-lg shadow-lg">
+                  Seamless Integration
+                </div>
+              </div>
+            </Slide>
+            
+            <div className="space-y-6">
               <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Expert Document Control
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Metisplan provides experienced document controllers at all levels, offering assistance with day-to-day project documentation, management of metadata requirements, and oversight and audit.
-                  </p>
-                  <p>
-                    Our experienced personnel work collaboratively ensuring a seamless transition between client and contractor in order to prepare and manage your documentation with accuracy and efficiency.
-                  </p>
-                </div>
+                <h2 className="text-white font-bold text-3xl md:text-4xl leading-tight">
+                  Comprehensive Document 
+                  <span className="text-sec"> Control Systems</span>
+                </h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  Our experienced personnel work collaboratively ensuring a seamless transition between client and contractor to prepare and manage your documentation with accuracy and efficiency.
+                </p>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  We establish robust systems tailored to your needs, including metadata conventions, electronic filing, and efficient storage and retrieval processes.
+                </p>
               </Slide>
             </div>
-
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Comprehensive Document Systems
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    We establish robust document management systems tailored to your project needs, including metadata numbering conventions, electronic sorting and filing, and efficient storage and retrieval processes.
-                  </p>
-                  <p>
-                    In addition to managing your documents, we prepare regular and ad-hoc reports for management, providing valuable insights into document status, compliance, and project information flow.
-                  </p>
-                </div>
-              </Slide>
-            </div>
-          </div>
-
-          {/* Services Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Our Document Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Metadata Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Establishing and maintaining consistent metadata numbering conventions to ensure proper document identification, categorization, and retrieval.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Document Control</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Day-to-day management of project documentation, including version control, distribution, and tracking of document status throughout the project lifecycle.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Electronic Filing Systems</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Implementation of electronic sorting and filing systems to organize documents logically and ensure quick and efficient access to information.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Document Storage & Retrieval</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Efficient storage and retrieval processes for both electronic and hard copy documents, ensuring information is accessible when needed.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Management Reporting</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Preparation of regular and ad-hoc document management reports, providing insights into document status, compliance, and information flow.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Staff Training</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Training for your employees – from basic user to document management and audit/oversight – to maintain accurate, up-to-date records.
-                  </p>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Benefits Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Benefits of Our Document Management Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white transition-all duration-150 transform hover:scale-105">
-                  Our document management services deliver numerous benefits to your organization, including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
-                  <li>Improved information accessibility and reduced time spent searching for documents</li>
-                  <li>Enhanced document security and protection of sensitive project information</li>
-                  <li>Consistent document naming and classification for easier identification</li>
-                  <li>Streamlined document approval and distribution processes</li>
-                  <li>Reduced risk of using outdated or incorrect document versions</li>
-                  <li>Improved collaboration between project stakeholders through shared document access</li>
-                  <li>Comprehensive audit trails for document changes and approvals</li>
-                  <li>Knowledge transfer to your team through targeted training programs</li>
-                </ul>
-              </div>
-            </Slide>
-          </div>
-
-          {/* CTA Section */}
-          <div className="w-full py-8 flex flex-col items-center">
-            <Slide>
-              <div className="text-center max-w-2xl mx-auto space-y-6">
-                <h3 className="text-sec font-bold text-xl md:text-2xl">
-                  Ready to Streamline Your Document Management?
-                </h3>
-                <p className="text-white text-sm md:text-base">
-                  Contact us today to discuss how our document management services can help your organization organize, store, and protect critical project documentation.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                  <Link href="/contact">
-                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
-                      Contact Us
-                    </button>
-                  </Link>
-                  <Link href="/adhoc/services">
-                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
-                      Back to Services
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </Slide>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-6 md:py-8 bg-dark relative overflow-hidden">
+        <img src="/glowing light.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" alt="light" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10">
+            <Slide>
+              <span className="text-sec text-sm font-semibold tracking-wider uppercase">What We Offer</span>
+              <h2 className="text-white font-bold text-3xl md:text-4xl mt-3">Our Document Services</h2>
+            </Slide>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Slide key={index}>
+                <div className="group h-full bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/[0.06] hover:border-sec/30 transition-all duration-300">
+                  <h3 className="text-white font-bold text-lg mb-3 group-hover:text-sec transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-white/60 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <Slide>
+                <span className="text-sec text-sm font-semibold tracking-wider uppercase">Why Choose Us</span>
+                <h2 className="text-white font-bold text-3xl md:text-4xl mt-3 mb-6">
+                  Benefits of Our <span className="text-sec">Document</span> Services
+                </h2>
+              </Slide>
+              <Slide>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed mb-6">
+                  Organize, store, and protect critical project documentation with experienced controllers at all levels.
+                </p>
+              </Slide>
+              <Slide>
+                <Link href="/contact">
+                  <button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105">
+                    Get Started Today
+                  </button>
+                </Link>
+              </Slide>
+            </div>
+            
+            <div className="space-y-3">
+              {benefits.map((benefit, index) => (
+                <Slide key={index}>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-sec/20 transition-all duration-300">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-sec/10 flex items-center justify-center mt-0.5">
+                      <svg className="w-3 h-3 text-sec" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-white/80 text-sm">{benefit}</p>
+                  </div>
+                </Slide>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CTA 
+        title="Ready to Streamline Your Document Management?"
+        description="Contact us today to discuss how our document management services can help your organization organize and protect critical documentation."
+        primaryButton={{ text: "Contact Us", href: "/contact" }}
+        secondaryButton={{ text: "Back to Services", href: "/adhoc/services" }}
+      />
+      
       <Footer />
     </>
   )

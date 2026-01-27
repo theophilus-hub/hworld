@@ -5,272 +5,118 @@ import Nav from "@/components/nav"
 import React from 'react';
 import Link from "next/link"
 import Slide from "@/components/slide"
+import CTA from "@/components/cta"
+import DarkVeil from "@/src/components/DarkVeil"
 
 function ClaimsAnalysis() {
+  const services = [
+    { title: "Delay Analysis", description: "Detailed CPM analysis to identify causes and quantify time impacts." },
+    { title: "Disruption & Productivity Loss", description: "Assessment using measured mile and industry-accepted methodologies." },
+    { title: "Quantum Assessment", description: "Calculation of delay damages including overhead and lost revenue." },
+    { title: "Schedule Analysis", description: "Forensic review identifying critical path impacts and concurrent delays." },
+    { title: "Claims Documentation", description: "Comprehensive documentation with detailed narratives and evidence." },
+    { title: "Proactive Claims Management", description: "Strategies to identify issues early and maintain proper documentation." }
+  ];
+
+  const benefits = [
+    "Expert identification of delay events and impacts",
+    "Clear establishment of entitlement through causation analysis",
+    "Accurate quantification of delays and costs",
+    "Strong, defensible documentation",
+    "Strategic advice on claim presentation",
+    "Reduced risk of protracted disputes",
+    "Expert support throughout resolution processes",
+    "Knowledge transfer for improved practices"
+  ];
+
   return (
     <>
       <Nav />
-      <div className="font-poppins relative flex flex-col justify-center items-center pt-32 pb-16 w-full">
-        <div className="relative space-y-8 flex flex-col justify-center items-start w-full px-4 sm:px-6 md:px-[10%] max-w-full">
-          {/* Hero Section */}
-          <div className="w-full flex flex-col items-center justify-center mb-12">
-            <Slide>
-              <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl mb-8">
-                Claims Analysis
-              </h1>
-            </Slide>
-            <Slide>
-              <h2 className="text-sec font-semibold text-center text-lg md:text-2xl mb-12">
-                Expert analysis and support for construction claims and disputes
-              </h2>
-            </Slide>
-            <Slide>
-              <img src="/claims-analysis.png" alt="Claims Analysis" className="w-full max-w-3xl mx-auto mb-8" />
-            </Slide>
-          </div>
-
-          <img
-            src={"/glowing light.png"}
-            className="absolute -top-12 md:-top-28 opacity-30 z-0"
-            alt="light"
-          />
-
-          {/* Main Content Section */}
-          <div className="py-8 w-full flex flex-col md:flex-row flex-1 text-white justify-start items-start space-y-8 md:space-y-0 md:space-x-12">
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Comprehensive Claims Assessment
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    Our claims analysis service provides comprehensive assessment of construction claims related to delays, disruptions, variations, and additional costs. We combine technical expertise with industry knowledge to deliver thorough, independent analyses.
-                  </p>
-                  <p>
-                    Using advanced forensic scheduling techniques, we identify delay events and impacts such as change orders, differing site conditions, and design deficiencies. Our approach focuses on establishing causation and quantifying delays through detailed analysis of project documentation and schedules.
-                  </p>
-                </div>
-              </Slide>
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 w-full h-full z-0 lg:hidden"><DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1} /></div>
+        <div className="absolute inset-0 w-full h-full z-0 hidden lg:block"><DarkVeil hueShift={-150} noiseIntensity={0} scanlineIntensity={0} speed={0.8} scanlineFrequency={1} warpAmount={0.8} resolutionScale={1.25} /></div>
+        <img src="/glowing light.png" className="absolute top-0 left-1/2 -translate-x-1/2 opacity-40 z-0" alt="light" />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-28 pb-12">
+          <Slide><span className="inline-block px-4 py-2 rounded-full bg-sec/10 border border-sec/30 text-sec text-sm font-medium mb-6">Forensic Planning Services</span></Slide>
+          <Slide><h1 className="font-poppins text-white font-extrabold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">Claims <span className="text-sec">Analysis</span></h1></Slide>
+          <Slide><p className="text-white/80 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">Expert analysis and support for construction claims related to delays, disruptions, variations, and additional costs.</p></Slide>
+          <Slide>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/contact"><button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-sec/20">Get Expert Support</button></Link>
+              <a href="#services"><button className="bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 text-white rounded-full px-8 py-4 text-sm font-bold transition-all duration-300">Explore Services</button></a>
             </div>
+          </Slide>
+        </div>
+      </section>
 
-            <div className="w-full md:w-1/2">
-              <Slide>
-                <div className="space-y-4 w-full">
-                  <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                    Expert Methodology
-                  </h3>
-                  <hr
-                    className="border-0 w-full"
-                    style={{
-                      backgroundColor: "#414141",
-                      height: 1,
-                    }}
-                  />
-                </div>
-                <div className="space-y-4 md:space-y-6 font-normal text-sm md:text-base mt-4">
-                  <p>
-                    We employ industry-recognized forensic scheduling techniques including Time Impact Analysis, Windows Analysis, As-Planned vs. As-Built Analysis, Impacted As-Planned Analysis, and Collapsed As-Built Analysis to ensure the most appropriate methodology for your specific situation.
-                  </p>
-                  <p>
-                    Our experts carefully evaluate the availability of contemporaneous schedule updates, contract requirements, and the quality of available construction schedules to determine the most effective approach for your claim, ensuring robust results that stand up to scrutiny.
-                  </p>
-                </div>
-              </Slide>
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <Slide>
+              <div className="relative">
+                <img src="/services/8.png" alt="Claims Analysis" className="rounded-2xl shadow-2xl shadow-black/50" />
+                <div className="absolute -bottom-4 right-2 md:-bottom-6 md:-right-6 bg-sec text-dark px-4 py-2 md:px-6 md:py-4 rounded-xl font-bold text-sm md:text-lg shadow-lg">Expert Methodology</div>
+              </div>
+            </Slide>
+            <div className="space-y-6">
+              <Slide><h2 className="text-white font-bold text-3xl md:text-4xl leading-tight">Comprehensive <span className="text-sec">Claims Assessment</span></h2></Slide>
+              <Slide><p className="text-white/70 text-base md:text-lg leading-relaxed">Using advanced forensic scheduling techniques, we identify delay events and impacts, establishing causation through detailed analysis of documentation and schedules.</p></Slide>
+              <Slide><p className="text-white/70 text-base md:text-lg leading-relaxed">We employ Time Impact Analysis, Windows Analysis, and As-Planned vs. As-Built Analysis to ensure robust results that stand up to scrutiny.</p></Slide>
             </div>
-          </div>
-
-          {/* Services Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Our Claims Analysis Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Delay Analysis</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Detailed analysis of project delays using Critical Path Method (CPM) techniques to identify causes, establish entitlement, and quantify time impacts on project schedules.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Disruption & Productivity Loss</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Assessment of productivity losses resulting from multiple changes, interference, and alterations in work sequence, using measured mile and other industry-accepted methodologies.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Quantum Assessment</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Calculation and preparation of cost schedules for delay damages including extended field office overhead, unabsorbed home office overhead, standby equipment, and lost revenue.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Schedule Analysis</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Forensic review of project schedules to identify critical path impacts, concurrent delays, and responsibility allocation between project stakeholders.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Claims Documentation</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Preparation of comprehensive claims documentation including detailed narratives, supporting evidence, and visual presentations that clearly communicate complex technical issues.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="text-white font-bold text-lg">Proactive Claims Management</h4>
-                  <p className="text-white text-sm md:text-base">
-                    Implementation of strategies to identify potential issues early, maintain proper documentation, and minimize the impact of claims on project delivery and stakeholder relationships.
-                  </p>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Analysis Methods Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Forensic Scheduling Methods
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-6">
-                <div className="bg-ft rounded-xl p-6 border-[3px] border-ftborder">
-                  <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <div className="md:col-span-1 flex items-center justify-center">
-                      <div className="bg-darker rounded-full w-16 h-16 flex items-center justify-center">
-                        <span className="text-sec font-bold text-xl">01</span>
-                      </div>
-                    </div>
-                    <div className="md:col-span-4">
-                      <h4 className="text-sec font-bold text-lg mb-2">Time Impact Analysis (TIA)</h4>
-                      <p className="text-white text-sm md:text-base">
-                        A forward-looking analysis that measures the impact of specific delay events on the project schedule by inserting delay activities into an updated schedule at the time of occurrence. This method is particularly effective when contemporaneous schedule updates are available.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-ft rounded-xl p-6 border-[3px] border-ftborder">
-                  <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <div className="md:col-span-1 flex items-center justify-center">
-                      <div className="bg-darker rounded-full w-16 h-16 flex items-center justify-center">
-                        <span className="text-sec font-bold text-xl">02</span>
-                      </div>
-                    </div>
-                    <div className="md:col-span-4">
-                      <h4 className="text-sec font-bold text-lg mb-2">Windows Analysis</h4>
-                      <p className="text-white text-sm md:text-base">
-                        Divides the project into discrete time periods or "windows" to analyze delays incrementally, allowing for a detailed understanding of critical path shifts and delay responsibility throughout the project timeline.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-ft rounded-xl p-6 border-[3px] border-ftborder">
-                  <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <div className="md:col-span-1 flex items-center justify-center">
-                      <div className="bg-darker rounded-full w-16 h-16 flex items-center justify-center">
-                        <span className="text-sec font-bold text-xl">03</span>
-                      </div>
-                    </div>
-                    <div className="md:col-span-4">
-                      <h4 className="text-sec font-bold text-lg mb-2">As-Planned vs. As-Built Analysis</h4>
-                      <p className="text-white text-sm md:text-base">
-                        Compares the planned schedule against what actually occurred, identifying variances and determining the causes and responsibilities for delays. This method is useful when detailed contemporaneous records are available.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Slide>
-          </div>
-
-          {/* Benefits Section */}
-          <div className="w-full py-8">
-            <Slide>
-              <div className="space-y-4 w-full">
-                <h3 className="font-semibold text-sec text-xl md:text-2xl">
-                  Benefits of Our Claims Analysis Services
-                </h3>
-                <hr
-                  className="border-0 w-full"
-                  style={{
-                    backgroundColor: "#414141",
-                    height: 1,
-                  }}
-                />
-              </div>
-              <div className="mt-6 space-y-4 font-normal text-sm md:text-base">
-                <p className="text-white transition-all duration-150 transform hover:scale-105">
-                  Our claims analysis services provide numerous benefits to your organization, including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-white transition-all duration-150 transform hover:scale-105">
-                  <li>Expert identification of delay events and their impacts on project schedules</li>
-                  <li>Clear establishment of entitlement through detailed causation analysis</li>
-                  <li>Accurate quantification of delays and associated costs</li>
-                  <li>Strong, defensible documentation that stands up to scrutiny</li>
-                  <li>Strategic advice on claim presentation and negotiation</li>
-                  <li>Reduced risk of protracted disputes through comprehensive analysis</li>
-                  <li>Expert support throughout dispute resolution processes</li>
-                  <li>Knowledge transfer to improve future project management practices</li>
-                </ul>
-              </div>
-            </Slide>
-          </div>
-
-          {/* CTA Section */}
-          <div className="w-full py-8 flex flex-col items-center">
-            <Slide>
-              <div className="text-center max-w-2xl mx-auto space-y-6">
-                <h3 className="text-sec font-bold text-xl md:text-2xl">
-                  Need Expert Claims Analysis?
-                </h3>
-                <p className="text-white text-sm md:text-base">
-                  Contact us today to discuss how our claims analysis services can help you resolve construction disputes efficiently and protect your interests.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                  <Link href="/contact">
-                    <button className="bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
-                      Contact Us
-                    </button>
-                  </Link>
-                  <Link href="/adhoc/forensics">
-                    <button className="bg-transparent border-2 border-sec hover:bg-sec hover:text-black rounded-[40px] w-full sm:w-auto flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold text-white transition-all duration-150 transform hover:scale-105">
-                      Back to Forensics
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </Slide>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section id="services" className="py-6 md:py-8 bg-dark relative overflow-hidden">
+        <img src="/glowing light.png" className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" alt="light" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10">
+            <Slide>
+              <span className="text-sec text-sm font-semibold tracking-wider uppercase">What We Offer</span>
+              <h2 className="text-white font-bold text-3xl md:text-4xl mt-3">Our Claims Analysis Services</h2>
+            </Slide>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Slide key={index}>
+                <div className="group h-full bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/[0.06] hover:border-sec/30 transition-all duration-300">
+                  <h3 className="text-white font-bold text-lg mb-3 group-hover:text-sec transition-colors">{service.title}</h3>
+                  <p className="text-white/60 text-sm leading-relaxed">{service.description}</p>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-6 md:py-8 bg-darker">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+              <Slide>
+                <span className="text-sec text-sm font-semibold tracking-wider uppercase">Why Choose Us</span>
+                <h2 className="text-white font-bold text-3xl md:text-4xl mt-3 mb-6">Benefits of Our <span className="text-sec">Claims Analysis</span></h2>
+              </Slide>
+              <Slide><p className="text-white/70 text-base md:text-lg leading-relaxed mb-6">Resolve construction disputes efficiently with expert analysis and defensible documentation.</p></Slide>
+              <Slide><Link href="/contact"><button className="bg-sec hover:bg-sec/90 text-dark rounded-full px-8 py-4 text-sm font-bold transition-all duration-300 hover:scale-105">Get Started Today</button></Link></Slide>
+            </div>
+            <div className="space-y-3">
+              {benefits.map((benefit, index) => (
+                <Slide key={index}>
+                  <div className="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-sec/20 transition-all duration-300">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-sec/10 flex items-center justify-center mt-0.5">
+                      <svg className="w-3 h-3 text-sec" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                    </div>
+                    <p className="text-white/80 text-sm">{benefit}</p>
+                  </div>
+                </Slide>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CTA title="Need Expert Claims Analysis?" description="Contact us today to discuss how our claims analysis services can help resolve construction disputes efficiently." primaryButton={{ text: "Contact Us", href: "/contact" }} secondaryButton={{ text: "Back to Forensics", href: "/adhoc/forensics" }} />
       <Footer />
     </>
   )

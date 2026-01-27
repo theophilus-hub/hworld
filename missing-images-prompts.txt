@@ -1,0 +1,361 @@
+================================================================================
+ADHOC SERVICE PAGES - MISSING IMAGES & AI GENERATION PROMPTS
+================================================================================
+
+This file contains a list of all adhoc service pages that are missing their
+hero images, along with detailed AI image generation prompts for each.
+
+Generated: January 27, 2026
+
+================================================================================
+SUMMARY
+================================================================================
+
+PAGES WITH EXISTING IMAGES (3):
+- /app/adhoc/services/functional-lead/page.jsx → /funclead.png ✓
+- /app/adhoc/services/planning-management/page.jsx → /planman.png ✓
+- /app/adhoc/services/pmo/page.jsx → /pmo.png ✓
+
+PAGES WITH MISSING IMAGES (10):
+1. 4D Planning
+2. Commercial Management
+3. Cost Management
+4. Document Management
+5. Project Controls
+6. Project Estimations
+7. Risk Management
+8. Claims Analysis (Forensics)
+9. Dispute Resolution (Forensics)
+10. Expert Witness (Forensics)
+
+================================================================================
+DETAILED PROMPTS FOR EACH MISSING IMAGE
+================================================================================
+
+--------------------------------------------------------------------------------
+1. 4D PLANNING
+--------------------------------------------------------------------------------
+Page: /app/adhoc/services/4d-planning/page.jsx
+Missing Image: /4d-planning.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+4D planning combines 3D models with time/schedule data to visualize construction
+sequences. It's used for clash detection, claims visualization, sequencing, and
+scenario planning. The service uses software like Synchro integrated with Revit
+and AutoCAD.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of a modern construction project
+control room. In the foreground, a large curved monitor displays a 3D BIM
+(Building Information Model) of a complex building structure with a timeline
+bar showing construction phases highlighted in warm amber/gold (#FFAD4A) and
+blue tones. The 3D model shows a partially completed high-rise building with
+transparent sections revealing internal structures. A professional engineer
+in business casual attire is pointing at the screen, analyzing the construction
+sequence. The room has subtle warm amber accent lighting from desk lamps,
+glass walls showing a city skyline at golden hour in the background. Clean,
+corporate environment with technical sophistication. Warm gold accent elements
+visible in the room decor - a gold-framed clock, amber LED strip under the
+desk. Photorealistic, shot on Canon EOS R5, 35mm lens, f/2.8, warm golden
+hour lighting mixed with screen glow. Style: corporate technology,
+construction industry, modern office, warm professional tones."
+
+--------------------------------------------------------------------------------
+2. COMMERCIAL MANAGEMENT
+--------------------------------------------------------------------------------
+Page: /app/adhoc/services/commercial-management/page.jsx
+Missing Image: /commercial-management.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+Commercial management covers financial oversight of construction projects from
+conception to final account. Services include tendering, sub-contracting, cost
+reporting, forecasting, change control, payment applications, and final accounting.
+Focus on financial transparency and value-driven management.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of a senior business meeting in
+a modern glass-walled conference room. A diverse team of 4-5 professionals
+in business attire are gathered around a large table reviewing financial
+documents and construction contracts. The table has neatly organized stacks
+of documents with amber/gold (#FFAD4A) sticky note tabs, tablets showing
+financial charts with warm gold and blue color schemes, and a laptop
+displaying a spreadsheet with cost projections. One person is standing,
+presenting to the group with a large wall-mounted screen showing a project
+budget breakdown with gold accent highlights on key figures. Through the
+glass walls, a construction site with cranes is visible in warm golden hour
+morning light. Professional, corporate atmosphere with warm amber-toned
+lighting. Gold-accented pens and a brass desk clock visible on the table.
+Photorealistic, shot on Sony A7R IV, 24-70mm lens, f/4, warm natural daylight.
+Style: corporate finance, construction industry, business meeting, warm
+professional ambiance."
+
+--------------------------------------------------------------------------------
+3. COST MANAGEMENT
+--------------------------------------------------------------------------------
+Page: /app/adhoc/services/cost-management/page.jsx
+Missing Image: /cost-management.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+Cost management focuses on baseline management, accurate forecasting, budget
+development, cash flow management, value engineering, and earned value management.
+Uses proven processes and systems for right-first-time data. Helps control
+project costs and prevent budget overruns.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of a cost engineer's workstation
+in a modern open-plan office. The main focus is on dual ultra-wide monitors
+displaying detailed cost tracking dashboards with S-curve graphs showing
+planned vs actual costs in warm amber/gold (#FFAD4A) and dark blue color
+schemes, earned value charts with golden accent lines, and cash flow
+projections. A brass calculator, financial reports with amber-highlighted
+figures, and a coffee cup in a gold-rimmed mug sit on the clean wooden desk.
+The engineer's hands are visible typing on a keyboard, wearing a gold-accented
+watch. In the blurred background, other professionals work at similar stations,
+and a whiteboard shows a project cost breakdown with amber marker highlights.
+Warm golden afternoon light streams through large windows. Photorealistic,
+shot on Nikon Z7 II, 50mm lens, f/2.8, shallow depth of field focusing on
+the screen data, warm color temperature. Style: corporate finance, data
+analytics, construction cost control, professional workplace, warm tones."
+
+--------------------------------------------------------------------------------
+4. DOCUMENT MANAGEMENT
+--------------------------------------------------------------------------------
+Page: /app/adhoc/services/document-management/page.jsx
+Missing Image: /document-management.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+Document management involves organizing, storing, and protecting project documents.
+Services include metadata management, document control, electronic filing systems,
+storage and retrieval, management reporting, and staff training. Focus on
+ensuring accurate, accessible documentation throughout project lifecycle.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of a modern document control
+center. A professional document controller is working at a workstation with
+multiple monitors showing a document management system interface with folder
+hierarchies, amber/gold (#FFAD4A) status indicators, revision tracking tables
+with gold highlight on approved items, and approval workflow diagrams.
+Physical elements include neatly organized filing cabinets with gold and
+amber color-coded tabs in the background, a scanner on the desk, and a tablet
+with a gold case showing a document checklist. The interface displays
+construction drawings thumbnails with warm amber accent UI elements. Clean,
+organized environment with warm overhead lighting and a brass-framed clock
+on the wall. Gold-accented desk accessories including a pen holder and
+stapler. Photorealistic, shot on Canon EOS R5, 35mm lens, f/4, warm even
+lighting. Style: corporate office, information management, construction
+documentation, organized professional workspace, warm gold accents."
+
+--------------------------------------------------------------------------------
+5. PROJECT CONTROLS
+--------------------------------------------------------------------------------
+Page: /app/adhoc/services/project-controls/page.jsx
+Missing Image: /project-controls.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+Project controls integrates cost management, schedule management, risk management,
+and document control for comprehensive project oversight. Uses data-driven
+approach with advanced analytics for early identification of trends and issues.
+Manages complex construction and engineering projects.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of a state-of-the-art project
+control room or 'war room' for a major construction project. A large wall
+of connected screens displays an integrated project dashboard showing Gantt
+charts with amber/gold (#FFAD4A) milestone markers, cost performance indices
+(CPI/SPI gauges with gold needle indicators), risk heat maps, and resource
+histograms with warm gold accent bars. A diverse team of 3-4 project control
+professionals in smart business attire are standing and analyzing the data,
+one pointing at a critical path highlighted in amber on the schedule. The
+room has a long table with laptops, printed progress reports with gold tabs,
+and tablets. Modern industrial design with exposed ceiling elements, dark
+walls with subtle warm amber LED accent strips along the baseboards,
+contrasting with bright screen displays. Photorealistic, shot on Sony A1,
+16-35mm wide angle lens, f/5.6, dramatic warm-toned lighting from screens.
+Style: mission control, construction management, data-driven decision making,
+corporate technology, warm professional ambiance."
+
+--------------------------------------------------------------------------------
+6. PROJECT ESTIMATIONS
+--------------------------------------------------------------------------------
+Page: /app/adhoc/services/project-estimations/page.jsx
+Missing Image: /project-estimations.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+Project estimation services cover bid submission, tendering, cost estimating,
+benchmarking, and auditing. Focus on robust estimates with sufficient change
+processes. Works collaboratively to prepare estimates for any project stage
+and evaluate third-party estimates.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of a senior quantity surveyor
+or cost estimator at work in a professional office setting. The focus is on
+a large desk covered with detailed construction drawings, takeoff sheets with
+measurements highlighted in warm amber/gold (#FFAD4A), a brass scale ruler,
+and a laptop showing estimation software with gold accent UI elements and
+line-item cost breakdowns. A second monitor displays a 3D building model
+with quantity takeoff data overlaid in amber highlight. The professional is
+using a gold-tipped pen to annotate the drawings, with a brass calculator
+and leather-bound reference cost books nearby. Large architectural blueprints
+are pinned to a board with gold pushpins on the wall behind. Warm golden
+afternoon light from a window illuminates the workspace. Photorealistic,
+shot on Nikon D850, 50mm lens, f/3.5, warm golden natural lighting. Style:
+construction estimation, quantity surveying, detailed analysis, professional
+expertise, warm amber accents."
+
+--------------------------------------------------------------------------------
+7. RISK MANAGEMENT
+--------------------------------------------------------------------------------
+Page: /app/adhoc/services/risk-management/page.jsx
+Missing Image: /risk-management.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+Risk management involves proactive identification and mitigation of project risks.
+Focus on whole programme perspective, establishing robust risk processes, working
+with senior management to identify objectives, and providing training on risk
+and opportunity awareness.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of a risk management workshop
+in a modern corporate meeting room. A facilitator stands at a large digital
+whiteboard displaying a risk register matrix with probability/impact axes
+and colored risk dots, with amber/gold (#FFAD4A) prominently used for
+opportunities and medium-priority items. The board shows a bow-tie risk
+diagram with gold connecting lines and mitigation action plans. A team of
+5-6 professionals sit around an oval table with a warm wood finish, some
+taking notes with gold pens, others engaged in discussion. Amber and gold
+sticky notes are prominently arranged on the table for risk identification
+exercises. A large window shows a construction project site bathed in golden
+hour light in the background. Warm brass pendant lights hang above the table.
+Professional, collaborative atmosphere. Photorealistic, shot on Canon EOS R6,
+24mm lens, f/4, warm balanced natural and artificial lighting. Style:
+corporate workshop, strategic planning, risk assessment, team collaboration,
+warm gold accents."
+
+--------------------------------------------------------------------------------
+8. CLAIMS ANALYSIS (FORENSICS)
+--------------------------------------------------------------------------------
+Page: /app/adhoc/forensics/claims-analysis/page.jsx
+Missing Image: /claims-analysis.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+Claims analysis provides expert assessment of construction claims related to
+delays, disruptions, variations, and additional costs. Uses forensic scheduling
+techniques like Time Impact Analysis, Windows Analysis, As-Planned vs As-Built
+Analysis. Focuses on establishing causation and quantifying delays.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of a forensic schedule analyst
+working on a complex delay claim analysis. The scene shows a large curved
+monitor displaying detailed Primavera P6 or Microsoft Project schedule with
+critical path highlighted, baseline vs actual bars comparison with amber/gold
+(#FFAD4A) used for actual progress bars, and delay fragments marked with
+gold annotations. A second screen shows a Time Impact Analysis diagram with
+before/after schedule comparisons using warm amber highlights. The desk has
+thick ring binders with gold-lettered labels 'Project Records', 'Contemporaneous
+Documents', and 'Daily Logs'. Printed timeline charts with handwritten
+analysis notes and amber highlighters are spread across the desk. A brass
+desk lamp provides warm focused lighting. The analyst is wearing gold-rimmed
+reading glasses, studying a specific section intently. Serious, analytical
+atmosphere. Photorealistic, shot on Sony A7 III, 85mm lens, f/2.8, dramatic
+warm side lighting. Style: forensic analysis, legal evidence preparation,
+detailed investigation, professional expertise, warm amber accents."
+
+--------------------------------------------------------------------------------
+9. DISPUTE RESOLUTION (FORENSICS)
+--------------------------------------------------------------------------------
+Page: /app/adhoc/forensics/dispute-resolution/page.jsx
+Missing Image: /dispute-resolution.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+Dispute resolution services support mediation, arbitration, and litigation for
+construction conflicts. Focus on strategic dispute management, identifying core
+issues, analyzing evidence, and developing strategies for favorable outcomes.
+Emphasizes collaborative resolution when possible.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of a formal mediation or
+arbitration session in an upscale legal conference room. Two parties sit
+on opposite sides of a long polished mahogany table with brass inlay details,
+each with their legal teams and technical advisors. At the head of the table,
+a neutral mediator or arbitrator reviews documents under a warm brass desk
+lamp. The table has organized stacks of evidence binders with gold spine
+labels, construction photographs, schedule printouts with amber (#FFAD4A)
+highlighted dates, and tablets. A large screen displays a presentation slide
+showing a project timeline with key events marked in gold accent color. The
+room has warm wood-paneled walls, gold-framed professional artwork, and warm
+amber-toned formal lighting from brass wall sconces. Participants are in
+formal business attire. Photorealistic, shot on Canon EOS R5, 35mm lens,
+f/4, warm professional lighting. Style: legal proceedings, alternative
+dispute resolution, formal business setting, professional negotiation,
+warm gold accents."
+
+--------------------------------------------------------------------------------
+10. EXPERT WITNESS (FORENSICS)
+--------------------------------------------------------------------------------
+Page: /app/adhoc/forensics/expert-witness/page.jsx
+Missing Image: /expert-witness.png
+Image Dimensions: Recommended 1200x800px (landscape, 3:2 ratio)
+
+CONTEXT:
+Expert witness services provide independent, authoritative testimony for
+construction claims and disputes. Experts have extensive experience in planning,
+scheduling, and project controls. Focus on presenting complex information
+accessibly to judges, arbitrators, and juries.
+
+AI IMAGE PROMPT:
+"A highly realistic, professional photograph of an expert witness giving
+testimony in a modern arbitration hearing or courtroom setting. The expert,
+a distinguished professional in their 50s wearing a formal dark suit with a
+subtle gold tie pin, stands at a presentation screen explaining a complex
+construction schedule analysis to a panel. The screen shows a clear,
+professionally designed slide with a simplified timeline diagram, key findings
+highlighted in amber/gold (#FFAD4A), and the company logo subtly visible.
+The expert gestures confidently at specific data points. In the foreground,
+slightly blurred, are legal teams taking notes with gold pens, and an
+arbitration panel listening attentively behind a bench with brass nameplates.
+Evidence binders with gold-lettered spines and technical reports are visible
+on polished wood tables. The setting is formal with warm wood accents, brass
+light fixtures, and warm professional lighting. Photorealistic, shot on
+Nikon Z9, 70-200mm lens, f/4, dramatic warm courtroom lighting. Style: legal
+testimony, expert presentation, authoritative professional, formal proceedings,
+warm gold accents."
+
+================================================================================
+NOTES FOR IMAGE GENERATION
+================================================================================
+
+1. CONSISTENCY: All images should maintain a consistent professional, corporate
+   aesthetic that aligns with Hworld's brand identity.
+
+2. COLOR SCHEME: Incorporate subtle gold/amber accent colors (#FFAD4A) as
+   specified in each prompt. This is Hworld's secondary brand color. The
+   accents should feel natural and integrated - through lighting, accessories,
+   UI elements, or environmental details - not as obvious filters or overlays.
+
+3. ASPECT RATIO: All images should be landscape orientation (approximately
+   3:2 or 16:9 ratio) to fit the hero image placement on the service pages.
+
+4. QUALITY: Generate at highest resolution possible, minimum 1200x800px for
+   web display, preferably 2400x1600px for retina displays.
+
+5. STYLE: Photorealistic is preferred over illustrated or AI-artistic styles
+   to maintain professional credibility.
+
+6. FILE FORMAT: Save as PNG for best quality, or high-quality JPG (90%+) for
+   smaller file sizes.
+
+7. NAMING: Use the exact filenames listed above (e.g., "4d-planning.png") and
+   place in the /public folder.
+
+================================================================================
+END OF FILE
+================================================================================
