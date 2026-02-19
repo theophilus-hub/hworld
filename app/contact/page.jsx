@@ -6,7 +6,7 @@ function Contact() {
     <>
       <Nav />
 
-      <div className="flex flex-col flex-1 justify-center items-center space-y-6 mt-20 mb-[20px] md:mb-[40px] px-4 md:px-16">
+      <div className="flex flex-col flex-1 justify-center items-center space-y-6 mt-24 mb-[20px] md:mb-[40px] px-4 md:px-16">
         <div className=" space-y-14 relative w-full">
           <div className=" w-full mx-0 md:mx-6 px-6 md:px-12">
             <h1 className=" opacity-60 font-poppins px-2 xl:px-16 text-white font-bold text-left text-xl md:text-3xl">
@@ -63,10 +63,10 @@ function Contact() {
           <div className="relative group">
             {/* Decorative background elements */}
             <div className="absolute top-0 left-0 w-32 h-32 bg-sec/5 rounded-full blur-3xl -z-10"></div>
-            
+
             <div className="relative bg-gradient-to-br from-white/[0.03] to-transparent backdrop-blur-sm rounded-[32px] p-6 md:p-10 border border-white/5">
               <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-                
+
                 {/* Contact Details */}
                 <div className="lg:w-1/2 w-full space-y-8">
                   <div className="space-y-2">
@@ -75,7 +75,7 @@ function Contact() {
                       Get In Touch
                     </h2>
                   </div>
-                  
+
                   {/* Phone */}
                   <div className="flex items-start gap-4 group/item hover:translate-x-2 transition-transform duration-300">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sec/20 to-sec/10 rounded-xl flex items-center justify-center">
@@ -90,7 +90,7 @@ function Contact() {
                       </a>
                     </div>
                   </div>
-                  
+
                   {/* Email */}
                   <div className="flex items-start gap-4 group/item hover:translate-x-2 transition-transform duration-300">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sec/20 to-sec/10 rounded-xl flex items-center justify-center">
@@ -98,14 +98,29 @@ function Contact() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
-                    <div>
-                      <p className="text-white/60 text-sm">General Inquiries</p>
-                      <a href="mailto:info@hworldinc.com" className="text-white text-lg font-semibold hover:text-sec transition-colors">
-                        info@hworldinc.com
-                      </a>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="text-white/60 text-sm">General Inquiries</p>
+                        <a href="mailto:info@hworldinc.com" className="text-white text-lg font-semibold hover:text-sec transition-colors">
+                          info@hworldinc.com
+                        </a>
+                      </div>
+
+                      <div>
+                        <p className="text-white/60 text-xs">Construction Inquiries</p>
+                        <a href="mailto:info@hworldinc.com" className="text-white text-md font-semibold hover:text-sec transition-colors">
+                          construction@hworldinc.com
+                        </a>
+                      
+                        <p className="text-white/60 text-xs">Marine Inquiries</p>
+                        <a href="mailto:info@hworldinc.com" className="text-white text-lg font-semibold hover:text-sec transition-colors">
+                          marine@hworldinc.com
+                        </a>
+                      </div>
+
                     </div>
                   </div>
-                  
+
                   {/* Address */}
                   <div className="flex items-start gap-4 group/item hover:translate-x-2 transition-transform duration-300">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sec/20 to-sec/10 rounded-xl flex items-center justify-center">
@@ -123,7 +138,7 @@ function Contact() {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Map */}
                 <div className="lg:w-1/2 w-full">
                   <div className="relative h-[400px] rounded-[24px] overflow-hidden shadow-2xl">
@@ -139,7 +154,7 @@ function Contact() {
                     ></iframe>
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -147,7 +162,7 @@ function Contact() {
       </div>
 
       {/* Department-Specific Contact Section */}
-      <div className="w-full flex flex-col flex-1 justify-center items-center space-y-6 mb-[10px] md:mb-[20px] px-4 md:px-16">
+      {/* <div className="w-full flex flex-col flex-1 justify-center items-center space-y-6 mb-[10px] md:mb-[20px] px-4 md:px-16">
         <div className="w-full max-w-7xl">
           <div className="space-y-8">
             <div className="text-center space-y-2">
@@ -159,7 +174,7 @@ function Contact() {
 
             <div className="grid md:grid-cols-2 gap-6">
               {/* Construction Department */}
-              <div className="relative group">
+              {/* <div className="relative group">
                 <div className="relative bg-gradient-to-br from-white/[0.05] to-transparent backdrop-blur-sm rounded-[24px] p-6 md:p-8 border border-white/5 hover:border-sec/20 transition-all duration-300">
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
@@ -184,10 +199,10 @@ function Contact() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Marine Department */}
-              <div className="relative group">
+              {/* <div className="relative group">
                 <div className="relative bg-gradient-to-br from-white/[0.05] to-transparent backdrop-blur-sm rounded-[24px] p-6 md:p-8 border border-white/5 hover:border-sec/20 transition-all duration-300">
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
@@ -216,36 +231,36 @@ function Contact() {
             </div>
           </div>
         </div>
+      </div>  */}
+
+      <div className=" w-full flex flex-col flex-1 justify-start items-start space-y-6 mt-8 mb-[20px] md:mb-[40px] px-8 xl:px-56">
+        <h2 className="text-3xl font-bold text-white">Our Other <span className="text-white">Offices</span></h2>
+
+        <div className="flex space-x-4 justify-start items-start text-white font-semibold">
+          <img src="/location.png" alt="" />
+          <h4>
+            <span className="text-sec">Scotland </span><br /> Aberdeen |   Aberdeenshire  |  AB11 6LZ  | United Kingdom.
+          </h4>
+        </div>
+        <div className="flex space-x-4 justify-start items-start text-white font-semibold">
+          <img src="/location.png" alt="" />
+          <h4>
+            <span className="text-sec">Latvia </span><br /> Basuskas Novads  |  Islices Pagasts  |  Kalnares  |  LV-3914 Bauska
+          </h4>
+        </div>
+        <div className="flex space-x-4 justify-start items-start text-white font-semibold">
+          <img src="/location.png" alt="" />
+          <h4>
+            <span className="text-sec">United State</span> <br />   Richmond  | 77407  | Texas  | United States.
+          </h4>
+        </div>
+        <div className="flex space-x-4 justify-start items-start text-white font-semibold">
+          <img src="/location.png" alt="" />
+          <h4>
+            <span className="text-sec">Nigeria</span> <br /> Ikate Lekki  | Lagos  | Nigeria
+          </h4>
+        </div>
       </div>
-
-<div className=" w-full flex flex-col flex-1 justify-start items-start space-y-6 mt-8 mb-[20px] md:mb-[40px] px-8 xl:px-56">
-<h2 className="text-3xl font-bold text-white">Our Other <span className="text-white">Offices</span></h2>
-
-<div className="flex space-x-4 justify-start items-start text-white font-semibold">
-              <img src="/location.png" alt="" />
-              <h4>
-              <span className="text-sec">Scotland </span><br /> Aberdeen |   Aberdeenshire  |  AB11 6LZ  | United Kingdom.
-              </h4>
-            </div>
-            <div className="flex space-x-4 justify-start items-start text-white font-semibold">
-              <img src="/location.png" alt="" />
-              <h4>
-              <span className="text-sec">Latvia </span><br /> Basuskas Novads  |  Islices Pagasts  |  Kalnares  |  LV-3914 Bauska
-              </h4>
-            </div>
-            <div className="flex space-x-4 justify-start items-start text-white font-semibold">
-              <img src="/location.png" alt="" />
-              <h4>
-              <span className="text-sec">United State</span> <br />   Richmond  | 77407  | Texas  | United States.
-              </h4>
-            </div>
-            <div className="flex space-x-4 justify-start items-start text-white font-semibold">
-              <img src="/location.png" alt="" />
-              <h4>
-              <span className="text-sec">Nigeria</span> <br /> Ikate Lekki  | Lagos  | Nigeria
-              </h4>
-            </div>
-</div>
       <hr
         className="border-0 my-6 mx-4 md:mx-20"
         style={{

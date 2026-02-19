@@ -32,13 +32,7 @@ export default function Home() {
     <>
       <Nav />
       <Hero />
-      <Job />
-      <About />
-      <CTA 
-        title="Ready to Partner with Us?"
-        description="Discover how Hworld can help transform your next project with our expertise across construction, marine, and innovative solutions."
-        primaryButton={{ text: "Contact Us", href: "/contact" }}
-      />
+     
       <Footer />
     </>
 

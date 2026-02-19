@@ -37,20 +37,10 @@ function About() {
               </div>
               <div className="space-y-4 md:space-y-6 font-normal text-xs md:text-base">
                 <p>
-                  Our mission is to drive innovation and deliver sustainable
-                  solutions across the industries we serve. We are committed to
-                  exceeding client expectations by consistently providing
-                  high-quality services in construction, marine engineering, and
-                  hospitality. Through collaboration and forward-thinking
-                  approaches, we aim to create lasting value in everything we
-                  do.
+                  We drive innovation and deliver sustainable solutions across the industries we serve. We are committed to exceeding client expectations by consistently providing high-quality services in ad hoc planning, construction, marine engineering, and global deal sourcing. Through collaboration and forward-thinking approaches, we create lasting value in everything we do.
                 </p>
                 <p>
-                  Our focus is on shaping a better future by integrating
-                  advanced technology, sustainable practices, and a
-                  customer-first mindset. At Hworld, we believe that by
-                  fostering growth and innovation, we can positively impact the
-                  industries and communities we serve.
+                  We focus on shaping a better future by integrating advanced technology, sustainable practices, and a customer-first mindset. At Hworld, we believe that fostering growth and innovation enables us to make a meaningful and positive impact on the industries and communities we serve.
                 </p>
               </div>
             </div>
@@ -70,20 +60,9 @@ function About() {
               </div>
               <div className="space-y-4 md:space-y-6 font-normal text-xs md:text-base">
                 <p>
-                  Hworld is a versatile company with expertise across multiple
-                  industries, including construction, marine engineering, and
-                  hospitality. We are dedicated to delivering innovative
-                  solutions that prioritize sustainability, quality, and client
-                  satisfaction. Our ability to adapt to the changing landscape
-                  ensures we consistently provide value across all sectors.
+                  Hworld is a versatile organisation with expertise across multiple industries, including project planning, construction, marine engineering, and deal sourcing. We are committed to delivering innovative solutions that prioritise sustainability, quality, and client satisfaction. Our ability to adapt to evolving industry demands enables us to consistently deliver value across all sectors we serve.
                 </p>
-                <p>
-                  From building cutting-edge infrastructure to creating
-                  unforgettable hospitality experiences, we approach every
-                  project with a commitment to excellence. At Hworld, we believe
-                  in shaping the future through forward-thinking strategies and
-                  unwavering dedication to success.
-                </p>
+               <p></p>
               </div>
             </div>
           </div>

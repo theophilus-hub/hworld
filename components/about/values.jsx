@@ -40,7 +40,7 @@ function Values() {
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-x-2 md:gap-x-6 gap-y-10 md:gap-y-20 justify-center items-start">
+                <div className="grid grid-cols-2 gap-x-2 md:gap-x-6 gap-y-5 md:gap-y-10 justify-center items-start">
                 <Slide>
    <div className="space-y-2  w-full flex flex-col items-start justify-start ">
                     <img src="/bulb.png" alt="" />

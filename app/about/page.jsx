@@ -7,13 +7,16 @@ import Career from "../../components/about/career"
 import Values from "../../components/about/values"
 import CTA from "@/components/cta"
 import Footer from "../../components/footer"
+import Job from "@/components/job"
+import Abouts from "@/components/about";
 
 function About() {
   return (
     <>
     <Nav />
     <AboutSub />
-    <Team />
+     <Job />
+    <Abouts />
     <Values />
     <CTA 
       title="Ready to Learn More About Us?"

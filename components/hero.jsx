@@ -21,7 +21,7 @@ function Hero() {
 
   return (
     <>
-      <div className="relative flex flex-col justify-center items-center mt-0 mb-0 w-full min-h-screen overflow-hidden">
+      <div className="relative flex flex-col justify-center items-center mt-0 mb-4 md:mb-8 w-full min-h-screen overflow-hidden">
         {/* DarkVeil Background - Mobile (lower resolution scale) */}
         <div className="absolute inset-0 w-full h-full z-0 lg:hidden">
           <DarkVeil
