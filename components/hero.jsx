@@ -11,6 +11,7 @@ const NoSSRGlobe = dynamic(() => import("@/components/hworldGlobe"), {
   ssr: false,
 });
 
+
 function Hero() {
   const words = ["Industries", "Construction", "Marine", "Trade", "Ventures"];
   const ref = React.useRef(null);

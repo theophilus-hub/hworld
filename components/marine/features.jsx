@@ -29,7 +29,7 @@ function Features() {
                 </h2>
               </div>
               <div>
-                <p className="text-white text-xs md:text-sm lg:text-base">
+                <p className="text-white text-xs md:text-xs lg:text-sm text-left">
                   Select flexible terms, starting from just 2 years, to keep
                   your projects running smoothly without the burden of upfront
                   capital.
@@ -47,7 +47,7 @@ function Features() {
                 </h2>
               </div>
               <div>
-                <p className="text-white text-xs md:text-sm lg:text-base">
+                <p className="text-white text-xs md:text-xs lg:text-sm text-left">
                   Our rigs require minimal maintenance and include a stock of
                   spare parts, guaranteeing continuous operations without
                   delays.
@@ -65,7 +65,7 @@ function Features() {
                 </h2>
               </div>
               <div>
-                <p className="text-white text-xs md:text-sm lg:text-base">
+                <p className="text-white text-xs md:text-xs lg:text-sm text-left">
                   Customize your lease to align with tender requirements or
                   drilling scope, offering maximum operational flexibility.
                 </p>
@@ -82,7 +82,7 @@ function Features() {
                 </h2>
               </div>
               <div>
-                <p className="text-white text-xs md:text-sm lg:text-base">
+                <p className="text-white text-xs md:text-xs lg:text-sm text-left">
                   Grow your rig fleet without the initial capital expenses or
                   concerns about depreciation.
                 </p>
@@ -99,7 +99,7 @@ function Features() {
                 </h2>
               </div>
               <div>
-                <p className="text-white text-xs md:text-sm lg:text-base">
+                <p className="text-white text-xs md:text-xs lg:text-sm text-left">
                   Utilize our extensive experience in drilling and oil field
                   services to guarantee the success of your project.
                 </p>
@@ -115,7 +115,7 @@ function Features() {
                 </h2>
               </div>
               <div>
-                <p className="text-white text-xs md:text-sm lg:text-base">
+                <p className="text-white text-xs md:text-xs lg:text-sm text-left">
                   Our team is ready to assist you from lease agreement to
                   operational deployment, facilitating a seamless process.
                 </p>

@@ -51,10 +51,9 @@ function Footer() {
                 </div>
                 <div className="space-y-2 font-semibold text-sm text-white flex flex-col">
                   <h1 className="text-notdark">Follow Us</h1>
-                  <Link href={"/"} className="hover:text-sec transition-colors duration-300">Instagram</Link>
-                  <Link href={"/"} className="hover:text-sec transition-colors duration-300">Facebook</Link>
-                  <Link href={"/"} className="hover:text-sec transition-colors duration-300">LinkedIn</Link>
-                  <Link href={"/"} className="hover:text-sec transition-colors duration-300">Twitter</Link>
+                  <Link href={"https://www.instagram.com/hworldinc/"} target="_blank" rel="noopener noreferrer" className="hover:text-sec transition-colors duration-300">Instagram</Link>
+                  <Link href={"https://www.linkedin.com/in/hworld-incorporated-8a75043b2"} target="_blank" rel="noopener noreferrer" className="hover:text-sec transition-colors duration-300">LinkedIn</Link>
+                  <Link href={"https://x.com/Hworldinc"} target="_blank" rel="noopener noreferrer" className="hover:text-sec transition-colors duration-300">Twitter</Link>
                 </div>
               </div>
             </div>

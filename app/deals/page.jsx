@@ -12,7 +12,7 @@ function Deals() {
   
     <Hero />
     <Services />
-    <Source />
+    {/* <Source /> */}
     <CTA 
       title="Ready to Explore Opportunities?"
       description="Contact us today to discover how our deals and trading expertise can help you find the right solutions for your business."

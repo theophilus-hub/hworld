@@ -18,58 +18,48 @@ function MainList() {
         </div>
       </Slide>
 
-      <div className=" w-full px-4 md:px-8 lg:px-16 xl:px-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 justify-items-center">
+      <div className="w-full px-4 md:px-12 lg:px-20 xl:px-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           <Slide>
             <ListingCard
-              header={"Gas Turbine Plant"}
-              sub={"/"}
-              img={"/gasturbine.png"}
+              header={"400 MW GE-Alstom Power Plant"}
+              pdfUrl={"/pdf/400 MW GE-Alstom HW Brochure.docx.pdf"}
               category="Energy & Power"
-              description="State-of-the-art gas turbine facility with advanced efficiency systems and environmental controls"
+              description="400 MW GE-Alstom gas turbine power plant with advanced combined cycle technology for high-efficiency electricity generation."
             />
           </Slide>
           <Slide>
             <ListingCard
-              header={"CPP Power Plant"}
-              sub={"/"}
-              img={"/powerplant.png"}
+              header={"810 MW GE Frame 9 Power Plant"}
+              pdfUrl={"/pdf/810 MW GE Frame 9 Based HW Brochure .docx.pdf"}
               category="Energy & Power"
-              description="Combined cycle power plant with high-efficiency generation and grid integration capabilities"
+              description="810 MW GE Frame 9 based combined cycle power plant offering large-scale power generation with proven turbine technology."
             />
           </Slide>
           <Slide>
             <ListingCard
-              header={"CCGT Power Plant"}
-              sub={"/"}
-              img={"/powerplant2.png"}
-              category="Energy & Power"
-              description="Combined Cycle Gas Turbine facility featuring cutting-edge technology and sustainable operations"
-            />
-          </Slide>
-          <Slide>
-            <ListingCard
-              header={"Oil Refinery"}
-              sub={"/"}
-              img={"/oilref.png"}
+              header={"Oil Refinery Asset"}
+              pdfUrl={"/pdf/HW - Oil Refinary Asset.pdf"}
               category="Oil & Gas"
-              description="Modern refinery complex with advanced processing capabilities and environmental compliance systems"
-            />
-          </Slide>
-          {/* <Slide>
-            <ListingCard
-              header={"Electrical Engineering"}
-              sub={"Roads, bridges, highways, Railways, Airports, Ports"}
-              img={"/confeatures5.png"}
+              description="Comprehensive oil refinery asset with full processing capabilities for crude oil refining and petroleum product distribution."
             />
           </Slide>
           <Slide>
             <ListingCard
-              header={"Energy"}
-              sub={"Power plants (renewable energy, e.t.c) Wind farms, solar farms Oil and gas infrastructure"}
-              img={"/confeatures6.png"}
+              header={"NOV 1500hp AC Rig 827"}
+              pdfUrl={"/pdf/TDS  -Ideal NOV 1500hp AC Rig 827.pdf"}
+              category="Drilling Rigs"
+              description="Ideal NOV 1500 horsepower AC drilling rig (#827) equipped for demanding drilling operations across diverse environments."
             />
-          </Slide> */}
+          </Slide>
+          <Slide>
+            <ListingCard
+              header={"Drillmec 2000hp Rig 67"}
+              pdfUrl={"/pdf/TDS - Drillmec 2000 hp Rig 67.pdf"}
+              category="Drilling Rigs"
+              description="Drillmec 2000 horsepower drilling rig (#67) designed for heavy-duty drilling applications with high-performance capabilities."
+            />
+          </Slide>
         </div>
       </div>
       

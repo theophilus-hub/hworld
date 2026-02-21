@@ -21,16 +21,7 @@ function Overview() {
         </div>
       </Slide>
 
-    <Slide>
-      <div className="flex flex-col justify-center items-center">
-        <Link href={"/adhoc/services"} className="z-10">
-        <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
-          See All Available Services
-        </button>
-      </Link>
-      </div>
-       
-    </Slide>
+  
      
     </div>
   );

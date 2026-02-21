@@ -12,7 +12,7 @@ function Adhoc() {
   
     <Hero />
     <Overview />
-    <Services />
+    {/* <Services /> */}
     <CTA 
       title="Ready to Transform Your Project Planning?"
       description="Contact us today to discuss how our project planning expertise can help your organization deliver projects more effectively."

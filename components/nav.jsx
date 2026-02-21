@@ -44,27 +44,40 @@ export default function Nav({ sectorSpecial }) {
   
   // Define special links for each sector
   const sectorSpecialLinks = {
-    marine: { name: "Rigs", href: "/marine/rigs" },
+    marine: {
+      name: "Services",
+      href: "/marine/services",
+      hasDropdown: true,
+      items: [
+        { name: "All Services", href: "/marine/services" },
+        { name: "Equipment & Solutions", href: "/marine/services/equipment" },
+        { name: "Rigs", href: "/marine/rigs" },
+      ],
+    },
     deals: { name: "Deal Listings", href: "/deals/list" },
     adhoc: {
-      name: "Services",
+      name: "Management Services",
       href: "/adhoc/services",
       hasDropdown: true,
       items: [
         { name: "All Services", href: "/adhoc/services" },
-        { name: "Project Management Office", href: "/adhoc/services/pmo" },
-        { name: "Planning Management", href: "/adhoc/services/planning-management" },
-        { name: "Functional Lead Service", href: "/adhoc/services/functional-lead" },
-        { name: "Cost Management", href: "/adhoc/services/cost-management" },
-        { name: "Project Controls", href: "/adhoc/services/project-controls" },
-        { name: "Project Estimations", href: "/adhoc/services/project-estimations" },
-        { name: "Risk Management", href: "/adhoc/services/risk-management" },
+        { name: "Project Management", href: "/adhoc/services/project-management" },
+        { name: "Planning & Controls", href: "/adhoc/services/planning-controls" },
+        { name: "Financial Services", href: "/adhoc/services/financial-services" },
         { name: "Document Management", href: "/adhoc/services/document-management" },
-        { name: "Commercial Management", href: "/adhoc/services/commercial-management" },
+        { name: "Risk Management", href: "/adhoc/services/risk-management" },
         { name: "4D Planning", href: "/adhoc/services/4d-planning" },
+        { name: "Commercial Management", href: "/adhoc/services/commercial-management" },
+        { name: "Project Estimations", href: "/adhoc/services/project-estimations" },
+        { name: "Functional Lead Service", href: "/adhoc/services/functional-lead" },
+        { name: "Project Controls", href: "/adhoc/services/project-controls" },
       ],
     },
-    construction: { name: "Services", href: "/construction" },
+    construction: {
+      name: "Services",
+      href: "/construction/services",
+      hasDropdown: false,
+    },
   };
   
   // Define additional special links for adhoc sector
@@ -92,13 +105,17 @@ export default function Nav({ sectorSpecial }) {
   if (pathname === '/') {
     currentNavigation = currentNavigation.filter(item => item.name !== "Home");
   }
+  // For about and contact pages, show full navigation with Sectors dropdown (like home page)
+  else if (currentSector === 'about' || currentSector === 'contact') {
+    // Keep the full navigation as-is (includes Sectors dropdown)
+  }
   // If we're on a sector page, modify the navigation
   else if (currentSector) {
     // For nested pages (services, forensics, etc.), show sector name instead of Home
     if (isNestedPage) {
       // Get the sector display name with proper capitalization
       const sectorDisplayName = {
-        'adhoc': 'Milestone Project Planner',
+        'adhoc': 'Adhoc',
         'marine': 'Marine',
         'construction': 'Construction',
         'deals': 'Deals'

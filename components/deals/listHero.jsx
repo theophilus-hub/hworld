@@ -8,7 +8,7 @@ function ListHero() {
     <div className="bg-cover bg-center relative w-full pt-20">
       <div className="relative flex flex-col justify-center items-center pt-20 mb-[30px] md:mb-[40px] w-full">
         <div className=" space-y-16 flex flex-col justify-center items-center mx-4 lg:mx-[10%]">
-          <Slide>
+          {/* <Slide>
             <h1 className="font-poppins text-white font-extrabold text-center text-3xl md:text-5xl z-10">
               Available Opportunities
             </h1>
@@ -38,7 +38,7 @@ function ListHero() {
               className="absolute -top-12 md:-top-16 z-0"
               alt="light"
             />
-          </div>
+          </div> */}
         </div>
       </div>
      

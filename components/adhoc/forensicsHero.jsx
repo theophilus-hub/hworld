@@ -14,9 +14,9 @@ function ForensicsHero() {
             </h1>
           </Slide>
           
-          <Slide>
+          {/* <Slide>
             <img src="/adhoc-forensics.png" alt="Forensic Planning & Analysis" />
-          </Slide>
+          </Slide> */}
           
           <div className="z-10 px-4 md:px-16 flex flex-col justify-center items-center space-y-10">
             <Slide>

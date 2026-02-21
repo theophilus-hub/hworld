@@ -14,11 +14,11 @@ function ServicesHero() {
             </h1>
           </Slide>
           
-          <Slide>
+          {/* <Slide>
             <div className="w-full flex flex-col justify-center items-center px-[10%]">
               <img src="/adhocservice.png" alt="Professional Services" className="rounded-2xl h-[30%]"/>
             </div>
-          </Slide>
+          </Slide> */}
           
           <div className="z-10 px-2 md:px-8 lg:px-12 flex flex-col justify-center items-center space-y-10">
             <Slide>
@@ -57,7 +57,7 @@ function ServicesHero() {
                       </p>
                     </div>
                     <div className="mt-auto pt-2">
-                      <Link href={"/adhoc/services/pmo"} className="z-10">
+                      <Link href={"/adhoc/services/project-management"} className="z-10">
                         <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-6 py-2 text-sm font-bold md:font-extrabold">
                           Explore
                         </button>
@@ -80,7 +80,7 @@ function ServicesHero() {
                       </p>
                     </div>
                     <div className="mt-auto pt-2">
-                      <Link href={"/adhoc/services/planning-management"} className="z-10">
+                      <Link href={"/adhoc/services/planning-controls"} className="z-10">
                         <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-6 py-2 text-sm font-bold md:font-extrabold">
                           Explore 
                         </button>
@@ -103,7 +103,7 @@ function ServicesHero() {
                       </p>
                     </div>
                     <div className="mt-auto pt-2">
-                      <Link href={"/adhoc/services/cost-management"} className="z-10">
+                      <Link href={"/adhoc/services/financial-services"} className="z-10">
                         <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-6 py-2 text-sm font-bold md:font-extrabold">
                           Explore
                         </button>

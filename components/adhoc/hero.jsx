@@ -9,7 +9,7 @@ function Hero() {
     <>
       <div
         className="bg-cover bg-center relative w-full pt-20"
-        style={{ backgroundImage: "url('/adhoc.png')" }}
+        style={{ backgroundImage: "url('/adhocservice.png')" }}
       >
 
         <div className="relative flex flex-col justify-center items-center py-44 mb-[60px] md:mb-[70px] w-full">
@@ -30,7 +30,7 @@ function Hero() {
               />
               <Link href={"/adhoc/services"} className="z-10">
                 <button className="z-10 bg-sec rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold">
-                Request a Service
+                See All Available Services
                 </button>
               </Link>
               <Slide>

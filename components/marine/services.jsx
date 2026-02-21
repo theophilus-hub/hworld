@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link";
 import React from "react";
 import Slide from "../slide";
 
@@ -79,11 +78,6 @@ function Services() {
   </Slide>
         
       </div>
-      <Link href={"/marine/rigs"} className="z-10" >
-          <button className="z-10 bg-sec hover:bg-transparent hover:border-2 hover:border-sec hover:text-white rounded-[40px] flex justify-center items-center text-center px-8 py-3 text-sm font-bold md:font-extrabold transition-all duration-150 transform hover:scale-105">
-            See all Available Drilling Rigs
-          </button>
-        </Link>
     </div>
   );
 }
