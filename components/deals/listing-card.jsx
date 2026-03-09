@@ -19,6 +19,7 @@ const PdfViewer = dynamic(() => import('./pdf-viewer'), { ssr: false })
 function ListingCard({
   header, 
   pdfUrl,
+  listingId,
   category = "Infrastructure", 
   description = "Premium opportunity in the energy sector"
 }) {
@@ -58,7 +59,12 @@ function ListingCard({
         {/* Content section */}
         <div className='flex flex-col flex-1 p-4 md:p-5 space-y-3'>
           <div className='space-y-2'>
-            <span className='inline-block text-sec text-[10px] md:text-xs font-semibold uppercase tracking-wider bg-sec/10 px-2 py-1 rounded-full'>{category}</span>
+            <div className='flex items-center gap-2 flex-wrap'>
+              <span className='inline-block text-sec text-[10px] md:text-xs font-semibold uppercase tracking-wider bg-sec/10 px-2 py-1 rounded-full'>{category}</span>
+              {listingId && (
+                <span className='inline-block text-white/50 text-[10px] font-mono tracking-wide bg-white/5 px-2 py-1 rounded-full border border-white/10'>{listingId}</span>
+              )}
+            </div>
             <h3 className='text-white text-sm md:text-base font-bold leading-snug line-clamp-2'>{header}</h3>
             <p className='text-white/60 text-xs md:text-sm line-clamp-2 leading-relaxed'>{description}</p>
           </div>

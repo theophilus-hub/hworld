@@ -23,7 +23,8 @@ function MainList() {
           <Slide>
             <ListingCard
               header={"400 MW GE-Alstom Power Plant"}
-              pdfUrl={"/pdf/400 MW GE-Alstom HW Brochure.docx.pdf"}
+              pdfUrl={"/pdf/HWPOWER26-0001-400MW-GE-Alstom.pdf"}
+              listingId="HWPOWER26-0001"
               category="Energy & Power"
               description="400 MW GE-Alstom gas turbine power plant with advanced combined cycle technology for high-efficiency electricity generation."
             />
@@ -31,7 +32,8 @@ function MainList() {
           <Slide>
             <ListingCard
               header={"810 MW GE Frame 9 Power Plant"}
-              pdfUrl={"/pdf/810 MW GE Frame 9 Based HW Brochure .docx.pdf"}
+              pdfUrl={"/pdf/HWPOWER26-0002-810MW-GE-Frame9.pdf"}
+              listingId="HWPOWER26-0002"
               category="Energy & Power"
               description="810 MW GE Frame 9 based combined cycle power plant offering large-scale power generation with proven turbine technology."
             />
@@ -39,7 +41,8 @@ function MainList() {
           <Slide>
             <ListingCard
               header={"Oil Refinery Asset"}
-              pdfUrl={"/pdf/HW - Oil Refinary Asset.pdf"}
+              pdfUrl={"/pdf/HWOIL26-0001-Refinery-Asset.pdf"}
+              listingId="HWOIL26-0001"
               category="Oil & Gas"
               description="Comprehensive oil refinery asset with full processing capabilities for crude oil refining and petroleum product distribution."
             />
@@ -47,7 +50,8 @@ function MainList() {
           <Slide>
             <ListingCard
               header={"NOV 1500hp AC Rig 827"}
-              pdfUrl={"/pdf/TDS  -Ideal NOV 1500hp AC Rig 827.pdf"}
+              pdfUrl={"/pdf/HWRIG26-0001-NOV-1500hp-Rig827.pdf"}
+              listingId="HWRIG26-0001"
               category="Drilling Rigs"
               description="Ideal NOV 1500 horsepower AC drilling rig (#827) equipped for demanding drilling operations across diverse environments."
             />
@@ -55,7 +59,8 @@ function MainList() {
           <Slide>
             <ListingCard
               header={"Drillmec 2000hp Rig 67"}
-              pdfUrl={"/pdf/TDS - Drillmec 2000 hp Rig 67.pdf"}
+              pdfUrl={"/pdf/HWRIG26-0002-Drillmec-2000hp-Rig67.pdf"}
+              listingId="HWRIG26-0002"
               category="Drilling Rigs"
               description="Drillmec 2000 horsepower drilling rig (#67) designed for heavy-duty drilling applications with high-performance capabilities."
             />
